@@ -13,10 +13,251 @@
   },
   "current": [
     {
+      "name": "Jihun Kim",
+      "email": "jihun1998@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "JihunKim.jpg",
+      "researchInterests": ["Semantic Segmentation", "Domain Adaptation", "Point Cloud", "Foundation Model"]
+    },
+    {
+      "name": "Byeongin Jeoung",
+      "email": "byeonginjoung@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "ByeonginJeoung.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Hyun-Kurl Jang",
+      "email": "jhg0001@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "HyunkurlJang.jpg",
+      "researchInterests": ["3D Vision"]
+    },
+    {
+      "name": "Jaeseok Jeong",
+      "email": "jason.jeong@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "",
+      "researchInterests": ["3D Vision"]
+    },
+    {
+      "name": "Yujeong Chae",
+      "email": "yujeong@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "",
+      "researchInterests": ["Multi-modal Vision", "Object Detection"]
+    },
+    {
+      "name": "Hyeonseong Kim",
+      "email": "brian617@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "HyeonseongKim.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Youngho Yoon",
+      "email": "dudgh1732@kaist.ac.kr",
+      "category": "phd",
+      "image": "",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Jih-Ho Kim",
+      "email": "jinho99@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering (Part-time)",
+      "image": "",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Hunmin Yang",
+      "email": "hmyang@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering (Part-time)",
+      "image": "",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Jongoh Jeong",
+      "email": "jeong2@kaist.ac.kr",
+      "category": "phd",
+      "major": "The Robotics Program",
+      "image": "JongohJeong.jpg",
+      "researchInterests": ["Visual Recognition", "Domain Adaptation/Generalization"]
+    },
+    {
+      "name": "Changgyoon Oh",
+      "email": "changgyoon@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "ChanggyoonOh.jpg",
+      "researchInterests": ["Generative Models"]
+    },
+    {
+      "name": "Hoonhee Cho",
+      "email": "gnsgnsgml@kaist.ac.kr",
+      "category": "phd",
+      "major": "The Robotics Program",
+      "image": "HoonheeCho.jpg",
+      "researchInterests": ["Stereo Vision", "Multi-modal sensor"]
+    },
+    {
+      "name": "Jaegyeong Cho",
+      "email": "j2k0618@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Wooseong Jeong",
+      "email": "stk14570@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "WooseongJeong.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Jaewoo Jeong",
+      "email": "jeong207@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "JaewooJeong.jpg",
+      "researchInterests": ["Human Motion Forecasting", "Trajectory Prediction"]
+    },
+    {
+      "name": "Yuhwan Jeong",
+      "email": "jeongyh98@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "YuhwanJeong.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Yunseo Yang",
+      "email": "acorn@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Jong Seob Yun",
+      "email": "jseob.y@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering (Part-time)",
+      "image": "JongseobYun.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Minseok Kim",
+      "email": "alstjrx1x1@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Jae-Young Kang",
+      "email": "mickeykang@kaist.ac.kr",
+      "category": "phd",
+      "major": "Mechanical Engineering",
+      "image": "jaeyoungkang.jpg",
+      "researchInterests": [""]
+    },
+    {
       "name": "Hoyong Kwon",
       "email": "kwonhoyong3@kaist.ac.kr",
       "category": "phd",
+      "major": "The Robotics Program",
       "image": "HoyongKwon.jpg",
+      "researchInterests": ["Semantic Segmentation", "Foundation Model"]
+    },
+    
+    {
+      "name": "Giwon Lee",
+      "email": "dlrldnjs@kaist.ac.kr",
+      "category": "ms",
+      "major": "Mechanical Engineering",
+      "image": "GiwonLee.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Heejun Park",
+      "email": "parkhee.ticket@kaist.ac.kr",
+      "category": "ms",
+      "major": "Division of Future Vehicle",
+      "image": "HeejunPark.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Daehyun We",
+      "email": "greathyun@kaist.ac.kr",
+      "category": "ms",
+      "major": "Kim Jaechul Graduate School of AI",
+      "image": "DaehyunWe.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Seonkyu Song",
+      "email": "sok9854@kaist.ac.kr",
+      "category": "ms",
+      "major": "Mechanical Engineering",
+      "image": "SeonkyuSong.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Yujin Bae",
+      "email": "yujinbae@kaist.ac.kr",
+      "category": "ms",
+      "major": "The Robotics Program",
+      "image": "YujinBae.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Jiyong Boo",
+      "email": "boojiyong@kaist.ac.kr",
+      "category": "ms",
+      "major": "Mechanical Engineering",
+      "image": "JiyongBoo.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Jinnyeong Yang",
+      "email": "jinnyeong6118@kaist.ac.kr",
+      "category": "ms",
+      "major": "Division of Future Vehicle",
+      "image": "JinnyeongYang.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Hyemin Yang",
+      "email": "hyemin0806@kaist.ac.kr",
+      "category": "ms",
+      "major": "The Robotics Program",
+      "image": "HyeminYang.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Wonyoung Lee",
+      "email": "bsis2one0@kaist.ac.kr",
+      "category": "ms",
+      "major": "Kim Jaechul Graduate School of AI",
+      "image": "WonyoungLee.jpg",
+      "researchInterests": [""]
+    },
+    {
+      "name": "Youngho Kim",
+      "email": "kmax2001@kaist.ac.kr",
+      "category": "ms",
+      "major": "Mechanical Engineering",
+      "image": "YounghoKim.jpg",
       "researchInterests": [""]
     }
   ],
