@@ -109,6 +109,7 @@ class PeoplePage {
           ${person.researchInterests ? `
             <p class="research-interests" style="font-weight: normal;"><span style="font-weight: bold;">Research Interests:</span> ${person.researchInterests.join(', ')}</p>
           ` : ''}
+          ${person.role ? `<p class="role" style="font-weight: normal;">${person.role}</p>` : ''}
           ${links.length > 0 ? `<div class="person-links">${links.join('')}</div>` : ''}
         </div>
       </div>

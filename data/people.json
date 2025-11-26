@@ -2,10 +2,11 @@
   "categories": {
     "postdoc": "Postdocs",
     "phd": "PhD Students",
-    "masters": "Masters Students",
+    "ms": "Masters Students",
     "undergraduate": "Undergraduate Students",
     "intern": "Interns",
-    "visiting": "Visiting Researchers"
+    "visiting": "Visiting Researchers",
+    "staff": "Administrative Assistant"
   },
   "positions": {
     "current": "Current Members",
@@ -17,24 +18,29 @@
       "email": "jihun1998@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering",
+      "role": "2025 Lab Leader (랩장)",
       "image": "JihunKim.jpg",
-      "researchInterests": ["Semantic Segmentation", "Domain Adaptation", "Point Cloud", "Foundation Model"]
+      "researchInterests": ["Semantic Segmentation", "Domain Adaptation", "Point Cloud", "Foundation Model"],
+      "website": "https://jihun1998.github.io/"
     },
     {
       "name": "Byeongin Jeoung",
       "email": "byeonginjoung@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering",
+      "role": "2025 Assistant Lab Leader (부랩장)",
       "image": "ByeonginJeoung.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Hyun-Kurl Jang",
       "email": "jhg0001@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering",
+      "role": "2025 Assistant Lab Leader (부랩장)",
       "image": "HyunkurlJang.jpg",
-      "researchInterests": ["3D Vision"]
+      "researchInterests": ["3D Vision"],
+      "website": "https://blue-531.github.io/"
     },
     {
       "name": "Jaeseok Jeong",
@@ -58,22 +64,22 @@
       "category": "phd",
       "major": "Mechanical Engineering",
       "image": "HyeonseongKim.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Youngho Yoon",
       "email": "dudgh1732@kaist.ac.kr",
       "category": "phd",
       "image": "",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
-      "name": "Jih-Ho Kim",
+      "name": "Jin-Ho Kim",
       "email": "jinho99@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering (Part-time)",
       "image": "",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Hunmin Yang",
@@ -81,7 +87,7 @@
       "category": "phd",
       "major": "Mechanical Engineering (Part-time)",
       "image": "",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Jongoh Jeong",
@@ -113,15 +119,15 @@
       "category": "phd",
       "major": "Mechanical Engineering",
       "image": "",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Wooseong Jeong",
       "email": "stk14570@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering",
-      "image": "WooseongJeong.jpg",
-      "researchInterests": [""]
+      "image": "WooseongJeong.png",
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Jaewoo Jeong",
@@ -137,7 +143,7 @@
       "category": "phd",
       "major": "Mechanical Engineering",
       "image": "YuhwanJeong.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["Optical Flow", "Diffusion Models"]
     },
     {
       "name": "Yunseo Yang",
@@ -145,7 +151,7 @@
       "category": "phd",
       "major": "Mechanical Engineering",
       "image": "",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Jong Seob Yun",
@@ -153,15 +159,15 @@
       "category": "phd",
       "major": "Mechanical Engineering (Part-time)",
       "image": "JongseobYun.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Minseok Kim",
       "email": "alstjrx1x1@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering",
-      "image": "",
-      "researchInterests": [""]
+      "image": "MinseokKim.jpg",
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Jae-Young Kang",
@@ -169,7 +175,7 @@
       "category": "phd",
       "major": "Mechanical Engineering",
       "image": "JaeyoungKang.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Hoyong Kwon",
@@ -186,7 +192,7 @@
       "category": "ms",
       "major": "Mechanical Engineering",
       "image": "GiwonLee.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Heejun Park",
@@ -194,7 +200,7 @@
       "category": "ms",
       "major": "Division of Future Vehicle",
       "image": "HeejunPark.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Daehyun We",
@@ -202,7 +208,7 @@
       "category": "ms",
       "major": "Kim Jaechul Graduate School of AI",
       "image": "DaehyunWe.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Seonkyu Song",
@@ -210,7 +216,7 @@
       "category": "ms",
       "major": "Mechanical Engineering",
       "image": "SeonkyuSong.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Yujin Bae",
@@ -218,7 +224,7 @@
       "category": "ms",
       "major": "The Robotics Program",
       "image": "YujinBae.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Jiyong Boo",
@@ -226,7 +232,7 @@
       "category": "ms",
       "major": "Mechanical Engineering",
       "image": "JiyongBoo.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Jinnyeong Yang",
@@ -234,7 +240,7 @@
       "category": "ms",
       "major": "Division of Future Vehicle",
       "image": "JinnyeongYang.png",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Hyemin Yang",
@@ -242,7 +248,7 @@
       "category": "ms",
       "major": "The Robotics Program",
       "image": "HyeminYang.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Wonyoung Lee",
@@ -250,7 +256,7 @@
       "category": "ms",
       "major": "Kim Jaechul Graduate School of AI",
       "image": "WonyoungLee.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
     },
     {
       "name": "Youngho Kim",
@@ -258,7 +264,12 @@
       "category": "ms",
       "major": "Mechanical Engineering",
       "image": "YounghoKim.jpg",
-      "researchInterests": [""]
+      "researchInterests": ["TBD"]
+    },
+    {
+      "name": "Kyung-A Kwon",
+      "category": "staff",
+      "image": "Kyung-AKwon.jpg"
     }
   ],
   "alumni": [

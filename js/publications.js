@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   async function createFilterButtons() {
     if (!filterContainer) return;
-    
+
     filterContainer.innerHTML = `
       <div class="filter-group">
         <label>Filter by Year:</label>
@@ -94,14 +94,14 @@ document.addEventListener('DOMContentLoaded', async function () {
         <button class="filter-btn" data-filter="year" data-value="2024">2024</button>
         <button class="filter-btn" data-filter="year" data-value="2023">2023</button>
         <button class="filter-btn" data-filter="year" data-value="2022">2022</button>
-        <button class="filter-btn" data-filter="year" data-value="-2021">-2021</button>
+        <button class="filter-btn" data-filter="year" data-value="~2021">~2021</button>
       </div>
       <div class="filter-group">
         <label>Filter by Venue:</label>
         <button class="filter-btn active" data-filter="venue" data-value="all">All Venues</button>
         <button class="filter-btn" data-filter="venue" data-value="CVPR">CVPR</button>
-        <button class="filter-btn" data-filter="venue" data-value="ECCV">ECCV</button>
         <button class="filter-btn" data-filter="venue" data-value="ICCV">ICCV</button>
+        <button class="filter-btn" data-filter="venue" data-value="ECCV">ECCV</button>
         <button class="filter-btn" data-filter="venue" data-value="Other Conferences">Other Conferences</button>
         <button class="filter-btn" data-filter="venue" data-value="Journals">Journals</button>
       </div>
