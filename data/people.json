@@ -70,7 +70,8 @@
       "name": "Youngho Yoon",
       "email": "dudgh1732@kaist.ac.kr",
       "category": "phd",
-      "image": "YounghoYoon_low.jpg",
+      "major": "Mechanical Engineering",
+      "image": "YounghoYoon.jpg",
       "researchInterests": ["TBD"]
     },
     {
@@ -114,11 +115,11 @@
       "researchInterests": ["Stereo Vision", "Multi-modal sensor"]
     },
     {
-      "name": "Jaegyeong Cho",
+      "name": "Jegyeong Cho",
       "email": "j2k0618@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering",
-      "image": "JaegyeongCho_low.jpg",
+      "image": "JegyeongCho_low.jpg",
       "researchInterests": ["TBD"]
     },
     {
@@ -154,7 +155,7 @@
       "researchInterests": ["TBD"]
     },
     {
-      "name": "Jong Seob Yun",
+      "name": "Jongseob Yun",
       "email": "jseob.y@kaist.ac.kr",
       "category": "phd",
       "major": "Mechanical Engineering (Part-time)",
@@ -192,7 +193,8 @@
       "category": "ms",
       "major": "Mechanical Engineering",
       "image": "GiwonLee.jpg",
-      "researchInterests": ["TBD"]
+      "researchInterests": ["TBD"],
+      "website": "https://giwonlee00.github.io/"
     },
     {
       "name": "Heejun Park",

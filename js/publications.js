@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', async function () {
   const TOP_CV = ['CVPR', 'ECCV', 'ICCV'];
 
   function getYearGroup(year) {
-    if (year >= 2025) return '2025';
+    if (year >= 2026) return '2026';
+    if (year === 2025) return '2025';
     if (year === 2024) return '2024';
     if (year === 2023) return '2023';
     if (year === 2022) return '2022';
@@ -23,7 +24,10 @@ document.addEventListener('DOMContentLoaded', async function () {
   }
 
   function getVenueGroup(pub) {
-    if (TOP_CV.includes(pub.venue)) return pub.venue;          
+    if (TOP_CV.includes(pub.venue)) return pub.venue;
+    for (const venue of TOP_CV) {
+      if (pub.venue.includes(venue)) return venue;
+    }
     if (pub.type === 'journal') return 'Journals';            
     if (pub.type === 'conference') return 'Other Conferences'; 
     return 'Other';
@@ -90,11 +94,11 @@ document.addEventListener('DOMContentLoaded', async function () {
       <div class="filter-group">
         <label>Filter by Year:</label>
         <button class="filter-btn active" data-filter="year" data-value="all">All Years</button>
+        <button class="filter-btn" data-filter="year" data-value="2026">2026</button>
         <button class="filter-btn" data-filter="year" data-value="2025">2025</button>
         <button class="filter-btn" data-filter="year" data-value="2024">2024</button>
         <button class="filter-btn" data-filter="year" data-value="2023">2023</button>
-        <button class="filter-btn" data-filter="year" data-value="2022">2022</button>
-        <button class="filter-btn" data-filter="year" data-value="~2021">~2021</button>
+        <button class="filter-btn" data-filter="year" data-value="~2022">~2022</button>
       </div>
       <div class="filter-group">
         <label>Filter by Venue:</label>
@@ -196,6 +200,8 @@ document.addEventListener('DOMContentLoaded', async function () {
           </div>` : ''}
           <div class="publication-links">
             ${pub.pdf_url && pub.pdf_url !== '#' ? `<a href="${pub.pdf_url}" class="pub-link">Paper</a>` : ''}
+            ${pub.supp_url && pub.supp_url !== '#' ? `<a href="${pub.supp_url}" class="pub-link">Supp</a>` : ''}
+            ${pub.arxiv_url && pub.arxiv_url !== '#' ? `<a href="${pub.arxiv_url}" class="pub-link">ArXiv</a>` : ''}
             ${pub.code_url && pub.code_url !== '#' ? `<a href="${pub.code_url}" class="pub-link">Code</a>` : ''}
             ${pub.project_url && pub.project_url !== '#' ? `<a href="${pub.project_url}" class="pub-link">Project Page</a>` : ''}
           </div>
@@ -243,8 +249,9 @@ document.addEventListener('DOMContentLoaded', async function () {
   async function applyFilters() {
     const activeFilters = {
       year: getActiveFilterValue('year'),
-      category: getActiveFilterValue('category'),
-      type: getActiveFilterValue('type')
+      venue: getActiveFilterValue('venue')
+      // category: getActiveFilterValue('category'),
+      // type: getActiveFilterValue('type')
     };
 
     let filteredPublications = [...allPublications];
@@ -254,15 +261,37 @@ document.addEventListener('DOMContentLoaded', async function () {
       filteredPublications = filteredPublications.filter(pub => pub.year.toString() === activeFilters.year);
     }
 
-    // Apply category filter
-    if (activeFilters.category !== 'all') {
-      filteredPublications = filteredPublications.filter(pub => pub.category === activeFilters.category);
+    // Apply venue filter
+    if (activeFilters.venue !== 'all') {
+      const v = activeFilters.venue;
+
+      if (['CVPR', 'ICCV', 'ECCV'].includes(v)) {
+        // Top conference만
+        // filteredPublications = filteredPublications.filter(pub => pub.venue === v);
+        filteredPublications = filteredPublications.filter(pub =>
+          pub.venue === v || pub.venue.includes(v)  
+        );
+      } else if (v === 'Journals') {
+        filteredPublications = filteredPublications.filter(pub => pub.type === 'journal');
+      } else if (v === 'Other Conferences') {
+        filteredPublications = filteredPublications.filter(
+          pub => 
+            pub.type === 'conference' && 
+            !TOP_CV.includes(pub.venue) &&
+            !TOP_CV.some(top => pub.venue.includes(top))
+        );
+      }
     }
 
-    // Apply type filter
-    if (activeFilters.type !== 'all') {
-      filteredPublications = filteredPublications.filter(pub => pub.type === activeFilters.type);
-    }
+    // // Apply category filter
+    // if (activeFilters.category !== 'all') {
+    //   filteredPublications = filteredPublications.filter(pub => pub.category === activeFilters.category);
+    // }
+
+    // // Apply type filter
+    // if (activeFilters.type !== 'all') {
+    //   filteredPublications = filteredPublications.filter(pub => pub.type === activeFilters.type);
+    // }
 
     // Apply search filter
     if (currentSearch) {
@@ -271,12 +300,25 @@ document.addEventListener('DOMContentLoaded', async function () {
       if (activeFilters.year !== 'all') {
         filteredPublications = filteredPublications.filter(pub => pub.year.toString() === activeFilters.year);
       }
-      if (activeFilters.category !== 'all') {
-        filteredPublications = filteredPublications.filter(pub => pub.category === activeFilters.category);
+      if (activeFilters.venue !== 'all') {
+        const v = activeFilters.venue;
+  
+        if (['CVPR', 'ICCV', 'ECCV'].includes(v)) {
+          filteredPublications = filteredPublicications.filter(pub => pub.venue === v);
+        } else if (v === 'Journals') {
+          filteredPublications = filteredPublications.filter(pub => pub.type === 'journal');
+        } else if (v === 'Other Conferences') {
+          filteredPublications = filteredPublications.filter(
+            pub => pub.type === 'conference' && !TOP_CV.includes(pub.venue)
+          );
+        }
       }
-      if (activeFilters.type !== 'all') {
-        filteredPublications = filteredPublications.filter(pub => pub.type === activeFilters.type);
-      }
+      // if (activeFilters.category !== 'all') {
+      //   filteredPublications = filteredPublications.filter(pub => pub.category === activeFilters.category);
+      // }
+      // if (activeFilters.type !== 'all') {
+      //   filteredPublications = filteredPublications.filter(pub => pub.type === activeFilters.type);
+      // }
     }
 
     displayPublications(filteredPublications);
