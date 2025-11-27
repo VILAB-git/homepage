@@ -33,7 +33,7 @@
     },
     {
       "title": "DOODLE: Diffusion-based Out-of-Distribution Learning for Open-set LiDAR Semantic Segmentation",
-      "authors": ["Changgyoon Oh*", "Hyeonseong Kim*", "Daehyun We", "Jongoh Jeong", "Yujeong Chae", "Kuk-Jin Yoon"],
+      "authors": ["Changgyoon Oh*", "Hyeonseong Kim*", "Daehyun We*", "Jongoh Jeong", "Yujeong Chae", "Kuk-Jin Yoon"],
       "venue": "WACV",
       "year": 2026,
       "type": "conference",

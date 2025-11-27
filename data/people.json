@@ -184,7 +184,8 @@
       "category": "phd",
       "major": "The Robotics Program",
       "image": "HoyongKwon.jpg",
-      "researchInterests": ["Semantic Segmentation", "Foundation Model"]
+      "researchInterests": ["Semantic Segmentation", "Foundation Model"],
+      "website": "https://kwonhoyong3.github.io/"
     },
     
     {
