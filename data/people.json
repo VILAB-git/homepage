@@ -88,7 +88,8 @@
       "category": "phd",
       "major": "Mechanical Engineering (Part-time)",
       "image": "HunminYang_low.jpg",
-      "researchInterests": ["TBD"]
+      "researchInterests": ["TBD"],
+      "website": "https://hmyang1.github.io/"
     },
     {
       "name": "Jongoh Jeong",
@@ -96,7 +97,8 @@
       "category": "phd",
       "major": "The Robotics Program",
       "image": "JongohJeong.jpg",
-      "researchInterests": ["Visual Recognition", "Domain Adaptation/Generalization"]
+      "researchInterests": ["Visual Recognition", "Domain Adaptation/Generalization"],
+      "website": "https://sites.google.com/view/jongohjeong?pli=1"
     },
     {
       "name": "Changgyoon Oh",
@@ -112,7 +114,8 @@
       "category": "phd",
       "major": "The Robotics Program",
       "image": "HoonheeCho.jpg",
-      "researchInterests": ["Stereo Vision", "Multi-modal sensor"]
+      "researchInterests": ["Stereo Vision", "Multi-modal sensor"],
+      "website": "https://sites.google.com/view/hoonheecho/"
     },
     {
       "name": "Jegyeong Cho",
@@ -136,7 +139,8 @@
       "category": "phd",
       "major": "Mechanical Engineering",
       "image": "JaewooJeong.jpg",
-      "researchInterests": ["Human Motion Forecasting", "Trajectory Prediction"]
+      "researchInterests": ["Human Motion Forecasting", "Trajectory Prediction"],
+      "website": "https://jaewoo97.github.io/"
     },
     {
       "name": "Yuhwan Jeong",
@@ -160,7 +164,8 @@
       "category": "phd",
       "major": "Mechanical Engineering (Part-time)",
       "image": "JongseobYun.jpg",
-      "researchInterests": ["TBD"]
+      "researchInterests": ["TBD"],
+      "website": "https://jseobyun.github.io/"
     },
     {
       "name": "Minseok Kim",
