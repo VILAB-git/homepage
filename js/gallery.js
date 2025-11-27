@@ -8,121 +8,161 @@ document.addEventListener('DOMContentLoaded', async function () {
   let currentFilter = 'all';
   let currentSearch = '';
 
-  // Initialize gallery page
+  // 초기화
   await initializeGallery();
 
-  // Load gallery from JSON
   async function initializeGallery() {
     try {
-      // Load gallery data
-      allGalleryItems = await window.dataManager.getGalleryItems();
+      const items = await window.dataManager.getGalleryItems();
+      allGalleryItems = Array.isArray(items) ? items : [];
 
-      // Create filter buttons if filter container exists
       if (filterContainer) {
         await createFilterButtons();
       }
 
-      // Display gallery items
       displayGalleryItems(allGalleryItems);
-
-      // Setup event listeners
       setupEventListeners();
-
     } catch (error) {
       console.error('Error initializing gallery:', error);
       showErrorMessage();
     }
   }
 
-  // Create dynamic filter buttons based on available categories
+  // 필터 버튼 생성
   async function createFilterButtons() {
     const categories = await window.dataManager.getGalleryCategories();
 
-    // Create filter buttons HTML
     const filterButtonsHTML = `
       <button class="filter-btn active" data-category="all">All</button>
-      ${Object.entries(categories).map(([key, label]) =>
-      `<button class="filter-btn" data-category="${key}">${label}</button>`
-    ).join('')}
+      ${Object.entries(categories)
+        .map(
+          ([key, label]) =>
+            `<button class="filter-btn" data-category="${key}">${label}</button>`
+        )
+        .join('')}
     `;
-
     filterContainer.innerHTML = filterButtonsHTML;
   }
 
-  // Display gallery items in a grid layout
-  function displayGalleryItems(items) {
-    if (!galleryContainer) return;
-
-    if (items.length === 0) {
-      galleryContainer.innerHTML = '<div class="no-results">No gallery items found matching your criteria.</div>';
-      return;
-    }
-
-    const html = items.map(item => createGalleryItemHTML(item)).join('');
-    galleryContainer.innerHTML = html;
-  }
-
+  // 날짜 포맷 (연·월만)
   function formatYearMonthOnly(dateStr, locale = 'ko-KR') {
     try {
-      // YYYY-MM → YYYY-MM-01 로 보정
       if (/^\d{4}-\d{2}$/.test(dateStr)) {
         const d = new Date(`${dateStr}-01T00:00:00`);
         return d.toLocaleDateString(locale, { year: 'numeric', month: 'long' });
       }
-      // YYYY-MM-DD → 해당 월의 연·월만
       if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
         const [y, m] = dateStr.split('-');
         const d = new Date(`${y}-${m}-01T00:00:00`);
         return d.toLocaleDateString(locale, { year: 'numeric', month: 'long' });
       }
-      // 기타 문자열도 Date 파싱 후 연·월만
       const d = new Date(dateStr);
       if (!isNaN(d)) {
         return d.toLocaleDateString(locale, { year: 'numeric', month: 'long' });
       }
     } catch (_) {}
-    // 파싱 실패 시 원문 반환(안전장치)
     return dateStr;
   }
-  
 
+  // 아이템별 이미지 리스트 생성
+  // - images 배열이 있으면 그걸 사용
+  // - 없으면 image_dir + image_count 기반으로
+  //   ../assets/images/gallery/<dir>/<dir>-1.jpg ~ -N.jpg 생성
+  // - 그것도 없으면 단일 image 필드 사용
+  function getImageUrlsForItem(item) {
+    const baseDir = '../assets/images/gallery/';
+
+    if (Array.isArray(item.images) && item.images.length > 0) {
+      return item.images.map((name) =>
+        name.startsWith('http') || name.startsWith('../')
+          ? name
+          : baseDir + name
+      );
+    }
+
+    if (item.image_dir && item.image_count) {
+      const dir = item.image_dir.replace(/\/+$/, '');
+      const count = Number(item.image_count) || 0;
+      const urls = [];
+      for (let i = 1; i <= count; i++) {
+        const filename = `${dir}-${i}.jpg`;
+        urls.push(`${baseDir}${dir}/${filename}`);
+      }
+      if (urls.length > 0) return urls;
+    }
+
+    if (item.image) {
+      const url =
+        item.image.startsWith('http') || item.image.startsWith('../')
+          ? item.image
+          : baseDir + item.image;
+      return [url];
+    }
+
+    return [];
+  }
+
+  // 개별 카드 HTML 생성
   function createGalleryItemHTML(item) {
     const featuredClass = item.featured ? 'featured' : '';
-    const formattedDate = formatYearMonthOnly(item.date); // 예: "2025년 8월"
-  
-    const imageUrl = item.image.startsWith('http') || item.image.startsWith('../')
-      ? item.image
-      : `../assets/images/gallery/${item.image}`;
-  
-    const venueHTML = item.venue || item.location ? `
+    const formattedDate = formatYearMonthOnly(item.date);
+
+    const imageUrls = getImageUrlsForItem(item);
+    if (imageUrls.length === 0) return '';
+
+    const mainImageUrl = imageUrls[0];
+    const imagesDataAttr = imageUrls.join('|');
+
+    const venueHTML =
+      item.venue || item.location
+        ? `
       <div class="gallery-venue">
         ${item.venue ? `<span class="venue">${item.venue}</span>` : ''}
         ${item.location ? `<span class="location">${item.location}</span>` : ''}
       </div>
-    ` : '';
-  
+    `
+        : '';
+
     return `
-      <div class="gallery-item ${featuredClass}" data-category="${item.category}">
+      <div class="gallery-item ${featuredClass}"
+           data-category="${item.category}"
+           data-images="${imagesDataAttr}">
         <div class="gallery-image">
-          <img src="${imageUrl}" alt="${item.alt_text}" class="gallery-img">
+          <img src="${mainImageUrl}" alt="${item.alt_text || item.title}" class="gallery-img">
           <div class="gallery-overlay">
             <h4 class="gallery-title">${item.title}</h4>
-            <p class="gallery-description">${item.description}</p>
+            <p class="gallery-description">${item.description || ''}</p>
             <div class="gallery-meta">
               <span class="gallery-date">${formattedDate}</span>
               ${venueHTML}
             </div>
-            <!-- 태그 출력 제거 -->
           </div>
         </div>
       </div>
     `;
   }
-  
 
-  // Setup event listeners
+  // 아이템들 표시
+  function displayGalleryItems(items) {
+    if (!galleryContainer) return;
+
+    if (!Array.isArray(items) || items.length === 0) {
+      galleryContainer.innerHTML =
+        '<div class="no-results">No gallery items found matching your criteria.</div>';
+      return;
+    }
+
+    const html = items
+      .map((item) => createGalleryItemHTML(item))
+      .filter(Boolean)
+      .join('');
+
+    galleryContainer.innerHTML = html;
+  }
+
+  // 이벤트 리스너 등록
   function setupEventListeners() {
-    // Filter buttons
+    // 필터 버튼
     if (filterContainer) {
       filterContainer.addEventListener('click', function (e) {
         if (e.target.classList.contains('filter-btn')) {
@@ -131,7 +171,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-    // Search input
+    // 검색
     if (searchInput) {
       searchInput.addEventListener('input', function (e) {
         currentSearch = e.target.value.toLowerCase();
@@ -139,89 +179,151 @@ document.addEventListener('DOMContentLoaded', async function () {
       });
     }
 
-    // Gallery image clicks for modal/lightbox (optional enhancement)
+    // 갤러리 아이템 클릭 → 슬라이드 모달
     if (galleryContainer) {
       galleryContainer.addEventListener('click', function (e) {
-        if (e.target.classList.contains('gallery-img')) {
-          handleImageClick(e.target);
-        }
+        const itemElement = e.target.closest('.gallery-item');
+        if (!itemElement) return;
+
+        const imagesData = itemElement.dataset.images;
+        if (!imagesData) return;
+
+        const images = imagesData.split('|').filter(Boolean);
+        if (!images.length) return;
+
+        openGalleryModal(images, 0);
       });
     }
   }
 
-  // Handle filter button clicks
+  // 필터 버튼 클릭 처리
   function handleFilterClick(button) {
     const category = button.dataset.category;
 
-    // Update active filter button
-    filterContainer.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    filterContainer
+      .querySelectorAll('.filter-btn')
+      .forEach((btn) => btn.classList.remove('active'));
     button.classList.add('active');
 
-    // Update current filter
     currentFilter = category;
-
     filterAndDisplayItems();
   }
 
-  // Filter and display gallery items based on current filters and search
+  // 필터 + 검색 적용
   function filterAndDisplayItems() {
     let filteredItems = [...allGalleryItems];
 
-    // Apply category filter
     if (currentFilter !== 'all') {
-      filteredItems = filteredItems.filter(item => item.category === currentFilter);
+      filteredItems = filteredItems.filter(
+        (item) => item.category === currentFilter
+      );
     }
 
-    // Apply search filter
     if (currentSearch) {
-      filteredItems = filteredItems.filter(item =>
-        item.title.toLowerCase().includes(currentSearch) ||
-        item.description.toLowerCase().includes(currentSearch) ||
-        (item.tags && item.tags.some(tag => tag.toLowerCase().includes(currentSearch))) ||
-        (item.venue && item.venue.toLowerCase().includes(currentSearch)) ||
-        (item.location && item.location.toLowerCase().includes(currentSearch))
-      );
+      filteredItems = filteredItems.filter((item) => {
+        const title = (item.title || '').toLowerCase();
+        const description = (item.description || '').toLowerCase();
+        const venue = (item.venue || '').toLowerCase();
+        const location = (item.location || '').toLowerCase();
+        const tags = Array.isArray(item.tags) ? item.tags : [];
+
+        const matchTags = tags.some((tag) =>
+          (tag || '').toLowerCase().includes(currentSearch)
+        );
+
+        return (
+          title.includes(currentSearch) ||
+          description.includes(currentSearch) ||
+          venue.includes(currentSearch) ||
+          location.includes(currentSearch) ||
+          matchTags
+        );
+      });
     }
 
     displayGalleryItems(filteredItems);
   }
 
-  // Handle gallery image clicks (basic implementation)
-  function handleImageClick(img) {
-    // Simple implementation - could be enhanced with a proper lightbox
+  // 슬라이드 가능한 모달
+  function openGalleryModal(images, startIndex = 0) {
+    if (!images || !images.length) return;
+
+    let currentIndex = startIndex;
+
     const modal = document.createElement('div');
     modal.className = 'gallery-modal';
     modal.innerHTML = `
       <div class="modal-content">
         <span class="modal-close">&times;</span>
-        <img src="${img.src}" alt="${img.alt}" class="modal-img">
-        <div class="modal-caption">
-          <h4>${img.alt}</h4>
+        <button class="modal-nav modal-prev">&#10094;</button>
+        <img src="${images[currentIndex]}" class="modal-img" alt="">
+        <button class="modal-nav modal-next">&#10095;</button>
+        <div class="modal-counter">
+          ${currentIndex + 1} / ${images.length}
         </div>
       </div>
     `;
 
     document.body.appendChild(modal);
 
-    // Close modal functionality
-    modal.addEventListener('click', function (e) {
-      if (e.target === modal || e.target.classList.contains('modal-close')) {
+    const modalImg = modal.querySelector('.modal-img');
+    const prevBtn = modal.querySelector('.modal-prev');
+    const nextBtn = modal.querySelector('.modal-next');
+    const closeBtn = modal.querySelector('.modal-close');
+    const counter = modal.querySelector('.modal-counter');
+
+    function updateImage(newIndex) {
+      if (newIndex < 0) newIndex = images.length - 1;
+      if (newIndex >= images.length) newIndex = 0;
+      currentIndex = newIndex;
+      modalImg.src = images[currentIndex];
+      if (counter) {
+        counter.textContent = `${currentIndex + 1} / ${images.length}`;
+      }
+    }
+
+    function closeModal() {
+      if (document.body.contains(modal)) {
         document.body.removeChild(modal);
       }
+      document.removeEventListener('keydown', onKeyDown);
+    }
+
+    function onKeyDown(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      } else if (e.key === 'ArrowLeft') {
+        updateImage(currentIndex - 1);
+      } else if (e.key === 'ArrowRight') {
+        updateImage(currentIndex + 1);
+      }
+    }
+
+    prevBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      updateImage(currentIndex - 1);
     });
 
-    // Close on escape key
-    document.addEventListener('keydown', function onEscapeKey(e) {
-      if (e.key === 'Escape') {
-        if (document.body.contains(modal)) {
-          document.body.removeChild(modal);
-        }
-        document.removeEventListener('keydown', onEscapeKey);
+    nextBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      updateImage(currentIndex + 1);
+    });
+
+    closeBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      closeModal();
+    });
+
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) {
+        closeModal();
       }
     });
+
+    document.addEventListener('keydown', onKeyDown);
   }
 
-  // Show error message
+  // 에러 메시지
   function showErrorMessage() {
     if (galleryContainer) {
       galleryContainer.innerHTML = `

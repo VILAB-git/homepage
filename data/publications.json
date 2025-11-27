@@ -1116,7 +1116,8 @@
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["HDR Imaging", "Camera ISP", "Adversarial Networks"]
+      "keywords": ["HDR Imaging", "Camera ISP", "Adversarial Networks"],
+      "arxiv_url": "https://arxiv.org/abs/2204.01795"
     },
     {
       "title": "Unlocking the Potential of Ordinary Classifier: Class-specific Adversarial Erasing Framework for Weakly Supervised Semantic Segmentation",
@@ -1125,16 +1126,23 @@
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Weakly Supervised Segmentation", "Adversarial Erasing"]
+      "keywords": ["Weakly Supervised Semantic Segmentation", "Adversarial Erasing"],
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Kweon_Unlocking_the_Potential_of_Ordinary_Classifier_Class-Specific_Adversarial_Erasing_Framework_ICCV_2021_paper.pdf",
+      "supp_url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Kweon_Unlocking_the_Potential_ICCV_2021_supplemental.pdf",
+      "code_url": "https://github.com/KAIST-vilab/OC-CSE"
     },
     {
-      "title": "Dual Transfer Learning for Event-based End-task Prediction via Pluggable Image Translation",
+      "title": "Dual Transfer Learning for Event-based End-task Prediction via Pluggable Event to Image Translation",
       "authors": ["Lin Wang", "Yujeong Chae", "Kuk-Jin Yoon"],
       "venue": "ICCV",
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Event-based Vision", "Transfer Learning"]
+      "keywords": ["Event-based Vision", "Transfer Learning"],
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Dual_Transfer_Learning_for_Event-Based_End-Task_Prediction_via_Pluggable_Event_ICCV_2021_paper.pdf",
+      "supp_url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Wang_Dual_Transfer_Learning_ICCV_2021_supplemental.pdf",
+      "arxiv_url": "http://arxiv.org/abs/2109.01801",
+      "code_url": "https://github.com/addisonwang2013/DTL"
     },
     {
       "title": "Event-Intensity Stereo: Estimating Depth by the Best of Both Worlds",
@@ -1143,16 +1151,19 @@
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Stereo Depth Estimation", "Event Intensity"]
+      "keywords": ["Stereo Depth Estimation", "Event Intensity"],
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Mostafavi_Event-Intensity_Stereo_Estimating_Depth_by_the_Best_of_Both_Worlds_ICCV_2021_paper.pdf"
     },
     {
-      "title": "Learning Localised Spherical Probability Map Based on Bingham Mixture Model for Vanishing Point Estimation",
+      "title": "Learning Icosahedral Spherical Probability Map Based on Bingham Mixture Model for Vanishing Point Estimation",
       "authors": ["Haoang Li", "Kai Chen", "Kyungdon Joo", "Pyojin Kim", "Kuk-Jin Yoon", "Zhe Liu", "Yunhui Liu"],
       "venue": "ICCV",
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Vanishing Point Estimation", "Spherical Probability Map"]
+      "keywords": ["Vanishing Point Estimation", "Spherical Probability Map"],
+      "pdf_url": "https://openaccess.thecvf.com/content/ICCV2021/papers/Li_Learning_Icosahedral_Spherical_Probability_Map_Based_on_Bingham_Mixture_Model_ICCV_2021_paper.pdf",
+      "supp_url": "https://openaccess.thecvf.com/content/ICCV2021/supplemental/Li_Learning_Icosahedral_Spherical_ICCV_2021_supplemental.pdf"
     },
     {
       "title": "Evaluating Region Modification based Data Augmentation Techniques for Low Level Vision Tasks",
@@ -1161,16 +1172,21 @@
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Data Augmentation", "Low-Level Vision"]
+      "keywords": ["Data Augmentation", "Low-Level Vision"],
+      "pdf_url": "https://koasas.kaist.ac.kr/handle/10203/289431",
+      "arxiv_url": "https://arxiv.org/abs/2103.05889"
     },
     {
       "title": "EvDistill: Asynchronous Events to End-task Learning via Bidirectional Reconstruction-guided Cross-modal Knowledge Distillation",
-      "authors": ["Lin Wang", "Yujeong Chae", "Sung-Hoon Yoon", "Tae-Kyun Kim", "Kuk-Jin Yoon"],
+      "authors": ["Lin Wang", "Yujeong Chae*", "Sung-Hoon Yoon*", "Tae-Kyun Kim", "Kuk-Jin Yoon"],
       "venue": "CVPR",
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Knowledge Distillation", "Event-based Learning"]
+      "keywords": ["Knowledge Distillation", "Event-based Learning"],
+      "pdf_url": "https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_EvDistill_Asynchronous_Events_To_End-Task_Learning_via_Bidirectional_Reconstruction-Guided_Cross-Modal_CVPR_2021_paper.pdf",
+      "arxiv_url": "https://arxiv.org/abs/2111.12341",
+      "code_url": "https://github.com/addisonwang2013/evdistill"
     },
     {
       "title": "Adversarially-trained Hierarchical Feature Extractor for Vehicle Re-identification",
@@ -1179,7 +1195,8 @@
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Vehicle Re-identification", "Adversarial Training"]
+      "keywords": ["Vehicle Re-identification", "Adversarial Training"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/9561632"
     },
     {
       "title": "Towards Domain Invariant Single Image Dehazing",
@@ -1188,7 +1205,9 @@
       "year": 2021,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Image Dehazing", "Domain Invariance"]
+      "keywords": ["Image Dehazing", "Domain Invariance"],
+      "pdf_url": "https://aaai.org/papers/09657-towards-domain-invariant-single-image-dehazing/",
+      "arxiv_url": "https://arxiv.org/abs/2101.10449"
     },
     {
       "title": "Semi-supervised Student-Teacher Learning for Single Image Super-Resolution",
@@ -1197,7 +1216,8 @@
       "year": 2021,
       "type": "journal",
       "status": "published",
-      "keywords": ["Single Image Super-Resolution", "Semi-supervised Learning", "Student-Teacher"]
+      "keywords": ["Single Image Super-Resolution", "Semi-supervised Learning", "Student-Teacher"],
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0031320321003873"
     },
     {
       "title": "Scanline Resolution-invariant Depth Completion using a Single Image and Sparse LiDAR Point Cloud",
@@ -1206,7 +1226,8 @@
       "year": 2021,
       "type": "journal",
       "status": "published",
-      "keywords": ["Depth Completion", "Sparse LiDAR", "Scanline Resolution"]
+      "keywords": ["Depth Completion", "Sparse LiDAR", "Scanline Resolution"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/9483665"
     },
     {
       "title": "EOMVS: Event-based Omnidirectional Multi-View Stereo",
@@ -1215,16 +1236,18 @@
       "year": 2021,
       "type": "journal",
       "status": "published",
-      "keywords": ["Event-based Stereo", "Omnidirectional Multi-View", "Robotics"]
+      "keywords": ["Event-based Stereo", "Omnidirectional Multi-View", "Robotics"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/9479757"
     },
     {
       "title": "Improvement of Optical Flow Estimation by Using the Hampel Filter for Low-End Embedded Systems",
-      "authors": ["Ji-il Park", "Yeongseok Lee", "Eungyo Suh", "Hyunyoung Jeon", "Kuk-Jin Yoon*", "Kyung-Soo Kim*"],
+      "authors": ["Ji-il Park", "Yeongseok Lee", "Eungyo Suh", "Hyunyoung Jeon", "Kuk-Jin Yoon", "Kyung-Soo Kim"],
       "venue": "IEEE Robotics and Automation Letters (RA-L)",
       "year": 2021,
       "type": "journal",
       "status": "published",
-      "keywords": ["Optical Flow", "Embedded Systems"]
+      "keywords": ["Optical Flow", "Embedded Systems"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/9479796"
     },
     {
       "title": "PSAT-GAN: Efficient Adversarial Attacks against Holistic Scene Understanding",
@@ -1233,7 +1256,8 @@
       "year": 2021,
       "type": "journal",
       "status": "published",
-      "keywords": ["Adversarial Attacks", "Scene Understanding"]
+      "keywords": ["Adversarial Attacks", "Scene Understanding"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/9524508"
     },
     {
       "title": "Knowledge Distillation and Student-Teacher Learning for Visual Intelligence: A Review and New Outlooks",
@@ -1242,16 +1266,19 @@
       "year": 2021,
       "type": "journal",
       "status": "published",
-      "keywords": ["Knowledge Distillation", "Student-Teacher Learning"]
+      "keywords": ["Knowledge Distillation", "Student-Teacher Learning"],
+      "pdf_url": "https://ieeexplore.ieee.org/abstract/document/9340578",
+      "arxiv_url": "https://arxiv.org/abs/2004.05937"
     },
     {
-      "title": "Learning to Reconstruct HDR Images from Events, with Applications to Depth and Flow",
+      "title": "Learning to Reconstruct HDR Images from Events, with Applications to Depth and Flow Prediction",
       "authors": ["S. Mohammad Mostafavi I.", "Lin Wang", "Kuk-Jin Yoon"],
       "venue": "International Journal of Computer Vision (IJCV)",
       "year": 2021,
       "type": "journal",
       "status": "published",
-      "keywords": ["HDR Imaging", "Event Cameras", "Depth and Flow"]
+      "keywords": ["HDR Imaging", "Event Cameras", "Depth and Flow Prediction"],
+      "pdf_url": "https://link.springer.com/article/10.1007/s11263-020-01410-2"
     },
     {
       "title": "EventSR: From Asynchronous Events to Image Reconstruction, Restoration, and Super-Resolution via End-to-End Adversarial Learning",
@@ -1260,7 +1287,10 @@
       "year": 2020,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Event-based Imaging", "Super-Resolution"]
+      "keywords": ["Event-based Imaging", "Super-Resolution"],
+      "pdf_url": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_EventSR_From_Asynchronous_Events_to_Image_Reconstruction_Restoration_and_Super-Resolution_CVPR_2020_paper.pdf",
+      "arxiv_url": "https://arxiv.org/abs/2003.07640",
+      "project_url": "https://github.com/wl082013/ESIM_dataset"
     },
     {
       "title": "Learning to Super Resolve Intensity Images from Events",
@@ -1270,7 +1300,11 @@
       "type": "conference",
       "status": "accepted",
       "presentation": "Oral",
-      "keywords": ["Event Cameras", "Image Super-Resolution"]
+      "keywords": ["Event Cameras", "Image Super-Resolution"],
+      "pdf_url": "https://openaccess.thecvf.com/content_CVPR_2020/papers/I._Learning_to_Super_Resolve_Intensity_Images_From_Events_CVPR_2020_paper.pdf",
+      "supp_url": "https://openaccess.thecvf.com/content_CVPR_2020/supplemental/I._Learning_to_Super_CVPR_2020_supplemental.zip",
+      "arxiv_url": "http://arxiv.org/abs/1912.01196",
+      "code_url": "https://github.com/gistvision/e2sri"
     },
     {
       "title": "Dynamic Anchor Selection for Improving Object Localization",
@@ -1279,34 +1313,39 @@
       "year": 2020,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Object Detection", "Anchor Selection"]
+      "keywords": ["Object Detection", "Anchor Selection"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/9197076"
     },
     {
       "title": "Loop-Net: Joint Unsupervised Disparity and Optical Flow Estimation of Stereo Videos with Spatiotemporal Loop Consistency",
-      "authors": ["Taewoo Kim", "Kyeongseob Song", "Kwoonyoung Ryu", "Kuk-Jin Yoon"],
+      "authors": ["Taewoo Kim", "Kwonyoung Ryu", "Kyeongseob Song", "Kuk-Jin Yoon"],
       "venue": "IEEE Robotics and Automation Letters (RA-L)",
       "year": 2020,
       "type": "journal",
       "status": "published",
-      "keywords": ["Optical Flow", "Stereo Disparity", "Unsupervised Learning"]
+      "keywords": ["Optical Flow", "Stereo Disparity", "Unsupervised Learning"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/9140315"
     },
     {
-      "title": "SpherePHD: Applying CNNs on 360° Images with Non-Euclidean Spherical PolyHeDRon Representation",
-      "authors": ["Yeon Kun Lee", "Jaeseock Jeong*", "Jong Seob Yun*", "Won June Cho*", "Kuk-Jin Yoon*"],
+      "title": "SpherePHD: Applying CNNs on 360° Images with Non-Euclidean Spherical PolyHeDron Representation",
+      "authors": ["Yeonkun Lee", "Jaeseok Jeong", "Jongseob Yun", "Wonjune Cho", "Kuk-Jin Yoon"],
       "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
       "year": 2020,
       "type": "journal",
       "status": "published",
-      "keywords": ["360° Images", "Spherical CNNs"]
+      "keywords": ["360° Images", "Spherical CNNs"],
+      "pdf_url": "https://ieeexplore.ieee.org/abstract/document/9099466"
     },
     {
       "title": "Deceiving Image-to-Image Translation Networks for Autonomous Driving with Adversarial Perturbations",
-      "authors": ["Lin Wang", "Wonjun Cho", "Kuk-Jin Yoon"],
+      "authors": ["Lin Wang", "Wonjune Cho", "Kuk-Jin Yoon"],
       "venue": "IEEE Robotics and Automation Letters (RA-L)",
       "year": 2020,
       "type": "journal",
       "status": "published",
-      "keywords": ["Image-to-Image Translation", "Adversarial Perturbations"]
+      "keywords": ["Image-to-Image Translation", "Adversarial Perturbations"],
+      "pdf_url": "https://ieeexplore.ieee.org/abstract/document/8962221",
+      "arxiv_url": "https://arxiv.org/abs/2001.01506"
     },
     {
       "title": "Learning Depth from Endoscopic Images",
@@ -1315,16 +1354,21 @@
       "year": 2019,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Depth Estimation", "Endoscopic Imaging"]
+      "keywords": ["Depth Estimation", "Endoscopic Imaging"],
+      "pdf_url": "https://ieeexplore.ieee.org/document/8886115"
     },
     {
-      "title": "SpherePHD: Applying CNNs on a Spherical PolyHeDRon Representation of 360° Images",
-      "authors": ["Yeon Kun Lee*", "Jaeseok Jeong*", "Jong Seob Yun*", "Won June Cho*", "Kuk-Jin Yoon"],
+      "title": "SpherePHD: Applying CNNs on a Spherical PolyHeDron Representation of 360° Images",
+      "authors": ["Yeonkun Lee*", "Jaeseok Jeong*", "Jongseob Yun*", "Wonjune Cho*", "Kuk-Jin Yoon"],
       "venue": "CVPR",
       "year": 2019,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["360° Images", "Spherical CNNs"]
+      "keywords": ["360° Images", "Spherical CNNs"],
+      "pdf_url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Lee_SpherePHD_Applying_CNNs_on_a_Spherical_PolyHeDron_Representation_of_360deg_CVPR_2019_paper.pdf",
+      "supp_url": "https://openaccess.thecvf.com/content_CVPR_2019/supplemental/Lee_SpherePHD_Applying_CNNs_CVPR_2019_supplemental.pdf",
+      "arxiv_url": "https://arxiv.org/abs/1811.08196",
+      "code_url": "https://github.com/KAIST-vilab/SpherePHD_public"
     },
     {
       "title": "Event-based High Dynamic Range Image and Very High Frame Rate Video Generation using Conditional Generative Adversarial Networks",
@@ -1333,7 +1377,8 @@
       "year": 2019,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["HDR Imaging", "Conditional GAN", "Event-based Vision"]
+      "keywords": ["HDR Imaging", "Conditional GAN", "Event-based Vision"],
+      "pdf_url": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Event-Based_High_Dynamic_Range_Image_and_Very_High_Frame_Rate_CVPR_2019_paper.pdf"
     },
     {
       "title": "Joint Estimation of Camera Orientation and Vanishing Points from Lines",
@@ -1342,7 +1387,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Camera Orientation", "Vanishing Points"]
+      "keywords": ["Camera Orientation", "Vanishing Points"],
+      "pdf_url": "https://link.springer.com/article/10.1007/s11263-019-01196-y"
     },
     {
       "title": "Distance-based Camera Network Topology Inference for Person Re-identification",
@@ -1351,7 +1397,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Camera Network Topology", "Person Re-identification"]
+      "keywords": ["Camera Network Topology", "Person Re-identification"],
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S016786551830730X"
     },
     {
       "title": "Confidence Analysis of Feature Points for Visual-Inertial Odometry of Urban Vehicles",
@@ -1360,7 +1407,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Visual-Inertial Odometry", "Feature Confidence"]
+      "keywords": ["Visual-Inertial Odometry", "Feature Confidence"],
+      "pdf_url": "https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/iet-its.2018.5196"
     },
     {
       "title": "As-Planar-As-Possible Depth Map Estimation",
@@ -1369,7 +1417,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Depth Map Estimation", "Regularization"]
+      "keywords": ["Depth Map Estimation", "Regularization"],
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1077314219300165"
     },
     {
       "title": "Joint Person Re-identification and Camera Network Topology Inference in Multiple Cameras",
@@ -1378,7 +1427,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Person Re-identification", "Camera Network Topology"]
+      "keywords": ["Person Re-identification", "Camera Network Topology"],
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S1077314219300037"
     },
     {
       "title": "Exploiting Multi-layer Graph Factorization for Multi-attributed Graph Matching",
@@ -1387,7 +1437,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Graph Matching", "Graph Factorization"]
+      "keywords": ["Graph Matching", "Graph Factorization"],
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0167865518306937"
     },
     {
       "title": "Consistent Multiple Graph Matching with Multi-layer Random Walks Synchronization",
@@ -1396,7 +1447,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Multiple Graph Matching", "Random Walk Synchronization"]
+      "keywords": ["Multiple Graph Matching", "Random Walk Synchronization"],
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0167865518306354"
     },
     {
       "title": "Learning and Selecting Confidence Measures for Robust Stereo Matching",
@@ -1405,7 +1457,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Stereo Matching", "Confidence Measures"]
+      "keywords": ["Stereo Matching", "Confidence Measures"],
+      "pdf_url": "https://ieeexplore.ieee.org/abstract/document/8360469"
     },
     {
       "title": "Structural Constraint Data Association for Online Multi-Object Tracking",
@@ -1414,7 +1467,8 @@
       "year": 2019,
       "type": "journal",
       "status": "published",
-      "keywords": ["Multi-Object Tracking", "Data Association"]
+      "keywords": ["Multi-Object Tracking", "Data Association"],
+      "pdf_url": "https://link.springer.com/article/10.1007/s11263-018-1087-1"
     },
     {
       "title": "Stereo Vision aided Image Dehazing using Deep Neural Network",
@@ -1423,7 +1477,8 @@
       "year": 2018,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Image Dehazing", "Stereo Vision"]
+      "keywords": ["Image Dehazing", "Stereo Vision"],
+      "pdf_url": "https://dl.acm.org/doi/abs/10.1145/3265987.3265993"
     },
     {
       "title": "Animal Detection in Huge Air-view Images using CNN-based Sliding Window",
@@ -1432,7 +1487,8 @@
       "year": 2018,
       "type": "conference",
       "status": "accepted",
-      "keywords": ["Object Detection", "Aerial Images"]
+      "keywords": ["Object Detection", "Aerial Images"],
+      "pdf_url": "https://koasas.kaist.ac.kr/handle/10203/244618"
     },
     {
       "title": "Calibration and Noise Identification of a Rolling Shutter Camera and a Low-cost Inertial Measurement Unit",
@@ -1441,7 +1497,8 @@
       "year": 2018,
       "type": "journal",
       "status": "published",
-      "keywords": ["Rolling Shutter Camera", "IMU Calibration"]
+      "keywords": ["Rolling Shutter Camera", "IMU Calibration"],
+      "pdf_url": "https://www.mdpi.com/1424-8220/18/7/2345"
     },
     {
       "title": "PAMM: Person Re-identification via Pose-aware Multi-shot Matching",
@@ -1450,7 +1507,8 @@
       "year": 2018,
       "type": "journal",
       "status": "published",
-      "keywords": ["Person Re-identification", "Multi-shot Matching"]
+      "keywords": ["Person Re-identification", "Multi-shot Matching"],
+      "pdf_url": ""
     },
     {
       "title": "Temporally Consistent Road Surface Profile Estimation Using Stereo Vision",
@@ -1459,7 +1517,8 @@
       "year": 2018,
       "type": "journal",
       "status": "published",
-      "keywords": ["Road Surface Estimation", "Stereo Vision"]
+      "keywords": ["Road Surface Estimation", "Stereo Vision"],
+      "pdf_url": ""
     },
     {
       "title": "Multi-attributed Graph Matching with Multi-layer Graph Structure and Multi-layer Random Walks",
@@ -1468,7 +1527,8 @@
       "year": 2018,
       "type": "journal",
       "status": "published",
-      "keywords": ["Graph Matching", "Random Walks"]
+      "keywords": ["Graph Matching", "Random Walks"],
+      "pdf_url": ""
     },
     {
       "title": "Confidence-Based Data Association and Discriminative Deep Appearance Learning for Robust Online Multi-Object Tracking",
@@ -1477,7 +1537,8 @@
       "year": 2018,
       "type": "journal",
       "status": "published",
-      "keywords": ["Multi-Object Tracking", "Deep Appearance Learning"]
+      "keywords": ["Multi-Object Tracking", "Deep Appearance Learning"],
+      "pdf_url": ""
     },
     {
       "title": "Greedy Refinement of Object Proposals via Boundary-aligned Minimum Bounding Box Search",
@@ -1486,7 +1547,8 @@
       "year": 2018,
       "type": "journal",
       "status": "published",
-      "keywords": ["Object Proposals", "Bounding Box Search"]
+      "keywords": ["Object Proposals", "Bounding Box Search"],
+      "pdf_url": ""
     },
     {
       "title": "Unified Framework for Automated Person Re-identification and Camera Network Topology Inference in Camera Networks",

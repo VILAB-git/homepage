@@ -20,7 +20,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     if (year === 2024) return '2024';
     if (year === 2023) return '2023';
     if (year === 2022) return '2022';
-    return '-2021'; 
+    if (year === 2021) return '2021';
+    return '-2020'; 
   }
 
   function getVenueGroup(pub) {
@@ -98,7 +99,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         <button class="filter-btn" data-filter="year" data-value="2025">2025</button>
         <button class="filter-btn" data-filter="year" data-value="2024">2024</button>
         <button class="filter-btn" data-filter="year" data-value="2023">2023</button>
-        <button class="filter-btn" data-filter="year" data-value="~2022">~2022</button>
+        <button class="filter-btn" data-filter="year" data-value="2022">2022</button>
+        <button class="filter-btn" data-filter="year" data-value="2021">2021</button>
+        <button class="filter-btn" data-filter="year" data-value="-2020">-2020</button>
       </div>
       <div class="filter-group">
         <label>Filter by Venue:</label>
@@ -258,7 +261,18 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Apply year filter
     if (activeFilters.year !== 'all') {
-      filteredPublications = filteredPublications.filter(pub => pub.year.toString() === activeFilters.year);
+      const yearFilter = activeFilters.year;
+
+      if (yearFilter.startsWith('-')) {
+        // "-2022" 같은 케이스: 해당 연도 이하 모두
+        const limitYear = parseInt(yearFilter.slice(1), 10); // "2022" → 2022
+        filteredPublications = filteredPublications.filter(pub => Number(pub.year) <= limitYear);
+      } else {
+        // 일반적인 단일 연도 필터 (2023, 2024, 2025, 2026)
+        filteredPublications = filteredPublications.filter(
+          pub => pub.year.toString() === yearFilter
+        );
+      }
     }
 
     // Apply venue filter
