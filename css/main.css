@@ -1244,9 +1244,15 @@ body {
   padding: 50px 0;
 }
 
-.projects-grid {
+/* .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+} */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));  /* 1열 고정 */
   gap: 25px;
   margin-bottom: 60px;
 }
@@ -1304,6 +1310,17 @@ body {
 .funding-label {
   font-weight: 500;
   color: #666;
+}
+
+/* Status value styles */
+span.ongoing {
+  color: #1976d2; /* blue */
+  font-weight: 600;
+}
+
+span.completed {
+  color: #555; /* gray */
+  font-weight: 600;
 }
 
 .status-badge {
