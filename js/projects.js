@@ -61,7 +61,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         </div>` : ''}
 
         <div class="project-header">
-          <h3 class="project-title">${project.title}</h3>
+          <h3 class="project-title">
+            ${project.role ? `(${project.role}) ` : ""}${project.title}
+          </h3>
         </div>
 
         <div class="project-content">
@@ -72,6 +74,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             <div class="detail-item">
               <strong>Funding:</strong> ${project.funding || 'TBD'}
             </div>
+            ${project.organization ? `<div class="detail-item"><strong>Organization:</strong> ${project.organization}</div>` : ''}
             <div class="detail-item">
               <strong>Status:</strong> <span class="${statusClass}" style="display: inline;">${project.status.charAt(0).toUpperCase() + project.status.slice(1)}</span>
             </div>

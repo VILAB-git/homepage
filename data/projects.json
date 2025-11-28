@@ -10,6 +10,353 @@
     "planned": "Planned"
   },
   "projects": [
-
+    {
+      "title": "Development of a C-arm X-ray Video Engine",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "DK Medical Systems",
+      "duration": "07/2025 - 06/2026",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Large-Scale Language Model Innovation Research Group",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Ministry of Science and ICT (InnoCore)",
+      "organization": "KAIST",
+      "duration": "07/2025 - 12/2025",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Bio-Embodied Physical AI Research Group",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Government-funded research institute (InnoCore)",
+      "organization": "DGIST",
+      "duration": "07/2025 - 12/2025",
+      "links": {}
+    },
+    {
+      "title": "AI Robot-Based Digital Twin Care Platform for Continuous Integrated Care of the Elderly",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Ministry of Health and Welfare",
+      "organization": "Korea Health Industry Development Institute (KHIDI)",
+      "duration": "05/2025 - 02/2026",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Development of a Generative AI-Based 16-bit HDR Solution",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Samsung Electronics",
+      "duration": "05/2025 - 04/2026",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Automated Particle Analysis Technology Using Cathode SEM Images",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "LG Energy Solution",
+      "duration": "03/2025 - 10/2025",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Computer Vision Research Based on Multimodal Cameras for Robust Autonomous Driving",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Ministry of Science and ICT",
+      "organization": "National Research Foundation of Korea (NRF)",
+      "duration": "03/2022 - 02/2026",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "AI Research Hub Project",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Ministry of Science and ICT",
+      "organization": "Institute for Information & Communications Technology Planning & Evaluation (IITP)",
+      "duration": "07/2024 - 12/2028",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Military-Specialized AI Curriculum Development and Operation (AI Leadership, Policy, Project Course)",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Ministry of Science and ICT",
+      "organization": "Institute for Information & Communications Technology Planning & Evaluation (IITP)",
+      "duration": "06/2024 - 12/2026",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Development of Autonomous Driving Connectivity Technology Based on Sensor Infrastructure Cooperation",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Ministry of Trade, Industry and Energy (MOTIE)",
+      "organization": "LG Electronics",
+      "duration": "01/2024 - 12/2026",
+      "links": {}
+    },
+    {
+      "title": "Development of a Humanoid Robot Pilot Based on Natural Language Processing Knowledge Base",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Ministry of National Defense",
+      "organization": "Agency for Defense Development (ADD)",
+      "duration": "01/2022 - 05/2027",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Graph-Based Approach to 3D Feature Point Tracking Algorithms of Event Cameras",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "KAIST",
+      "duration": "01/2025 - 06/2025",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Development of Data Augmentation and Sensor Fusion Technologies for Robust Autonomous Driving",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "42dot",
+      "duration": "12/2024 - 11/2025",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Samsung Electronics DS Division Strategic Industry-Academia Project",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Samsung Electronics",
+      "duration": "09/2023 - 09/2025",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Object Prediction Model Using Surrounding Environment Perception and Map Information",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "Hyundai NGV",
+      "duration": "06/2024 - 05/2025",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Development of AI Sub-Modules for Intelligent Baggage X-ray Interpretation Training System",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "National Research Foundation of Korea (NRF)",
+      "duration": "03/2023 - 06/2024",
+      "links": {}
+    },
+    {
+      "title": "Development of Core Technologies for Autonomous Driving in Unstructured Off-Road Environments",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "Hanwha Aerospace",
+      "duration": "07/2023 - 06/2026",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Development of a 2kg-Class Small EOTS for Drones",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "EO Systems",
+      "duration": "01/2021 - 11/2023",
+      "links": {}
+    },
+    {
+      "title": "Development of Real-Time Hologram Acquisition and Preprocessing Technology for 5G Services Based on Deep Learning",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "KETI",
+      "duration": "01/2023 - 12/2023",
+      "links": {}
+    },
+    {
+      "title": "(DeepView - Main/Part 1) Development of a High-Performance Visual Discovery Platform",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "ETRI",
+      "duration": "01/2023 - 02/2024",
+      "links": {}
+    },
+    {
+      "title": "Development of Artificial Intelligence Technology for Continuous Self-Improvement",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "IITP",
+      "duration": "01/2023 - 12/2023",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Domain Adaptation for AI-based Detection and Monitoring",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "LIG Nex1",
+      "duration": "10/2022 - 09/2023",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Low-level Image Fusion for Autonomous Driving",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "Hyundai Motors",
+      "duration": "11/2022 - 11/2023",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Development of an Iron Plate Abrasion Rate Recognition System",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "Samsung Heavy Industry",
+      "duration": "05/2021 - 01/2022",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Development of an Iron Plate Abrasion Rate Recognition System",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "Samsung Heavy Industry",
+      "duration": "05/2021 - 01/2022",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Intelligent Focus Adjustment for Dual Pixel Cameras",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "Samsung Advanced Institute of Technology",
+      "duration": "09/2020 - 09/2023",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Deep-learning-based 5G Real-time Hologram Generation and Processing",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "IITP",
+      "duration": "2020 - 2023",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Deep-learning-based HandPoseEstimation using Low-resolution Images",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "KETI",
+      "duration": "05/2020 - 11/2020",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Meta-fusion of Deep Neural Networks",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "ETRI",
+      "duration": "04/2020 - 11/2020",
+      "role": "PI",
+      "links": {}
+    },
+    {
+      "title": "Research on Self-improving AI",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "National Research Foundation of Korea (NRF)",
+      "duration": "04/2020 - 12/2023",
+      "links": {}
+    },
+    {
+      "title": "Deep View - Research on Vision- and Learning-based Scene Understanding and Event Forecasting",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "MSIP",
+      "duration": "2019 - 2023",
+      "links": {}
+    },
+    {
+      "title": "Research on Autonomous Multi-agent CPS",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "TBD",
+      "organization": "Agency for Defense Development (ADD)",
+      "duration": "12/2019 - 12/2024",
+      "links": {}
+    },
+    {
+      "title": "Research on Mapping and Perception",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "NaverLabs",
+      "duration": "2019 - 2022",
+      "links": {}
+    },
+    {
+      "title": "Development of Quadruped Robot for Surveillance, Reconnaissance, and Search Missions",
+      "category": "computer-vision",
+      "status": "completed",
+      "description": "TBD.",
+      "funding": "Defense Acquisition Program Administration (DAPA)",
+      "organization": "Agency for Defense Development (ADD)",
+      "duration": "12/2019 - 11/2024",
+      "links": {}
+    }
   ]
 }
