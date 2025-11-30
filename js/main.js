@@ -11,8 +11,10 @@ const newsList = document.getElementById('news-list');
 document.addEventListener('DOMContentLoaded', function () {
   initializeNavigation();
 
+  const isHomePage = document.body.classList.contains('home-page-main');
+  
   // Only load news on homepage
-  if (newsList) {
+  if (isHomePage && newsList) {
     loadNews();
   }
 
