@@ -71,6 +71,21 @@
   box-shadow: 0 4px 18px rgba(0,0,0,0.1);
 }
 
+.info-table {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px; /* label과 value 간격 */
+  row-gap: 4px;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.value {
+  text-align: left;
+}
+
 /* Location Section */
 .location {
   padding: 50px 0;
