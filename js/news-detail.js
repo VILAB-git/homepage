@@ -1,4 +1,4 @@
-// ../js/news-detail.js
+// ../../js/news-detail.js
 document.addEventListener('DOMContentLoaded', async function () {
   // === Simple image modal (for award images, etc.) ===
   let imageModal = null;
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       const imgFile = person.image || '';
       const imgPath = imgFile
-        ? `../assets/images/people/${imgFile}`
+        ? `../../assets/images/people/${imgFile}`
         : studentPlaceholder;
 
       // groupKey에 따라 전공 선택
@@ -479,7 +479,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
       const imgFile = person.image || '';
       const imgPath = imgFile
-        ? `../assets/images/people/${imgFile}`
+        ? `../../assets/images/people/${imgFile}`
         : studentPlaceholder;
 
       // ----- 전공 선택 (groupKey 기준) -----
@@ -761,7 +761,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       const placeholderImg = '../assets/images/people/student-placeholder.svg';
       const imgFile = person && person.image ? person.image : '';
       const imgPath = imgFile
-        ? `../assets/images/people/${imgFile}`
+        ? `../../assets/images/people/${imgFile}`
         : placeholderImg;
 
       const email = person && person.email ? person.email : '';

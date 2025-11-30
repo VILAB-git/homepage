@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', async function () {
            ${item.type}
          </span>`
       : '';
-    const url = `news-detail.html?id=${encodeURIComponent(
+    const url = `../news-detail/?id=${encodeURIComponent(
       item.slug || item.id
     )}`;
 

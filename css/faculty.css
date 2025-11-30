@@ -9,6 +9,18 @@
   padding: 30px 40px;
 }
 
+.faculty-section .back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.faculty-section .back-link:hover {
+  text-decoration: underline;
+}
+
 /* 상단 레이아웃: 사진 + 소개 */
 .faculty-header {
   display: flex;

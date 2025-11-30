@@ -2,12 +2,12 @@
   "name": "Kuk-Jin Yoon",
   "title": "Professor",
   "affiliation_line": "Visual Intelligence Laboratory, Department of Mechanical Engineering, KAIST",
-  "photo": "../assets/images/people/Professor.jpg",
+  "photo": "../../assets/images/people/Professor.jpg",
   "email": "kjyoon@kaist.ac.kr",
 
   "intro": "",
   "google_scholar": "https://scholar.google.com/citations?user=1NvBj_gAAAAJ",
-  "cv": "../assets/docs/251201_Prof_Kuk-Jin_Yoon_CV.pdf",
+  "cv": "../../assets/docs/251201_Prof_Kuk-Jin_Yoon_CV.pdf",
 
   "experience": [
     {

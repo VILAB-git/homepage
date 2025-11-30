@@ -38,7 +38,7 @@ class DataManager {
     try {
       // Determine correct path based on current location
       const isInSubdirectory = window.location.pathname.includes('/pages/');
-      const basePath = isInSubdirectory ? '../data/' : 'data/';
+      const basePath = isInSubdirectory ? '../../data/' : 'data/';
 
       const response = await fetch(`${basePath}${type}.json`);
       if (!response.ok) {

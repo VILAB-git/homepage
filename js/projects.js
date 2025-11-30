@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     const imageUrl = project.image
       ? (project.image.startsWith('http') || project.image.startsWith('../')
         ? project.image
-        : `../assets/images/projects/${project.image}`)
+        : `../../assets/images/projects/${project.image}`)
       : '';
 
     const linksHTML = project.links && Object.keys(project.links).length > 0 ? `

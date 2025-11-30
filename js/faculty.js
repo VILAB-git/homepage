@@ -5,7 +5,7 @@ class FacultyPage {
 
   async init() {
     try {
-      const data = await this.loadJSON("../data/faculty.json");
+      const data = await this.loadJSON("../../data/faculty.json");
       this.renderFaculty(data);
     } catch (err) {
       console.error("Error loading faculty:", err);

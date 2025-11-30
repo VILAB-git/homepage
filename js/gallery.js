@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', async function () {
   //   ../assets/images/gallery/<dir>/<dir>-1.jpg ~ -N.jpg 생성
   // - 그것도 없으면 단일 image 필드 사용
   function getImageUrlsForItem(item) {
-    const baseDir = '../assets/images/gallery/';
+    const baseDir = '../../assets/images/gallery/';
 
     if (Array.isArray(item.images) && item.images.length > 0) {
       return item.images.map((name) =>

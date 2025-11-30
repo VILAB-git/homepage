@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VILab - Gallery</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../assets/logos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/logos/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/logos/apple-touch-icon.png">
+  <link rel="manifest" href="../../assets/logos/site.webmanifest">
+  
+  <!-- <link rel="stylesheet" href="../../css/main.css"> -->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/gallery.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../../assets/logos/vilab-logo.png" alt="VILab" class="logo-img">
+          <!-- <span class="logo-text">VILab</span> -->
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../home/" class="nav-link">Home</a></li>
+          <li><a href="../people/" class="nav-link">People</a></li>
+          <li><a href="../publications/" class="nav-link">Publications</a></li>
+          <li><a href="../projects/" class="nav-link">Projects</a></li>
+          <li><a href="../news/" class="nav-link">News</a></li>
+          <li><a href="../gallery/" class="nav-link active">Gallery</a></li>
+          <li><a href="../contact/" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Gallery</h1>
+        <p class="page-subtitle">Lab life, events, and research highlights</p>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="container">
+        <!-- Search and Filter Options -->
+        <div class="gallery-controls">
+          <div class="gallery-search" style="text-align: center; margin-bottom: 20px;">
+            <input type="text" placeholder="Search gallery..." class="search-input">
+          </div>
+          <div class="gallery-filters">
+            <!-- Filters will be dynamically generated -->
+            <div class="loading-message">Loading filters...</div>
+          </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+          <!-- Gallery items will be dynamically loaded here -->
+          <div class="loading-message">Loading gallery...</div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="gallery-actions">
+          <button class="btn btn-secondary" onclick="loadMoreGallery()">Load More Images</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>KAIST VILab</h3>
+          <p>VIsual Intelligence Lab</p>
+          <p>Korea Advanced Institute of Science and Technology</p>
+        </div>
+        <!-- <div class="footer-links">
+          <a href="mailto:contact@cvml.kaist.ac.kr" class="footer-link">Contact</a>
+          <a href="apply.html" class="footer-link">Join Us</a>
+          <a href="https://github.com/kaist-cvml" class="footer-link">GitHub</a>
+        </div> -->
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KAIST Visual Intelligence Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/data-manager.js"></script>
+  <script src="../../js/main.js"></script>
+  <script src="../../js/gallery.js"></script>
+</body>
+
+</html>

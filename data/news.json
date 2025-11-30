@@ -32,11 +32,11 @@
       "description": "We are glad to introduce Professor <strong>Kuk-Jin Yoon</strong>'s remarkable achievement in winning the <strong>Test of Time Award at the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025)</strong>.<br><br>Professor Kuk-Jin Yoon’s research group in the Department of Mechanical Engineering at KAIST, in collaboration with Professor Ming-Hsuan Yang at UC Merced and Professor Jongwoo Lim at Seoul National University, has been honored with the Test of Time Award at the 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025) for their 2015 paper, <i><strong>Bayesian Multi-object Tracking using Motion Context from Multiple Objects</strong></i>.<br><br>The Test of Time Award is a prestigious recognition given to outstanding research that continues to influence both academia and industry long after its publication. Highly regarded in the field of Multi-Object Tracking (MOT), this paper remains extensively cited and widely applied even a decade later.<br><br>In this work, the authors introduced the concept of motion context into a Bayesian multi-object tracking framework, proposing a novel approach that overcomes the limitations of existing methods. By employing a Relative Motion Network (RMN) to model relative movements among objects, they successfully mitigated the effects of global camera motion and enhanced tracking accuracy. This pioneering method has significantly contributed to the advancement of multi-object tracking technology and has seen practical adoption in various domains, including autonomous driving, video surveillance, and sports analytics.<br><br>IEEE/CVF WACV is recognized as one of the leading conferences in the computer vision community, particularly esteemed for its focus on application-oriented research. This award stands as a testament to the enduring global impact and research excellence demonstrated by Professor Yoon's group.",
       "images": [
         {
-          "src": "../assets/images/news/25_wacv_test_of_time_award/WACV25-1.jpg",
+          "src": "../../assets/images/news/25_wacv_test_of_time_award/WACV25-1.jpg",
           "alt": "WACV 2025 Test of Time Award ceremony"
         },
         {
-          "src": "../assets/images/news/25_wacv_test_of_time_award/WACV25-4.jpg",
+          "src": "../../assets/images/news/25_wacv_test_of_time_award/WACV25-4.jpg",
           "alt": "WACV 2025 Test of Time Award certificate"
         }
       ],
@@ -200,15 +200,15 @@
       "description": "🎉 We are excited to announce that two papers,<br><br><strong>From SAM to CAMs: Exploring Segment Anything Model for Weakly Supervised Semantic Segmentation</strong> by Hyeokjun Kweon and Kuk-Jin Yoon<br><br>\nand<br><br>\n<strong>Multi-agent Long-term 3D Human Pose Forecasting via Interaction-aware Trajectory Conditioning</strong> by Jaewoo Jeong, Daehee Park and Kuk-Jin Yoon, have been awarded to <b>QIF 2024</b> in South Korea!<br><br>\nThis program is part of the Qualcomm Innovation Fellowship 2024 Korea, a scholarship selection program for qualified papers, open to Master's and PhD students at specific universities in South Korea.<br><br>\nThese groundbreaking studies have garnered attention for their innovative contributions to AI and future technologies.<br><br>\nBoth papers reflect outstanding achievements from our research teams.<br><br>\nWe sincerely thank all contributors and look forward to your continued support.<br>",
       "images": [
         {
-          "src": "../assets/images/news/24QIF/QIF24-1.png",
+          "src": "../../assets/images/news/24QIF/QIF24-1.png",
           "alt": "QIF 2024 South Korea award ceremony"
         },
         {
-          "src": "../assets/images/news/24QIF/QIF24-2.jpg",
+          "src": "../../assets/images/news/24QIF/QIF24-2.jpg",
           "alt": "QIF 2024 Jaewoo Jeong"
         },
         {
-          "src": "../assets/images/news/24QIF/QIF24-3.jpg",
+          "src": "../../assets/images/news/24QIF/QIF24-3.jpg",
           "alt": "QIF 2024 Hyeokjun Kweon"
         }
       ],
@@ -256,7 +256,7 @@
       "description": "Ph.D Candidate, <strong>Hyeokjun Kweon</strong> and <strong>Sung-Hoon Yoon (Prof: Kuk-Jin Yoon)</strong> won a <strong>bronze prize</strong> at <strong>'Signal Proscessing' division of 29th Samsung Humantech Paper Award</strong>.<br><br> Hyeokjun Kweon and Sung-Hoon Yoon, the award winners, presented a research paper titled <i><strong>Weakly Supervised Semantic Segmentation via Adversarial Erasing and Reconstruction Learning</strong></i>. The corresponding paper is accepted to CVPR 2023.",
       "images": [
         {
-          "src": "../assets/images/news/23_29th_samsung_humantech/29th_samsunghumantech-1.jpg",
+          "src": "../../assets/images/news/23_29th_samsung_humantech/29th_samsunghumantech-1.jpg",
           "alt": "Samsung Humantech Paper Award certificate"
         }
       ],
@@ -280,7 +280,7 @@
       "description": "VILab Students <strong>Taewoo Kim, Yujeong Chae, and Hyun-Kurl Jang (Prof. Kuk-Jin Yoon)</strong> received the <strong>Gold Award for Outstanding Paper at the 2023 Workshop on Image Processing and Understanding (IPIU 2023)</strong>, hosted by the Korea Computer Vision Society, held from February 8th to 10th.<br> IPIU, now in its 35th year, is the largest and most prestigious workshop in the field of image processing in Korea.<br><br> The award-winning students, Taewoo Kim, Yujeong Chae, and Hyun-Kurl Jang, presented a paper titled <i><strong>Event-guided Video Frame Interpolation with Bi-modal Asymmetric Motion Fields</strong></i> and demonstrated their excellence. <br><br> The research team developed an algorithm for upsampling the frame rate of an RGB camera using an event camera, which provides asynchronous event data with very low latency. To address the problem of relying on approximation-based methods for estimating bidirectional motion fields in existing video frame interpolation approaches, this paper proposes an asymmetric bidirectional motion field estimation method that carefully considers the characteristics of the RGB camera used in event cameras.<br><br> Furthermore, we developed hardware based on a beam-splitter setup for high-resolution event cameras and RGB cameras. We demonstrated the superiority of this method by proposing the ERF-X170XPS dataset, a large-scale video frame interpolation dataset using event cameras. <br><br> This research is expected to be highly useful in environments requiring the analysis of ultra-high-speed motion, such as drones and autonomous vehicles.",
       "images": [
         {
-          "src": "../assets/images/news/23_ipiu/23_ipiu_1.jpg",
+          "src": "../../assets/images/news/23_ipiu/23_ipiu_1.jpg",
           "alt": "IPIU 2023 Gold Prize certificate"
         }
       ],
@@ -316,11 +316,11 @@
       "description": "VILab achieved outstanding recognition at the <strong>34th Workshop on Image Processing and Image Understanding (IPIU 2022)</strong>, held on February 9-11 and organized by the Korean Computer Vision Society. IPIU, now in its 34th year, is one of the most prestigious and largest academic workshops in Korea in the field of image and video processing. This year's hybrid-format event received over 250 submissions, of which 227 papers were accepted, including 16 selected for oral presentations.<br><br> VILab earned both the <strong>Grand Prize</strong>, awarded to the single best paper among all Outstanding Paper Award candidates, and a <strong>Gold Prize</strong>, which is given to two additional top papers.<br><br> A VILab team consisting of <strong>Changgyoon Oh, Won-June Cho, Daehee Park, and Yujeong Chae</strong> received the <strong>Grand Prize</strong> for the paper <i><strong>BIPS: Bi-modal Indoor Panorama Synthesis via Residual Depth-aided Adversarial Learning</i></strong>.<br> The work proposes an RGB-D panorama generation framework that reconstructs complete 3D indoor environments from limited and arbitrarily structured RGB-D inputs. By designing a Residual Depth-aided Adversarial Learning (RDAL) method, the paper demonstrates the ability to synthesize realistic virtual indoor spaces suitable for VR and metaverse applications.<br><br> Another VILab team <strong>Sung-Hoon Yoon, Hyeokjun Kweon, Jaeseok Jeong, Hyunseong Kim, and Shinjeong Kim</strong> won the <strong>Gold Prize</strong> for the paper <i><strong>Exploring Pixel-level Self-supervision for Weakly Supervised Semantic Segmentation</strong></i>.<br> The study introduces a new contrastive-learning-based framework for Weakly Supervised Semantic Segmentation that achieves state-of-the-art performance on the PASCAL VOC 2012 benchmark, highlighting its strong effectiveness even under limited supervision.",
       "images": [
         {
-          "src": "../assets/images/news/22_ipiu/22_ipiu_1.png",
+          "src": "../../assets/images/news/22_ipiu/22_ipiu_1.png",
           "alt": "IPIU 2022 Grand Prize certificate"
         },
         {
-          "src": "../assets/images/news/22_ipiu/22_ipiu_2.png",
+          "src": "../../assets/images/news/22_ipiu/22_ipiu_2.png",
           "alt": "IPIU 2022 Gold Prize certificate"
         }
       ],
@@ -400,7 +400,7 @@
       "description": "Recognized for his contribution to the development of the artificial intelligence industry and the promotion of the Internet,  Prof. <strong>Kuk-Jin Yoon</strong> received a <strong>commendation from the Minister of Science and ICT</strong>.",
       "images": [
         {
-          "src": "../assets/images/news/20_science_and_ict_commendation/20_science_and_ict_commendation_1.png",
+          "src": "../../assets/images/news/20_science_and_ict_commendation/20_science_and_ict_commendation_1.png",
           "alt": "Minister of Science and ICT Commendation Certificate"
         }
       ],

@@ -84,7 +84,7 @@ class PeoplePage {
 
   createCurrentMemberCard(person) {
     const imagePath = person.image
-      ? `../assets/images/people/${person.image}`
+      ? `../../assets/images/people/${person.image}`
       : this.getPlaceholderImage(person.category);
 
     // 🔹 category에 따라 major 선택
@@ -167,9 +167,9 @@ class PeoplePage {
 
   getPlaceholderImage(category) {
     if (category === 'faculty') {
-      return '../assets/images/people/faculty-placeholder.svg';
+      return '../../assets/images/people/faculty-placeholder.svg';
     }
-    return '../assets/images/people/student-placeholder.svg';
+    return '../../assets/images/people/student-placeholder.svg';
   }
 
   formatGraduationDate(dateString) {
