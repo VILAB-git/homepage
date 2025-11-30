@@ -169,7 +169,7 @@ class PeoplePage {
     if (category === 'faculty') {
       return '../../assets/images/people/faculty-placeholder.svg';
     }
-    return '../../assets/images/people/student-placeholder.svg';
+    return '../assets/images/people/student-placeholder.svg';
   }
 
   formatGraduationDate(dateString) {
