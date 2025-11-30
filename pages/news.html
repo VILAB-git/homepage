@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VILab - People</title>
-  
+  <title>VILab - News</title>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../assets/logos/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/logos/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/logos/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/logos/apple-touch-icon.png">
   <link rel="manifest" href="../assets/logos/site.webmanifest">
-  
+
   <!-- <link rel="stylesheet" href="../css/main.css"> -->
   <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/people.css">
+  <link rel="stylesheet" href="../css/news.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -25,13 +25,14 @@
       <div class="nav-container">
         <div class="nav-logo">
           <img src="../assets/logos/vilab-logo.png" alt="VILab" class="logo-img">
+          <!-- <span class="logo-text">VILab</span> -->
         </div>
         <ul class="nav-menu">
           <li><a href="../index.html" class="nav-link">Home</a></li>
-          <li><a href="people.html" class="nav-link active">People</a></li>
+          <li><a href="people.html" class="nav-link">People</a></li>
           <li><a href="publications.html" class="nav-link">Publications</a></li>
           <li><a href="projects.html" class="nav-link">Projects</a></li>
-          <li><a href="news.html" class="nav-link">News</a></li>
+          <li><a href="news.html" class="nav-link active">News</a></li>
           <li><a href="gallery.html" class="nav-link">Gallery</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
@@ -47,51 +48,26 @@
   <main>
     <section class="page-header">
       <div class="container">
-        <h1 class="page-title">People</h1>
-        <p class="page-subtitle">Meet our research team</p>
+        <h1 class="page-title">News</h1>
+        <p class="page-subtitle">Lab announcements, paper acceptances, awards, and events.</p>
       </div>
     </section>
 
-    <section class="people-section">
+    <section class="news-content">
       <div class="container">
-        <!-- Faculty -->
-        <div class="section-header">
-          <h2 class="section-title">Faculty</h2>
-        </div>
-        <div class="people-grid">
-          <div class="person-card">
-            <div class="person-photo">
-              <img src="../assets/images/people/Professor.jpg" alt="Prof. Kuk-Jin Yoon" class="person-img" style="width: 150px; height: 150px; object-fit: cover;">
-            </div>
-            <div class="person-info">
-              <h3 class="person-name">Prof. Kuk-Jin Yoon</h3>
-              <p class="person-title">Professor</p>
-              <p class="person-email">
-                <a href="mailto:kjyoon@kaist.ac.kr">kjyoon@kaist.ac.kr</a>
-              </p>
-              <div class="person-links">
-                <!-- <a href="https://sites.google.com/view/kateshim" target="_blank" class="person-link">Website</a> -->
-                <a href="https://scholar.google.com/citations?user=1NvBj_gAAAAJ&hl=en" target="_blank"
-                  class="person-link">Google Scholar</a>
-              </div>
-            </div>
+
+        <!-- Search and Filter Options -->
+        <div class="news-controls">
+          <div class="news-search">
+            <input type="text" placeholder="Search news..." class="search-input">
+          </div>
+          <div class="news-filters">
+            <!-- Filters will be dynamically generated -->
           </div>
         </div>
 
-        <!-- Current Members -->
-        <div class="section-header" style="margin-top: 60px;">
-          <h2 class="section-title">Current Members</h2>
-        </div>
-        <div id="current-members-container">
-          <div class="loading">Loading current members...</div>
-        </div>
-
-        <!-- Alumni -->
-        <div class="section-header" style="margin-top: 60px;">
-          <h2 class="section-title">Alumni</h2>
-        </div>
-        <div id="alumni-container">
-          <div class="loading">Loading alumni...</div>
+        <div class="news-list" id="news-list">
+          <!-- News items will be loaded here by JavaScript -->
         </div>
       </div>
     </section>
@@ -118,8 +94,7 @@
   </footer>
 
   <script src="../js/data-manager.js"></script>
-  <script src="../js/people.js"></script>
-  <script src="../js/main.js"></script>
+  <script src="../js/news-list.js"></script>
 </body>
 
 </html>

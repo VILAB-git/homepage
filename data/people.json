@@ -12,12 +12,98 @@
     "current": "Current Members",
     "alumni": "Alumni"
   },
-  "current": [
+  "members": {
+    "current": [
+      "Jihun Kim",
+      "Byeongin Joung",
+      "Hyun-Kurl Jang",
+      "Jaeseok Jeong",
+      "Yujeong Chae",
+      "Hyeonseong Kim",
+      "Youngho Yoon",
+      "Jin-Ho Kim",
+      "Hunmin Yang",
+      "Jongoh Jeong",
+      "Changgyoon Oh",
+      "Hoonhee Cho",
+      "Jegyeong Cho",
+      "Wooseong Jeong",
+      "Jaewoo Jeong",
+      "Yuhwan Jeong",
+      "Yunseo Yang",
+      "Jongseob Yun",
+      "Minseok Kim",
+      "Jae-Young Kang",
+      "Hoyong Kwon",
+      "Giwon Lee",
+      "Heejun Park",
+      "Daehyun We",
+      "Seonkyu Song",
+      "Yujin Bae",
+      "Jiyong Boo",
+      "Jinnyeong Yang",
+      "Hyemin Yang",
+      "Wonyoung Lee",
+      "Youngho Kim",
+      "Kyung-A Kwon"
+    ],
+    "alumni": [
+      "Seongyong Ahn",
+      "Taewoo Kim",
+      "Sung-Hoon Yoon",
+      "Daehee Park",
+      "Hyeokjun Kweon",
+      "Taeyeop Lee",
+      "Inkyu Shin",
+      "Pranjay Shyam",
+      "Lin Wang",
+      "S. Mohammad Mostafavi I",
+      "Jeong-Kyun Lee",
+      "Chang-Ryeol Lee",
+      "Yeong-Jun Cho",
+      "Han-Mu Park",
+      "Min-Gyu Park",
+      "Yong-Ho Shin",
+      "Seung-Hwan Bae",
+      "Min-Koo Kang",
+      "Jong-Hee Park",
+      "Ju-Hong Yoon",
+      "Youngjin Oh",
+      "In-Chul Chung",
+      "Jeong-Min Lee",
+      "Yoonsu Kang",
+      "Kang-Il Lee",
+      "Won-June Cho",
+      "Kwon-Young Ryu",
+      "Kyeong-Seob Song",
+      "Jung-Won Lee",
+      "Hee-Chan Jung",
+      "Jong-Seob Yoon",
+      "Sung-Hyun Park",
+      "Yeon-Kun Lee",
+      "Jeong-Yun Na",
+      "Hyeok-Jae Choi",
+      "Jae-Han Park",
+      "Yong-Hoon Kwon",
+      "Jae-Won Yae",
+      "Yeong-Won Kim",
+      "Se-Hoon Park",
+      "Dae-Yong Cho",
+      "Su-A Kim",
+      "Dae-Won Ko",
+      "Hee-Jong Hong",
+      "Dae-Young Kim",
+      "Seung-Hwan Jung",
+      "Min-Gil Shin"
+    ]
+  },
+  "peoples": [
     {
       "name": "Jihun Kim",
       "email": "jihun1998@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "role": "2025 Lab Leader (랩장)",
       "image": "JihunKim.jpg",
       "researchInterests": ["Semantic Segmentation", "Domain Adaptation", "Point Cloud", "Foundation Model"],
@@ -27,7 +113,8 @@
       "name": "Byeongin Joung",
       "email": "byeonginjoung@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "role": "2025 Assistant Lab Leader (부랩장)",
       "image": "ByeonginJoung.jpg",
       "researchInterests": ["TBD"]
@@ -36,7 +123,7 @@
       "name": "Hyun-Kurl Jang",
       "email": "jhg0001@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "role": "2025 Assistant Lab Leader (부랩장)",
       "image": "HyunkurlJang.jpg",
       "researchInterests": ["3D Vision"],
@@ -46,7 +133,7 @@
       "name": "Jaeseok Jeong",
       "email": "jason.jeong@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "JaeseokJeong_low.jpg",
       "researchInterests": ["3D Vision"]
     },
@@ -54,7 +141,7 @@
       "name": "Yujeong Chae",
       "email": "yujeong@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "YujeongChae_low.jpg",
       "researchInterests": ["Multi-modal Vision", "Object Detection"]
     },
@@ -62,7 +149,7 @@
       "name": "Hyeonseong Kim",
       "email": "brian617@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "HyeonseongKim.jpg",
       "researchInterests": ["TBD"]
     },
@@ -70,7 +157,7 @@
       "name": "Youngho Yoon",
       "email": "dudgh1732@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "YounghoYoon.jpg",
       "researchInterests": ["TBD"]
     },
@@ -78,7 +165,7 @@
       "name": "Jin-Ho Kim",
       "email": "jinho99@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering (Part-time)",
+      "major_phd": "Mechanical Engineering (Part-time)",
       "image": "JinhoKim_low.jpg",
       "researchInterests": ["TBD"]
     },
@@ -86,7 +173,7 @@
       "name": "Hunmin Yang",
       "email": "hmyang@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering (Part-time)",
+      "major_phd": "Mechanical Engineering (Part-time)",
       "image": "HunminYang_low.jpg",
       "researchInterests": ["TBD"],
       "website": "https://hmyang1.github.io/"
@@ -95,7 +182,7 @@
       "name": "Jongoh Jeong",
       "email": "jeong2@kaist.ac.kr",
       "category": "phd",
-      "major": "The Robotics Program",
+      "major_phd": "The Robotics Program",
       "image": "JongohJeong.jpg",
       "researchInterests": ["Visual Recognition", "Domain Adaptation/Generalization"],
       "website": "https://sites.google.com/view/jongohjeong?pli=1"
@@ -104,7 +191,7 @@
       "name": "Changgyoon Oh",
       "email": "changgyoon@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "ChanggyoonOh.jpg",
       "researchInterests": ["Generative Models"]
     },
@@ -112,7 +199,7 @@
       "name": "Hoonhee Cho",
       "email": "gnsgnsgml@kaist.ac.kr",
       "category": "phd",
-      "major": "The Robotics Program",
+      "major_phd": "The Robotics Program",
       "image": "HoonheeCho.jpg",
       "researchInterests": ["Stereo Vision", "Multi-modal sensor"],
       "website": "https://sites.google.com/view/hoonheecho/"
@@ -121,7 +208,7 @@
       "name": "Jegyeong Cho",
       "email": "j2k0618@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "JegyeongCho_low.jpg",
       "researchInterests": ["TBD"]
     },
@@ -129,7 +216,7 @@
       "name": "Wooseong Jeong",
       "email": "stk14570@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "WooseongJeong.png",
       "researchInterests": ["TBD"]
     },
@@ -137,7 +224,7 @@
       "name": "Jaewoo Jeong",
       "email": "jeong207@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
       "image": "JaewooJeong.jpg",
       "researchInterests": ["Human Motion Forecasting", "Trajectory Prediction"],
       "website": "https://jaewoo97.github.io/"
@@ -146,7 +233,8 @@
       "name": "Yuhwan Jeong",
       "email": "jeongyh98@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "YuhwanJeong.jpg",
       "researchInterests": ["Optical Flow", "Diffusion Models"]
     },
@@ -154,7 +242,8 @@
       "name": "Yunseo Yang",
       "email": "acorn@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "YunseoYang_low.jpg",
       "researchInterests": ["TBD"]
     },
@@ -162,7 +251,7 @@
       "name": "Jongseob Yun",
       "email": "jseob.y@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering (Part-time)",
+      "major_phd": "Mechanical Engineering (Part-time)",
       "image": "JongseobYun.jpg",
       "researchInterests": ["TBD"],
       "website": "https://jseobyun.github.io/"
@@ -171,7 +260,10 @@
       "name": "Minseok Kim",
       "email": "alstjrx1x1@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
+      "thesis_ms": "Generalized Category Discovery for LiDAR Semantic Segmentation",
+      "thesis_ms_kor": "라이더 의미론적 분할을 위한 일반화된 카테고리 발견 방법",
       "image": "MinseokKim.jpg",
       "researchInterests": ["TBD"]
     },
@@ -179,7 +271,10 @@
       "name": "Jae-Young Kang",
       "email": "mickeykang@kaist.ac.kr",
       "category": "phd",
-      "major": "Mechanical Engineering",
+      "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
+      "thesis_ms": "Event-based Temporal Stereo Matching via Joint Learning of Optical Flow",
+      "thesis_ms_kor": "광학 흐름 동시 학습을 통한 이벤트 기반 시간적 스테레오 정합",
       "image": "JaeyoungKang.jpg",
       "researchInterests": ["TBD"]
     },
@@ -187,7 +282,10 @@
       "name": "Hoyong Kwon",
       "email": "kwonhoyong3@kaist.ac.kr",
       "category": "phd",
-      "major": "The Robotics Program",
+      "major_phd": "The Robotics Program",
+      "major_ms": "Kim Jaechul Graduate School of AI",
+      "thesis_ms": "Phase Concentration and Shortcut Suppression for Weakly Supervised Semantic Segmentation",
+      "thesis_ms_kor": "약지도 의미론적 분할을 위한 위상 집중 및 지름길 억제 기법",
       "image": "HoyongKwon.jpg",
       "researchInterests": ["Semantic Segmentation", "Foundation Model"],
       "website": "https://kwonhoyong3.github.io/"
@@ -197,7 +295,7 @@
       "name": "Giwon Lee",
       "email": "dlrldnjs@kaist.ac.kr",
       "category": "ms",
-      "major": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "GiwonLee.jpg",
       "researchInterests": ["TBD"],
       "website": "https://giwonlee00.github.io/"
@@ -206,7 +304,7 @@
       "name": "Heejun Park",
       "email": "parkhee.ticket@kaist.ac.kr",
       "category": "ms",
-      "major": "Division of Future Vehicle",
+      "major_ms": "Division of Future Vehicle",
       "image": "HeejunPark.jpg",
       "researchInterests": ["TBD"]
     },
@@ -214,7 +312,7 @@
       "name": "Daehyun We",
       "email": "greathyun@kaist.ac.kr",
       "category": "ms",
-      "major": "Kim Jaechul Graduate School of AI",
+      "major_ms": "Kim Jaechul Graduate School of AI",
       "image": "DaehyunWe.jpg",
       "researchInterests": ["TBD"]
     },
@@ -222,7 +320,7 @@
       "name": "Seonkyu Song",
       "email": "sok9854@kaist.ac.kr",
       "category": "ms",
-      "major": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "SeonkyuSong.jpg",
       "researchInterests": ["TBD"]
     },
@@ -230,7 +328,7 @@
       "name": "Yujin Bae",
       "email": "yujinbae@kaist.ac.kr",
       "category": "ms",
-      "major": "The Robotics Program",
+      "major_ms": "The Robotics Program",
       "image": "YujinBae.jpg",
       "researchInterests": ["TBD"]
     },
@@ -238,7 +336,7 @@
       "name": "Jiyong Boo",
       "email": "boojiyong@kaist.ac.kr",
       "category": "ms",
-      "major": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "JiyongBoo.jpg",
       "researchInterests": ["TBD"]
     },
@@ -246,7 +344,7 @@
       "name": "Jinnyeong Yang",
       "email": "jinnyeong6118@kaist.ac.kr",
       "category": "ms",
-      "major": "Division of Future Vehicle",
+      "major_ms": "Division of Future Vehicle",
       "image": "JinnyeongYang.png",
       "researchInterests": ["TBD"]
     },
@@ -254,7 +352,7 @@
       "name": "Hyemin Yang",
       "email": "hyemin0806@kaist.ac.kr",
       "category": "ms",
-      "major": "The Robotics Program",
+      "major_ms": "The Robotics Program",
       "image": "HyeminYang.jpg",
       "researchInterests": ["TBD"]
     },
@@ -262,7 +360,7 @@
       "name": "Wonyoung Lee",
       "email": "bsis2one0@kaist.ac.kr",
       "category": "ms",
-      "major": "Kim Jaechul Graduate School of AI",
+      "major_ms": "Kim Jaechul Graduate School of AI",
       "image": "WonyoungLee.jpg",
       "researchInterests": ["TBD"]
     },
@@ -270,7 +368,7 @@
       "name": "Youngho Kim",
       "email": "kmax2001@kaist.ac.kr",
       "category": "ms",
-      "major": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "YounghoKim.jpg",
       "researchInterests": ["TBD"]
     },
@@ -278,57 +376,79 @@
       "name": "Kyung-A Kwon",
       "category": "staff",
       "image": "Kyung-AKwon.jpg"
-    }
-  ],
-  "alumni": [
+    },
+
     {
       "name": "Seongyong Ahn",
+      "image": "SeongyongAhn.jpg",
       "email": "seongyong.ahn@gmail.com",
       "category": "phd",
       "title": "PhD",
+      "major_phd": "Mechanical Engineering",
+      "thesis_phd": "Visible and Infrared Image Fusion Framework for Enhancing Visual Quality Beyond Single Spectra",
+      "thesis_phd_kor": "단일 스펙트럼 한계 극복을 위한 가시광선 및 적외선 영상 융합 기반 시각적 품질 향상 연구",
       "nextPosition": "ADD",
       "graduationDate": "2025-02"
     },
     {
       "name": "Taewoo Kim",
+      "image": "TaewooKim.png",
       "email": "an625148@gmail.com",
       "category": "phd",
       "title": "PhD",
+      "major_phd": "Mechanical Engineering",
+      "thesis_phd": "Video Enhancement with Event Camera",
+      "thesis_phd_kor": "이벤트 카메라를 이용한 비디오 향상",
       "nextPosition": "Qualcomm",
       "graduationDate": "2025-02",
       "website": "https://intelpro.github.io/"
     },
     {
       "name": "Sung-Hoon Yoon",
+      "image": "SunghoonYoon.jpg",
       "email": "ysh941109@gmail.com",
       "category": "phd",
       "title": "PhD",
+      "major_phd": "Mechanical Engineering",
+      "thesis_phd": "Learning Image Semantic Segmentation with Weak Supervision",
+      "thesis_phd_kor": "약지도 학습을 통한 영상의 의미론적 분할 방법 연구",
       "nextPosition": "DGIST",
       "graduationDate": "2025-02"
     },
     {
       "name": "Daehee Park",
+      "image": "DaeheePark.jpg",
       "email": "bag2824@gmail.com",
       "category": "phd",
       "title": "PhD",
+      "major_phd": "Mechanical Engineering",
+      "thesis_phd": "Data-driven Trajectory Forecasting for Reliable Autonomous System in Various Urban Environments",
+      "thesis_phd_kor": "다양한 도시 환경에서 안정적인 자율주행 시스템을 위한 데이터 기반 경로 예측",
       "nextPosition": "DGIST",
       "graduationDate": "2025-02",
       "website": "https://sites.google.com/view/dhpark/"
     },
     {
       "name": "Hyeokjun Kweon",
+      "image": "HyeokjunKweon.jpg",
       "email": "0327june@gmail.com",
       "category": "phd",
       "title": "PhD",
+      "major_phd": "Mechanical Engineering",
+      "thesis_phd": "Exploring Weakly Supervised 3D Point Cloud Semantic Segmentation through Knowledge from the 2D Image Domain via Projection",
+      "thesis_phd_kor": "사영을 통해 2D 이미지 도메인의 지식을 활용하는 3D 점구름 의미론적 분할의 약지도 학습",
       "nextPosition": "Chung-Ang University",
       "graduationDate": "2025-02",
       "website": "https://sangrockeg.github.io/"
     },
     {
       "name": "Taeyeop Lee",
+      "image": "TaeyeopLee.png",
       "email": "taeyeop.trevor@gmail.com",
       "category": "phd",
       "title": "PhD",
+      "major_phd": "Electrical Engineering",
+      "thesis_phd": "6D Object Pose Estimation for Robot Manipulation",
       "nextPosition": "KAIST(Post-doc)",
       "graduationDate": "2025-02",
       "website": "https://sites.google.com/view/taeyeop-lee/"
@@ -384,9 +504,11 @@
     },
     {
       "name": "Yeong-Jun Cho",
+      "image": "YeongjunCho.jpg",
       "email": "yj.cho@jnu.ac.kr",
       "category": "phd",
       "title": "PhD",
+      "major_phd": "Electrical Engineering and Computer Science",
       "nextPosition": "Chonnam University",
       "graduationDate": "2018-08",
       "website": "https://sites.google.com/view/cvl-jnu/member/professor?authuser=0"
@@ -450,9 +572,13 @@
 
     {
       "name": "Youngjin Oh",
+      "image": "YoungjinOh.jpg",
       "email": "970529dudwls@gmail.com",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Division of Future Vehicle",
+      "thesis_ms": "Robust Unexpected Road Obstacle Detection Under Adverse Weather Conditions",
+      "thesis_ms_kor": "악천후 환경에서의 강건한 예상치 못한 도로 장애물 인식",
       "nextPosition": "",
       "graduationDate": "2025-02"
     },
@@ -664,6 +790,6 @@
       "nextPosition": "LG Electronics",
       "graduationDate": "2010-08"
     }
-    
+
   ]
 }

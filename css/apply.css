@@ -1,0 +1,456 @@
+/* ===== apply.css ===== */
+
+.apply-section {
+  padding: 50px 0;
+}
+
+/* Positions */
+.positions-section {
+  margin-bottom: 60px;
+}
+
+.position-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: box-shadow 0.3s ease;
+}
+
+.position-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.position-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.position-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.position-status {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.position-status.available {
+  background: #e8f5e8;
+  color: #388e3c;
+}
+
+.position-status.limited {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.position-status.not-available {
+  background: #ffebee;
+  color: #d32f2f;
+}
+
+.position-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.position-requirements,
+.position-benefits {
+  margin-bottom: 15px;
+}
+
+.position-requirements h4,
+.position-benefits h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.position-requirements ul,
+.position-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.position-requirements li,
+.position-benefits li {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.position-requirements li:before,
+.position-benefits li:before {
+  content: "•";
+  color: #FFC109;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Application steps & requirements */
+.application-section {
+  margin-bottom: 60px;
+}
+
+.application-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: #FFC109;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.step-content h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.step-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.requirements-section {
+  margin-bottom: 60px;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.requirement-item {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 3px solid #FFC109;
+}
+
+.requirement-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.requirement-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Contact info section inside apply */
+.contact-section {
+  margin-bottom: 60px;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.contact-method {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.contact-method h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-method p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.contact-link {
+  color: #FFC109;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-note {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+
+/* FAQ */
+.faq-section {
+  background: #f9f9fa;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 3px solid #FFC109;
+}
+
+.faq-question {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.faq-answer {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Intro / notes / buttons (apply 설명부분) */
+.intro-section {
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #007bff;
+}
+
+.intro-section h2 {
+  color: #495057;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.intro-section p {
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.important-notes {
+  background: #fff3cd;
+  border: 1px solid #ffeaa7;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.important-notes .note-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.important-notes .note-item:last-child {
+  margin-bottom: 0;
+}
+
+.important-notes .note-number {
+  color: #856404;
+  font-weight: 600;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.important-notes .note-text {
+  color: #856404;
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.important-notes h4 {
+  color: #856404;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.important-notes h4::before {
+  content: "⚠️";
+  margin-right: 8px;
+}
+
+.important-notes ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.important-notes li {
+  color: #856404;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.application-requirement-highlight {
+  background: #fff;
+  border: 2px solid #FFC109;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.application-requirement-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #FFC109;
+  border-radius: 8px 8px 0 0;
+}
+
+.application-requirement-highlight h3 {
+  color: #FFC109;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.application-requirement-highlight p {
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.application-requirement {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.application-requirement h3 {
+  color: #155724;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.application-requirement p {
+  color: #155724;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Apply 전용 버튼 */
+.form-button {
+  display: inline;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background: linear-gradient(135deg, #218838 0%, #1e7e34 100%);
+  box-shadow: 0 3px 10px rgba(40, 167, 69, 0.3);
+  color: white;
+  text-decoration: none;
+  transform: none;
+}
+
+.form-button-large {
+  display: inline-block;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 1.2rem 3rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.form-button-large:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+/* Apply page responsive */
+@media (max-width: 768px) {
+
+  .intro-section,
+  .application-requirement-highlight,
+  .faq-section {
+    padding: 1.5rem;
+  }
+
+  .form-button-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+
+  .important-notes {
+    padding: 1rem;
+  }
+
+  .important-notes .note-item {
+    gap: 0.3rem;
+  }
+}

@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VILab - Gallery</title>
-  
+  <title>VILab - News</title>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="../assets/logos/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/logos/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="../assets/logos/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/logos/apple-touch-icon.png">
   <link rel="manifest" href="../assets/logos/site.webmanifest">
-  
-  <!-- <link rel="stylesheet" href="../css/main.css"> -->
+
   <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/gallery.css">
+  <link rel="stylesheet" href="../css/news.css">
+  <link rel="stylesheet" href="../css/people.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
@@ -24,16 +24,15 @@
     <nav class="nav">
       <div class="nav-container">
         <div class="nav-logo">
-          <img src="../assets/logos/cvml-logo.png" alt="CVML Lab" class="logo-img">
-          <!-- <span class="logo-text">CVML</span> -->
+          <img src="../assets/logos/vilab-logo.png" alt="VILab" class="logo-img">
         </div>
         <ul class="nav-menu">
           <li><a href="../index.html" class="nav-link">Home</a></li>
           <li><a href="people.html" class="nav-link">People</a></li>
           <li><a href="publications.html" class="nav-link">Publications</a></li>
           <li><a href="projects.html" class="nav-link">Projects</a></li>
-          <li><a href="news.html" class="nav-link">News</a></li>
-          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="news.html" class="nav-link active">News</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
         <div class="nav-toggle">
@@ -46,35 +45,21 @@
   </header>
 
   <main>
+    <!-- ✅ 공통 page-header 그대로 -->
     <section class="page-header">
       <div class="container">
-        <h1 class="page-title">Gallery</h1>
-        <p class="page-subtitle">Lab life, events, and research highlights</p>
+        <h1 class="page-title">News</h1>
+        <p class="page-subtitle">Lab announcements, paper acceptances, awards, and events.</p>
       </div>
     </section>
 
-    <section class="gallery-section">
+    <!-- ✅ 이 아래가 상세 내용 -->
+    <section class="news-detail-section">
       <div class="container">
-        <!-- Search and Filter Options -->
-        <div class="gallery-controls">
-          <div class="gallery-search" style="text-align: center; margin-bottom: 20px;">
-            <input type="text" placeholder="Search gallery..." class="search-input">
-          </div>
-          <div class="gallery-filters">
-            <!-- Filters will be dynamically generated -->
-            <div class="loading-message">Loading filters...</div>
-          </div>
-        </div>
+        <a href="news.html" class="back-link">&larr; Back to News</a>
 
-        <!-- Gallery Grid -->
-        <div class="gallery-grid">
-          <!-- Gallery items will be dynamically loaded here -->
-          <div class="loading-message">Loading gallery...</div>
-        </div>
-
-        <!-- Load More Button -->
-        <div class="gallery-actions">
-          <button class="btn btn-secondary" onclick="loadMoreGallery()">Load More Images</button>
+        <div id="news-detail">
+          Loading news...
         </div>
       </div>
     </section>
@@ -88,11 +73,6 @@
           <p>VIsual Intelligence Lab</p>
           <p>Korea Advanced Institute of Science and Technology</p>
         </div>
-        <!-- <div class="footer-links">
-          <a href="mailto:contact@cvml.kaist.ac.kr" class="footer-link">Contact</a>
-          <a href="apply.html" class="footer-link">Join Us</a>
-          <a href="https://github.com/kaist-cvml" class="footer-link">GitHub</a>
-        </div> -->
       </div>
       <div class="footer-bottom">
         <p>&copy; 2025 KAIST Visual Intelligence Lab. All rights reserved.</p>
@@ -101,8 +81,7 @@
   </footer>
 
   <script src="../js/data-manager.js"></script>
-  <script src="../js/main.js"></script>
-  <script src="../js/gallery.js"></script>
+  <script src="../js/news-detail.js"></script>
 </body>
 
 </html>

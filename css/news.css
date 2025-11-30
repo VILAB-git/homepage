@@ -1,0 +1,878 @@
+/* ===========================
+   News 탭 리스트 영역
+   =========================== */
+
+.news-content {
+  padding: 40px 0 80px;
+  background: #fff;
+}
+
+/* 리스트 폭 / 가운데 정렬 */
+.news-content .news-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 개별 카드 */
+.news-content .news-list-item {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 16px;
+  margin-bottom: 16px;
+
+  /* hover animation */
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+/* 카드 전체 클릭 영역 */
+.news-content .news-list-link {
+  display: block;
+  padding: 16px 24px 18px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* hover 시 살짝 떠오르게 */
+.news-content .news-list-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+/* 날짜 + 타입 배지 줄 */
+.news-content .news-list-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.news-content .news-list-date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* 타입 배지 (admission / award / publication / graduation ...) */
+.news-content .news-type-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* 유형별 색깔 (원하는 대로 조절 가능) */
+
+.news-content .news-type-publication {
+  background: #fce7f3;
+  color: #a8065a;
+}
+
+.news-content .news-type-admission {
+  background: #e1f5fe;
+  color: #0277bd;
+}
+
+.news-content .news-type-graduation {
+  background: #e3f2fd;
+  color: #1a73e8;
+}
+
+.news-content .news-type-award {
+  background: #fff3cd;
+  color: #a15c00;
+}
+
+.news-content .news-type-career {
+  background: #e8f5e8;
+  color: #137333;
+}
+
+.news-content .news-type-service {
+  background: #ede7f6;
+  color: #5e35b1;
+}
+
+.news-content .news-type-media {
+  background: #f0f4c3;
+  color: #827717;
+}
+
+/* 제목 / 요약 텍스트 */
+.news-content .news-list-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;      /* 살짝 보라톤 */
+  margin-bottom: 4px;
+}
+
+/* a 태그의 "링크 티" 제거 */
+.news-content .news-list-link:link,
+.news-content .news-list-link:visited,
+.news-content .news-list-link:hover,
+.news-content .news-list-link:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.news-content .news-list-summary {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* 빈 결과 / 에러 메시지 */
+.news-content .no-results,
+.news-content .error-message {
+  max-width: 960px;
+  margin: 40px auto 0;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: #f9fafb;
+  font-size: 14px;
+  color: #555;
+}
+
+/* ===========================
+   News 상세 페이지 공통
+   =========================== */
+
+.news-detail-section {
+  padding: 40px 0 80px;
+  background: #fff;
+}
+
+.news-detail-section .back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+.news-detail-section .back-link:hover {
+  text-decoration: underline;
+}
+
+/* Detail 공통 헤더 */
+.news-detail-header {
+  margin-bottom: 24px;
+}
+
+.news-detail-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.news-detail-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.news-detail-date {
+  font-size: 13px;
+}
+
+.news-detail-type {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.news-type-publication {
+  background: #fce7f3;
+  color: #a8065a;
+}
+
+.news-type-admission {
+  background: #e1f5fe;
+  color: #0277bd;
+}
+
+.news-type-graduation {
+  background: #e3f2fd;
+  color: #1a73e8;
+}
+
+.news-type-award {
+  background: #fff3cd;
+  color: #a15c00;
+}
+
+.news-type-career {
+  background: #e8f5e8;
+  color: #137333;
+}
+
+.news-type-service {
+  background: #ede7f6;
+  color: #5e35b1;
+}
+
+.news-type-media {
+  background: #f0f4c3;
+  color: #827717;
+}
+
+.news-detail-summary,
+.news-detail-body {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ===========================
+   Publication-style cards in news detail
+   =========================== */
+
+.news-publications {
+  margin-top: 32px;
+}
+
+.news-publications-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.news-publications-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.news-publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-publication-item {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 20px 22px;
+  transition: box-shadow 0.3s ease;
+}
+
+.news-publication-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.news-publication-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.news-publication-authors {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.news-publication-venue {
+  font-size: 14px;
+  color: #FFC109;
+  margin-bottom: 10px;
+}
+
+/* Keywords (publications.css 스타일과 맞춤) */
+.news-publication-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.news-publication-keywords .keyword {
+  background: #f0f7ff;
+  color: #0066cc;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Links (publications.css 의 .pub-link 재사용) */
+.news-publication-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.pub-link {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.pub-link:hover {
+  background: #FFC109;
+  color: #fff;
+  border-color: #FFC109;
+}
+
+/* ===========================
+    Admission detail - grouped people
+   =========================== */
+
+.admission-description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.admission-group-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 40px 0 20px;
+  border-bottom: 2px solid #FFC109;
+  padding-bottom: 6px;
+  color: #333;
+}
+
+/* 필요하면 admission 카드에만 살짝 튜닝 */
+.admission-person-card .person-photo {
+  margin-bottom: 10px;
+}
+
+
+/* ===========================
+   Graduation detail - grouped people
+   =========================== */
+
+.graduation-people-section {
+  margin-top: 24px;
+}
+
+.graduation-people-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.graduation-group-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 24px 0 12px;
+}
+
+.graduation-divider {
+  margin: 24px 0 16px;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* 기존 news-people-grid 재사용 + 약간 여유만 */
+.graduation-people-grid {
+  margin-top: 8px;
+}
+
+/* graduation 카드에만 약간 여백 조정 (선택사항) */
+.graduation-person-card .person-photo-wrap {
+  margin-bottom: 10px;
+}
+
+.person-website a {
+  font-size: 13px;
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.person-website a:hover {
+  text-decoration: underline;
+}
+
+/* Graduation detail - grouped people (People 스타일 재사용) */
+
+.graduation-people-section {
+  margin-top: 24px;
+}
+
+.graduation-people-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.graduation-divider {
+  margin: 32px 0 24px;
+  border: none;
+  border-top: 1px solid #eee;
+}
+
+/* graduation-person-card는 people.css의 person-card 스타일을 그대로 쓰되
+   약간만 여유를 줄 수도 있음 (선택사항) */
+.graduation-person-card .person-photo {
+  margin-bottom: 10px;
+}
+
+.person-thesis-block {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #444;
+}
+
+.person-thesis-label {
+  margin-bottom: 2px;
+}
+
+.person-thesis-en,
+.person-thesis-ko {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.graduation-description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Career */
+/* Career 뉴스: 상단 설명 */
+.career-description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* career 사람 카드 안 텍스트 */
+/* 사람별 career 전체 래퍼에 구분선 추가 */
+.career-people-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 10px;
+}
+
+.career-person-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #eee;
+}
+
+.career-person-wrapper:last-child {
+  border-bottom: none;
+}
+
+/* 위쪽 people-card는 기존 스타일 재사용 (person-card, person-photo 등) */
+
+/* 아래쪽 next career 블록 */
+/* Appointed as + career 문장 */
+.career-next-block {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 한 줄로 붙이되, 가운데 정렬 & flex */
+.career-next-en {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;     /* 너무 길면 줄바꿈은 허용 */
+  gap: 4px;
+  margin: 0;
+}
+
+.career-next-en strong {
+  white-space: nowrap; /* Appointed as 단어는 줄바꿈 안 되게 */
+}
+
+.career-next-en span {
+  text-align: center;
+}
+
+/* 한국어 career */
+.career-next-ko {
+  margin: 4px 0 0;
+  line-height: 1.4;
+}
+
+/* Related article 줄 */
+.career-article {
+  text-align: center;
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.career-article-label {
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.career-article a {
+  color: #1a73e8;
+  text-decoration: underline;
+}
+
+.career-article a:hover {
+  text-decoration: none;
+}
+
+/* 공통 description (award/service) */
+.news-body-award,
+.news-body-service {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+/* Award */
+/* === Award images grid & hover === */
+.award-images-grid {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.award-image-card {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.award-thumb {
+  display: block;
+  width: 260px;          /* 필요하면 조정 */
+  height: 160px;         /* 필요하면 조정 */
+  object-fit: cover;
+}
+
+.award-image-card:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  filter: brightness(1.05);
+}
+
+/* Award link chips */
+.award-links {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.award-link-chip {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+  background: #fafafa;
+}
+
+.award-link-chip:hover {
+  background: #ffc109;
+  border-color: #ffc109;
+  color: #fff;
+}
+
+/* === Image modal === */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 2000;
+  /* 스크롤 허용 */
+  overflow: auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal.open {
+  display: flex;
+}
+
+.image-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+}
+
+.image-modal-body {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 1;
+}
+
+.image-modal-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* === Service images grid & hover === */
+.service-images-grid {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.service-image-card {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.service-thumb {
+  display: block;
+  width: 260px;          /* 필요하면 조정 */
+  height: 160px;         /* 필요하면 조정 */
+  object-fit: cover;
+}
+
+.service-image-card:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  filter: brightness(1.05);
+}
+
+/* Service link chips */
+.service-links {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-link-chip {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+  background: #fafafa;
+}
+
+.service-link-chip:hover {
+  background: #ffc109;
+  border-color: #ffc109;
+  color: #fff;
+}
+
+/* ===========================
+   Media-style cards in news detail
+   =========================== */
+.media-images-grid {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.media-image-card {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.media-thumb {
+  display: block;
+  width: 260px;          /* 필요하면 조정 */
+  height: 160px;         /* 필요하면 조정 */
+  object-fit: cover;
+}
+
+.media-image-card:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+  filter: brightness(1.05);
+}
+
+/* Media link chips */
+.media-links {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.media-link-chip {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  transition: all 0.2s ease;
+  background: #fafafa;
+}
+
+.media-link-chip:hover {
+  background: #ffc109;
+  border-color: #ffc109;
+  color: #fff;
+}
+
+/* Controls */
+.news-controls {
+  margin-bottom: 40px;
+}
+
+/* Search, Filter */
+.news-search {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #FFC109;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.news-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-group label {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.filter-btn {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #666;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+/* type별 필터 버튼 색상 (hover / active) */
+.filter-btn.active,
+.filter-btn:hover {
+  background: #FFC109;
+  color: #fff;
+  border-color: #FFC109;
+}
+
+.news-filters .filter-btn[data-filter="type"][data-value="publication"]:hover,
+.news-filters .filter-btn[data-filter="type"][data-value="publication"].active {
+  background: #fce7f3;
+  color: #a8065a;
+  border-color: transparent;
+}
+
+.news-filters .filter-btn[data-filter="type"][data-value="admission"]:hover,
+.news-filters .filter-btn[data-filter="type"][data-value="admission"].active {
+  background: #e1f5fe;
+  color: #0277bd;
+  border-color: transparent;
+}
+
+.news-filters .filter-btn[data-filter="type"][data-value="graduation"]:hover,
+.news-filters .filter-btn[data-filter="type"][data-value="graduation"].active {
+  background: #e3f2fd;
+  color: #1a73e8;
+  border-color: transparent;
+}
+
+.news-filters .filter-btn[data-filter="type"][data-value="award"]:hover,
+.news-filters .filter-btn[data-filter="type"][data-value="award"].active {
+  background: #fff3cd;
+  color: #a15c00;
+  border-color: transparent;
+}
+
+.news-filters .filter-btn[data-filter="type"][data-value="career"]:hover,
+.news-filters .filter-btn[data-filter="type"][data-value="career"].active {
+  background: #e8f5e8;
+  color: #137333;
+  border-color: transparent;
+}
+
+.news-filters .filter-btn[data-filter="type"][data-value="service"]:hover,
+.news-filters .filter-btn[data-filter="type"][data-value="service"].active {
+  background: #ede7f6;
+  color: #5e35b1;
+  border-color: transparent;
+}
+
+.news-filters .filter-btn[data-filter="type"][data-value="media"]:hover,
+.news-filters .filter-btn[data-filter="type"][data-value="media"].active {
+  background: #f0f4c3;
+  color: #827717;
+  border-color: transparent;
+}

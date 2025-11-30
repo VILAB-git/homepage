@@ -83,17 +83,26 @@ class DataManager {
       };
     } else if (type === 'people') {
       return {
-        people: [
+        categories: {
+          phd: "PhD Students"
+        },
+        positions: {
+          current: "Current Members",
+          alumni: "Alumni"
+        },
+        peoples: [
           {
             id: "fallback001",
             name: "Sample Person",
             email: "person@example.com",
             category: "phd",
-            position: "current",
-            title: "PhD Student",
-            year: "1st year"
+            title: "PhD Student"
           }
-        ]
+        ],
+        members: {
+          current: ["Sample Person"],
+          alumni: []
+        }
       };
     } else if (type === 'projects') {
       return {
@@ -150,6 +159,7 @@ class DataManager {
 
     return news;
   }
+
 
   // Get publications with filtering and sorting
   async getPublications(options = {}) {
@@ -232,40 +242,39 @@ class DataManager {
   // Get people with filtering and sorting
   async getPeople(options = {}) {
     const data = await this.loadData('people');
-    let people = [];
+    const allPeople = data.peoples || [];
+    const members = data.members || {};
 
-    // Combine all people from different sections (faculty is now hardcoded in HTML)
-    if (data.current) people = people.concat(data.current);
-    if (data.alumni) people = people.concat(data.alumni);
+    let people = [...allPeople];
 
-    // Filter by position (current/alumni)
+    // position(current/alumni)으로 필터링
     if (options.position) {
-      people = people.filter(person => person.position === options.position);
+      const names = members[options.position] || [];
+      people = people.filter(person => names.includes(person.name));
     }
 
-    // Filter by category
+    // category로 필터링
     if (options.category) {
       people = people.filter(person => person.category === options.category);
     }
 
-    // Sort current members by category hierarchy, alumni by graduation date
+    // 정렬 로직 (원하면 유지/수정)
     if (options.position === 'current') {
-      const categoryOrder = ['postdoc', 'phd', 'masters', 'undergraduate', 'visiting'];
+      const categoryOrder = ['postdoc', 'phd', 'ms', 'undergraduate', 'intern', 'visiting', 'staff'];
       people.sort((a, b) => {
         const aIndex = categoryOrder.indexOf(a.category);
         const bIndex = categoryOrder.indexOf(b.category);
-        if (aIndex !== bIndex) {
-          return aIndex - bIndex;
-        }
-        // Within same category, sort by join date (earliest first for current)
+        if (aIndex !== bIndex) return aIndex - bIndex;
         return new Date(a.joinDate || '2000-01-01') - new Date(b.joinDate || '2000-01-01');
       });
     } else if (options.position === 'alumni') {
-      // Sort alumni by graduation date (newest first)
-      people.sort((a, b) => new Date(b.graduationDate || '2000-01-01') - new Date(a.graduationDate || '2000-01-01'));
+      people.sort(
+        (a, b) =>
+          new Date(b.graduationDate || '2000-01-01') -
+          new Date(a.graduationDate || '2000-01-01')
+      );
     }
 
-    // Limit results
     if (options.limit) {
       people = people.slice(0, options.limit);
     }
@@ -276,15 +285,21 @@ class DataManager {
   // Get current members
   async getCurrentMembers(options = {}) {
     const data = await this.loadData('people');
-    let current = data.current || [];
+    const allPeople = data.peoples || [];
+    const members = data.members || {};
+    const currentNames = members.current || [];
 
-    // Apply filtering if needed
+    let current = allPeople.filter(person => currentNames.includes(person.name));
+
     if (options.category) {
       current = current.filter(person => person.category === options.category);
     }
 
-    // Sort by join date (earliest first)
-    current.sort((a, b) => new Date(a.joinDate || '2000-01-01') - new Date(b.joinDate || '2000-01-01'));
+    current.sort(
+      (a, b) =>
+        new Date(a.joinDate || '2000-01-01') -
+        new Date(b.joinDate || '2000-01-01')
+    );
 
     if (options.limit) {
       current = current.slice(0, options.limit);
@@ -296,15 +311,21 @@ class DataManager {
   // Get alumni
   async getAlumni(options = {}) {
     const data = await this.loadData('people');
-    let alumni = data.alumni || [];
+    const allPeople = data.peoples || [];
+    const members = data.members || {};
+    const alumniNames = members.alumni || [];
 
-    // Apply filtering if needed
+    let alumni = allPeople.filter(person => alumniNames.includes(person.name));
+
     if (options.category) {
       alumni = alumni.filter(person => person.category === options.category);
     }
 
-    // Sort by graduation date (newest first)
-    alumni.sort((a, b) => new Date(b.graduationDate || '2000-01-01') - new Date(a.graduationDate || '2000-01-01'));
+    alumni.sort(
+      (a, b) =>
+        new Date(b.graduationDate || '2000-01-01') -
+        new Date(a.graduationDate || '2000-01-01')
+    );
 
     if (options.limit) {
       alumni = alumni.slice(0, options.limit);
@@ -329,21 +350,26 @@ class DataManager {
   async searchPeople(query, position = null) {
     const data = await this.loadData('people');
     const searchTerm = query.toLowerCase();
-    let people = data.people;
+    const allPeople = data.peoples || [];
+    const members = data.members || {};
 
-    // Filter by position if specified
+    let people = [...allPeople];
+
+    // position(current/alumni)으로 제한
     if (position) {
-      people = people.filter(person => person.position === position);
+      const names = members[position] || [];
+      people = people.filter(person => names.includes(person.name));
     }
 
     return people.filter(person =>
       person.name.toLowerCase().includes(searchTerm) ||
-      person.title.toLowerCase().includes(searchTerm) ||
+      (person.title && person.title.toLowerCase().includes(searchTerm)) ||
       (person.email && person.email.toLowerCase().includes(searchTerm)) ||
       (person.nextPosition && person.nextPosition.toLowerCase().includes(searchTerm)) ||
-      (person.researchInterests && person.researchInterests.some(interest =>
-        interest.toLowerCase().includes(searchTerm)
-      ))
+      (person.researchInterests &&
+        person.researchInterests.some(interest =>
+          interest.toLowerCase().includes(searchTerm)
+        ))
     );
   }
 
@@ -400,6 +426,19 @@ class DataManager {
     return data.projects.filter(project =>
       project.title.toLowerCase().includes(searchTerm) ||
       project.description.toLowerCase().includes(searchTerm)
+    );
+  }
+
+  // === NEWS METHODS ===
+  
+  // Get single news item by id or slug
+  async getNewsItem(idOrSlug) {
+    const data = await this.loadData('news');
+    const items = data.news || [];
+    return (
+      items.find(
+        item => item.id === idOrSlug || item.slug === idOrSlug
+      ) || null
     );
   }
 

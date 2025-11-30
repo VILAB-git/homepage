@@ -236,26 +236,69 @@ body {
   margin: 0 auto;
 }
 
+/* -------- Main News 카드 기본 스타일 -------- */
 .news-item {
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
   background: #fff;
-  padding: 20px 0;
-  border-bottom: 1px solid #eee;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  padding: 0; /* 내부는 link-card가 padding을 관리 */
+  margin-bottom: 16px;
+
+  transition: box-shadow 0.3s ease, all 0.3s ease;
+  cursor: pointer;
 }
 
-.news-item:last-child {
+/* 왼쪽 세로 노란색 포인트 */
+.news-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  background: #FFC109;
+  border-radius: 0 4px 4px 0;
+}
+
+
+/* .news-item:last-child {
   border-bottom: none;
+} */
+
+/* -------- hover 시 publication 카드처럼 강조 -------- */
+.news-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* 카드 전체 클릭 링크 */
+.news-link-card {
+  display: block;
+  padding: 16px 20px 16px 24px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 날짜: 작은 회색 */
 .news-date {
-  font-size: 14px;
-  color: #666;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+/* 제목: 더 크고 bold */
+.news-title {
+  font-size: 16px;       /* 필요하면 17~18까지 올려도 됨 */
   font-weight: 600;
-  min-width: 100px;
-  flex-shrink: 0;
-  font-family: 'Courier New', Courier, monospace;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+/* 요약: 조금 더 작고 연한 검정 */
+.news-summary {
+  font-size: 14px;
+  color: #555;           /* 연한 검정 */
+  margin: 0;
+  line-height: 1.5;
 }
 
 .news-content {
@@ -1409,6 +1452,119 @@ span.completed {
   font-size: 14px;
   color: #666;
   line-height: 1.4;
+}
+
+/* News Page */
+.news-section {
+  padding: 50px 0;
+}
+
+.news-item.news-featured {
+  border-color: #ffc109;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.news-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.news-badge.featured {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #ffc109;
+  color: #fff;
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.news-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.pub-news-header {
+  margin: 24px 0 16px;
+}
+
+.pub-news-papers {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.pub-paper {
+  padding: 16px 18px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fff;
+}
+
+.pub-paper-title {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pub-paper-authors,
+.pub-paper-note,
+.pub-paper-links {
+  margin: 2px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.award-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.award-image-wrap {
+  flex: 0 0 260px;
+}
+
+.award-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.award-text {
+  flex: 1 1 250px;
+  font-size: 14px;
+  color: #444;
+}
+
+.award-description p {
+  margin: 0 0 8px;
+}
+
+.award-paper {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+}
+
+.news-people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.news-person-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #eee;
+  text-align: center;
 }
 
 /* Gallery Page */

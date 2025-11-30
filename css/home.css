@@ -1,0 +1,330 @@
+/* ===== home.css ===== */
+
+/* Main Hero Section */
+.hero-main {
+  padding: 40px 0;
+  background: #fff;
+}
+
+/* Title section */
+.hero-title-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-subtitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #434343;
+}
+
+.main-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #333;
+}
+
+.vision-highlight {
+  color: #E4C047;
+}
+
+/* Content layout - logo and intro */
+.hero-content-layout {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.hero-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.cvml-brand {
+  text-align: center;
+}
+
+.cvml-logo-main {
+  margin-bottom: 20px;
+}
+
+.main-logo-img {
+  max-width: 280px;
+  height: auto;
+}
+
+.hero-intro-section {
+  padding-top: 0;
+}
+
+.welcome-section {
+  margin-bottom: 30px;
+}
+
+.welcome-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  text-align: justify;
+}
+
+.research-overview {
+  margin-bottom: 30px;
+}
+
+.research-overview h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.research-list {
+  list-style: none;
+  padding: 0;
+}
+
+.research-list li {
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  position: relative;
+  padding-left: 12px;
+}
+
+.research-list li:before {
+  content: "•";
+  color: #FFC109;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.research-list li strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.recognition-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #FFC109;
+}
+
+.recognition-text {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #555;
+  font-style: italic;
+}
+
+/* Latest News (home) */
+.news {
+  padding: 50px 0;
+  background: #fff;
+  border-top: 1px solid #eee;
+}
+
+.news h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.news-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 카드 기본 스타일 */
+.news-item {
+  position: relative;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  background: #fff;
+  padding: 0;
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* 왼쪽 노란색 포인트 */
+.news-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 4px;
+  background: #FFC109;
+  border-radius: 0 4px 4px 0;
+}
+
+/* hover 시 강조 */
+.news-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 카드 전체 클릭 링크 */
+.news-link-card {
+  display: block;
+  padding: 16px 20px 16px 24px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 날짜 */
+.news-date {
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 4px;
+}
+
+/* 제목 */
+.news-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 4px;
+}
+
+/* 요약 */
+.news-summary {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.news-content {
+  color: #333;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.news-content strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.news-actions {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Location Section (home) */
+.location {
+  padding: 50px 0;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.location h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+  text-align: center;
+}
+
+.location-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.location-info {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.location-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.location-info p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.location-info p:last-child {
+  margin-bottom: 0;
+}
+
+.location-info strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.location-map {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.location-map iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+/* Home responsive */
+@media (max-width: 768px) {
+  .hero-content-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-logo-section {
+    order: 2;
+  }
+
+  .hero-intro-section {
+    order: 1;
+  }
+
+  .location-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .location-info {
+    padding: 20px;
+  }
+
+  .news-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .news-date {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 28px;
+  }
+
+  .hero-content-layout {
+    gap: 20px;
+  }
+}

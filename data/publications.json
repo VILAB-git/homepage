@@ -51,7 +51,7 @@
       "pdf_url": "https://arxiv.org/pdf/2510.23205",
       "arxiv_url": "https://arxiv.org/abs/2510.23205",
       "code_url2": "https://github.com/mickeykang16/VR-Drive",
-      "project_url2": "https://vrdriveneurips.github.io/"
+      "project_url": "https://vrdriveneurips.github.io/"
     },
     {
       "title": "Generative Active Learning for Long-tail Trajectory Prediction via Controllable Diffusion Model",

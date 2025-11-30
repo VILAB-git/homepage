@@ -87,6 +87,17 @@ class PeoplePage {
       ? `../assets/images/people/${person.image}`
       : this.getPlaceholderImage(person.category);
 
+    // 🔹 category에 따라 major 선택
+    let majorText = '';
+    if (person.category === 'phd' && person.major_phd) {
+      majorText = person.major_phd;
+    } else if (person.category === 'ms' && person.major_ms) {
+      majorText = person.major_ms;
+    } else if (person.major) {
+      // 백워드 컴패티빌리티용 (예전 데이터가 남아 있을 수도 있으니)
+      majorText = person.major;
+    }
+
     const links = [];
     if (person.website) {
       links.push(`<a href="${person.website}" target="_blank" class="person-link">Website</a>`);
@@ -102,15 +113,17 @@ class PeoplePage {
       <div class="person-card">
         <div class="person-photo">
           <img src="${imagePath}" alt="${person.name}" class="photo" style="width: 150px; height: 150px; object-fit: cover;"
-               onerror="this.src='${this.getPlaceholderImage(person.category)}'">
+              onerror="this.src='${this.getPlaceholderImage(person.category)}'">
         </div>
         <div class="person-info">
           <h3 class="person-name">${person.name}</h3>
-          ${person.major ? `<p class="person-major">${person.major}</p>` : ''}
+          ${majorText ? `<p class="person-major">${majorText}</p>` : ''}
           ${person.email ? `<p class="person-email">${person.email}</p>` : ''}
           ${person.affiliation ? `<p class="person-affiliation">${person.affiliation}</p>` : ''}
           ${person.researchInterests ? `
-            <p class="research-interests" style="font-weight: normal;"><span style="font-weight: bold;">Research Interests:</span> ${person.researchInterests.join(', ')}</p>
+            <p class="research-interests" style="font-weight: normal;">
+              <span style="font-weight: bold;">Research Interests:</span> ${person.researchInterests.join(', ')}
+            </p>
           ` : ''}
           ${person.role ? `<p class="role" style="font-weight: normal;">${person.role}</p>` : ''}
           ${links.length > 0 ? `<div class="person-links">${links.join('')}</div>` : ''}

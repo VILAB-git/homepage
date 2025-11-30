@@ -54,36 +54,63 @@ function initializeNavigation() {
   }
 }
 
-// Load news items from JSON (homepage only)
+// // Load news items from JSON (homepage only)
+// async function loadNews() {
+//   if (!newsList) return;
+
+//   try {
+//     // Load news data from JSON
+//     if (allNewsData.length === 0) {
+//       allNewsData = await window.dataManager.getNews();
+//     }
+
+//     newsList.innerHTML = '';
+
+//     for (let i = 0; i < Math.min(currentNewsCount, allNewsData.length); i++) {
+//       const newsItem = createNewsItem(allNewsData[i]);
+//       newsList.appendChild(newsItem);
+//     }
+
+//     // Hide "Load More" button if all news are displayed
+//     const loadMoreBtn = document.querySelector('.news-actions button');
+//     if (loadMoreBtn) {
+//       if (currentNewsCount >= allNewsData.length) {
+//         loadMoreBtn.style.display = 'none';
+//       } else {
+//         loadMoreBtn.style.display = 'inline-block';
+//       }
+//     }
+//   } catch (error) {
+//     console.error('Error loading news:', error);
+//     // Show error message to user
+//     newsList.innerHTML = '<div class="news-item"><div class="news-content">Error loading news. Please try again later.</div></div>';
+//   }
+// }
+
+// // Load news items from JSON
 async function loadNews() {
   if (!newsList) return;
 
   try {
-    // Load news data from JSON
+    // 최신 3개만
     if (allNewsData.length === 0) {
-      allNewsData = await window.dataManager.getNews();
+      allNewsData = await window.dataManager.getNews({ limit: 5 });
     }
 
     newsList.innerHTML = '';
 
-    for (let i = 0; i < Math.min(currentNewsCount, allNewsData.length); i++) {
-      const newsItem = createNewsItem(allNewsData[i]);
+    allNewsData.forEach(item => {
+      const newsItem = createNewsItem(item);
       newsList.appendChild(newsItem);
-    }
+    });
 
-    // Hide "Load More" button if all news are displayed
+    // 메인에서는 "Load More" 버튼 숨겨도 됨
     const loadMoreBtn = document.querySelector('.news-actions button');
-    if (loadMoreBtn) {
-      if (currentNewsCount >= allNewsData.length) {
-        loadMoreBtn.style.display = 'none';
-      } else {
-        loadMoreBtn.style.display = 'inline-block';
-      }
-    }
+    if (loadMoreBtn) loadMoreBtn.style.display = 'none';
   } catch (error) {
     console.error('Error loading news:', error);
-    // Show error message to user
-    newsList.innerHTML = '<div class="news-item"><div class="news-content">Error loading news. Please try again later.</div></div>';
+    newsList.innerHTML =
+      '<div class="news-item"><div class="news-content">Error loading news. Please try again later.</div></div>';
   }
 }
 
@@ -92,29 +119,28 @@ function createNewsItem(news) {
   const newsItem = document.createElement('div');
   newsItem.className = 'news-item';
 
-  // Add category class for styling
-  if (news.category) {
-    newsItem.classList.add(`news-${news.category}`);
-  }
+  if (news.category) newsItem.classList.add(`news-${news.category}`);
+  if (news.featured) newsItem.classList.add('news-featured');
 
-  // Add featured class
-  if (news.featured) {
-    newsItem.classList.add('news-featured');
-  }
+  const formattedDate = window.dataManager.formatDate(news.date, 'short');
+  const summary = news.summary || news.content || '';
+
+  // 상세 페이지 링크
+  const detailUrl = `pages/news-detail.html?id=${encodeURIComponent(
+    news.slug || news.id
+  )}`;
 
   newsItem.style.opacity = '0';
   newsItem.style.transform = 'translateY(20px)';
 
-  // Format date using data manager
-  const formattedDate = window.dataManager.formatDate(news.date, 'short');
-
   newsItem.innerHTML = `
-    <div class="news-date">[${formattedDate}]</div>
-    <div class="news-content">${news.content}</div>
-    ${news.category ? `<div class="news-category">${news.category}</div>` : ''}
+    <a href="${detailUrl}" class="news-link-card">
+      <div class="news-date">[${formattedDate}]</div>
+      <div class="news-title">${news.title}</div>
+      <div class="news-summary">${summary}</div>
+    </a>
   `;
 
-  // Animate the news item
   setTimeout(() => {
     newsItem.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     newsItem.style.opacity = '1';

@@ -1,5 +1,487 @@
 {
   "news": [
+    {
+      "id": "2025-august-admission",
+      "type": "admission",
+      "date": "2025-08-28",
+      "title": "New students joined VILAB (August 2025)",
+      "summary": "We welcome a new MS student to VILAB.",
+      "people": {
+        "ms": [
+          "Youngho Kim"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS student to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2025-iccv",
+      "type": "publication",
+      "date": "2025-06-26",
+      "title": "Papers accepted to ICCV 2025",
+      "summary": "12 papers from VILAB are accepted to ICCV 2025.",
+      "venue": "ICCV 2025",
+      "pub_venue": "ICCV",
+      "pub_year": 2025
+    },
+    {
+      "id": "2025-march-wacv-test-of-time-award",
+      "type": "award",
+      "date": "2025-03-18",
+      "title": "Winning the Test of Time Award at IEEE/CVF WACV 2025",
+      "summary": "Professor Kuk-Jin Yoon has won the Test of Time Award at IEEE/CVF WACV 2025.",
+      "description": "We are glad to introduce Professor <strong>Kuk-Jin Yoon</strong>'s remarkable achievement in winning the <strong>Test of Time Award at the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025)</strong>.<br><br>Professor Kuk-Jin Yoon’s research group in the Department of Mechanical Engineering at KAIST, in collaboration with Professor Ming-Hsuan Yang at UC Merced and Professor Jongwoo Lim at Seoul National University, has been honored with the Test of Time Award at the 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025) for their 2015 paper, <i><strong>Bayesian Multi-object Tracking using Motion Context from Multiple Objects</strong></i>.<br><br>The Test of Time Award is a prestigious recognition given to outstanding research that continues to influence both academia and industry long after its publication. Highly regarded in the field of Multi-Object Tracking (MOT), this paper remains extensively cited and widely applied even a decade later.<br><br>In this work, the authors introduced the concept of motion context into a Bayesian multi-object tracking framework, proposing a novel approach that overcomes the limitations of existing methods. By employing a Relative Motion Network (RMN) to model relative movements among objects, they successfully mitigated the effects of global camera motion and enhanced tracking accuracy. This pioneering method has significantly contributed to the advancement of multi-object tracking technology and has seen practical adoption in various domains, including autonomous driving, video surveillance, and sports analytics.<br><br>IEEE/CVF WACV is recognized as one of the leading conferences in the computer vision community, particularly esteemed for its focus on application-oriented research. This award stands as a testament to the enduring global impact and research excellence demonstrated by Professor Yoon's group.",
+      "images": [
+        {
+          "src": "../assets/images/news/25_wacv_test_of_time_award/WACV25-1.jpg",
+          "alt": "WACV 2025 Test of Time Award ceremony"
+        },
+        {
+          "src": "../assets/images/news/25_wacv_test_of_time_award/WACV25-4.jpg",
+          "alt": "WACV 2025 Test of Time Award certificate"
+        }
+      ],
+      "links": [
+        {
+          "label": "KAIST Official News",
+          "url": "https://www.kaist.ac.kr/news/html/news/?mode=V&mng_no=44715&skey=category&sval=etc&list_s_date=&list_e_date=&GotoPage=1"
+        },
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=956"
+        }
+      ]
+    },
+    {
+      "id": "2025-march-nvidia-internship",
+      "type": "career",
+      "date": "2025-03-17",
+      "title": "NVIDIA Korea Internship Participation News",
+      "summary": "VILab member Yujeong Chae participated in the NVIDIA Korea internship program.",
+      "description": "Ph.D student <strong>Yujeong Chae</strong> got the opportunity to participate in the <strong>NVIDIA Korea internship</strong> as an engineering intern to gain extensive experience. Congratulations!",
+      "people": [
+        {
+          "name": "Yujeong Chae",
+          "career": "engineering intern in the NVIDIA Korea internship program"
+        }
+      ]
+    },
+    {
+      "id": "2025-february-admission",
+      "type": "admission",
+      "date": "2025-02-24",
+      "title": "New students joined VILAB (February 2025)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "Seonkyu Song",
+          "Yujin Bae",
+          "Jiyong Boo",
+          "Jinnyeong Yang",
+          "Hyemin Yang",
+          "Wonyoung Lee"
+        ],
+        "phd": [
+          "Minseok Kim",
+          "Jae-Young Kang",
+          "Hoyong Kwon"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2025-february-graduation",
+      "type": "graduation",
+      "date": "2025-02-23",
+      "title": "February 2025 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Minseok Kim",
+          "Jae-Young Kang",
+          "Hoyong Kwon",
+          "Youngjin Oh"
+        ],
+        "phd": [
+          "Seongyong Ahn",
+          "Taewoo Kim",
+          "Sung-Hoon Yoon",
+          "Daehee Park",
+          "Hyeokjun Kweon",
+          "Taeyeop Lee"
+        ]
+      },
+      "description": "Congratulations to our PhD and master's graduates, and we wish them all the best in their future endeavors!"
+    },
+    {
+      "id": "2025-february-professor-appointments",
+      "type": "career",
+      "date": "2025-02-23",
+      "title": "Hyeokjun Kweon, Daehee Park, and Sung-Hoon Yoon Appointed as University Professors",
+      "summary": "Three VILAB members have been appointed as university professors at different institutions.",
+      "description": "🎉 We would like to congratulate Hyeokjun Kweon, Daehee Park, and Sung-Hoon Yoon on their well-deserved appointments as university professors. This is an outstanding achievement, and we are excited to see them continue to contribute to academia and inspire future generations of researchers. 🎉",
+      "people": [
+        {
+          "name": "Hyeokjun Kweon",
+          "career": "Assistant Professor at the Graduate School of Advanced Imaging Science, Chung-Ang University",
+          "career_ko": "중앙대학교 첨단영상대학원 조교수 임용",
+          "article_title": "Professor Appointment of Hyeokjun Kweon",
+          "article_url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=924"
+        },
+        {
+          "name": "Daehee Park",
+          "career": "Assistant Professor in the Department of Electrical, Electronic, and Computer Engineering at DGIST",
+          "career_ko": "DGIST 전기전자컴퓨터공학과 조교수 임용",
+          "article_title": "Professor Appointment of Daehee Park",
+          "article_url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=925"
+        },
+        {
+          "name": "Sung-Hoon Yoon",
+          "career": "Assistant Professor in the Department of Electrical, Electronic, and Computer Engineering at DGIST",
+          "career_ko": "DGIST 전기전자컴퓨터공학과 조교수 임용",
+          "article_title": "Professor Appointment of Sung-Hoon Yoon",
+          "article_url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=926"
+        }
+      ]
+    },
+    {
+      "id": "2025-february-kaist-ai-institute-service",
+      "type": "service",
+      "date": "2025-02-19",
+      "title": "Professor Kuk-Jin Yoon Appointed as Deputy Director of KAIST AI Institute",
+      "summary": "Professor Kuk-Jin Yoon appointed as Deputy Director of KAIST AI Institute.",
+      "description": "We are pleased to announce that professor <strong>Kuk-Jin Yoon</strong> has been appointed as the <strong>Deputy Director of the KAIST AI Institute</strong>, a prestigious role that recognizes his outstanding expertise and leadership in the field of artificial intelligence.<br><br>The KAIST AI Institute will serve as a <strong>key research hub</strong>, integrating AI research capabilities currently dispersed across Daejeon, as well as Hongneung and Yangjae in Seoul. The institute is expected to be built in Pangyo Techno Valley by the end of 2027, creating synergy with relevant organizations.<br><br>For more details, please visit the official website and check the related news:<br>",
+      "links": [
+        {
+          "label": "KAIST AI Institute Official Website",
+          "url": "https://kaist-ai-institute.github.io/"
+        },
+        {
+          "label": "Related News Article 1",
+          "url": "https://www.aitimes.kr/news/articleView.html?idxno=30237"
+        },
+        {
+          "label": "Related News Article 2",
+          "url": "https://www.yna.co.kr/view/AKR20240201052100061"
+        },
+        {
+          "label": "Related News Video 1",
+          "url": "https://www.youtube.com/watch?v=c2GVi_5Oc5Q"
+        }
+      ]
+    },
+    {
+      "id": "2025-february-area-chair-roles",
+      "type": "service",
+      "date": "2025-02-19",
+      "title": "Professor Kuk-Jin Yoon Appointed as Area Chair for ICML 2025 and NeurIPS 2025, and Senior Area Chair for ICCV 2025",
+      "summary": "Professor Kuk-Jin Yoon will serve as Area Chair for ICML 2025 and NeurIPS 2025, and Senior Area Chair for ICCV 2025.",
+      "description": "We are proud to announce that Professor <strong>Kuk-Jin Yoon</strong> has been appointed as an <strong>Area Chair for ICML 2025 and NeurIPS 2025</strong>, as well as a <strong>Senior Area Chair for ICCV 2025</strong>.<br><br> These prestigious roles highlight his contributions to the field and his dedication to advancing research in machine learning and computer vision.",
+      "links": [
+        {
+          "label": "ICML 2025",
+          "url": "https://icml.cc/"
+        },
+        {
+          "label": "NeurIPS 2025",
+          "url": "https://neurips.cc/"
+        },
+        {
+          "label": "ICCV 2025",
+          "url": "https://iccv.thecvf.com/"
+        }
+      ]
+    },
+    {
+      "id": "2024-qif-award",
+      "type": "award",
+      "date": "2024-12-03",
+      "title": "QIF 2024 South Korea: Two Papers from Visual Intelligence Lab Selected for Winners",
+      "summary": "Two papers from Visual Intelligence Lab were selected as winners at QIF 2024 South Korea.",
+      "description": "🎉 We are excited to announce that two papers,<br><br><strong>From SAM to CAMs: Exploring Segment Anything Model for Weakly Supervised Semantic Segmentation</strong> by Hyeokjun Kweon and Kuk-Jin Yoon<br><br>\nand<br><br>\n<strong>Multi-agent Long-term 3D Human Pose Forecasting via Interaction-aware Trajectory Conditioning</strong> by Jaewoo Jeong, Daehee Park and Kuk-Jin Yoon, have been awarded to <b>QIF 2024</b> in South Korea!<br><br>\nThis program is part of the Qualcomm Innovation Fellowship 2024 Korea, a scholarship selection program for qualified papers, open to Master's and PhD students at specific universities in South Korea.<br><br>\nThese groundbreaking studies have garnered attention for their innovative contributions to AI and future technologies.<br><br>\nBoth papers reflect outstanding achievements from our research teams.<br><br>\nWe sincerely thank all contributors and look forward to your continued support.<br>",
+      "images": [
+        {
+          "src": "../assets/images/news/24QIF/QIF24-1.png",
+          "alt": "QIF 2024 South Korea award ceremony"
+        },
+        {
+          "src": "../assets/images/news/24QIF/QIF24-2.jpg",
+          "alt": "QIF 2024 Jaewoo Jeong"
+        },
+        {
+          "src": "../assets/images/news/24QIF/QIF24-3.jpg",
+          "alt": "QIF 2024 Hyeokjun Kweon"
+        }
+      ],
+      "links": [
+        {
+          "label": "QIF 2024 Program",
+          "url": "https://www.qualcomm.com/research/university-relations/innovation-fellowship/2024-south-korea"
+        }
+      ]
+    },
+    {
+      "id": "2024-october-HMG-organizer",
+      "type": "service",
+      "date": "2024-10-19",
+      "title": "Professor Kuk-Jin Yoon Appointed as an Organizer for the 2025 HMG Autonomous Driving Challenge",
+      "summary": "Professor Kuk-Jin Yoon appointed as an organizer for the 2025 Hyundai Motor Group (HMG) Autonomous Driving Challenge.",
+      "description": "We are thrilled to share that Professor <strong>Kuk-Jin Yoon</strong> has been appointed as an <strong>organizer for the 2025 Hyundai Motor Group (HMG) Autonomous Driving Challenge</strong>!<br><br> Hosted by Hyundai Motor Group, the HMG Autonomous Driving Challenge is one of Korea’s premier autonomous driving competitions, where university teams develop AI-driven self-driving systems capable of perceiving complex environments, understanding road structures, and performing mission-based driving tasks in real time.<br><br> As an organizer, Professor Yoon will play a key role in shaping the technical direction of the 2025 challenge—including task design, evaluation criteria, and scenario composition—drawing on his extensive research experience in computer vision, multi-sensor fusion, and autonomous driving technologies. His involvement is expected to further strengthen the challenge’s academic and industrial impact, fostering deeper collaboration between research communities and the automotive industry.<br><br> The upcoming 2025 challenge aims to increase realism with more diverse sensor configurations, complex urban environments, and mission-critical driving conditions, encouraging participants to push the boundaries of perception and decision-making algorithms. Our lab is excited to see Professor Yoon’s contributions help advance innovation in autonomous driving research and support the development of the next generation of talented engineers and researchers.<br><br> For more details on the competition, please visit the official website: ",
+      "links": [
+        {
+          "label": "HMG Autonomous Driving Challenge Official Website",
+          "url": "http://hmgautonomousdrivingchallenge.com/"
+        }
+      ]
+    },
+    {
+      "id": "2023-april-tpami-associate-editor",
+      "type": "service",
+      "date": "2023-04-13",
+      "title": "Professor Kuk-Jin Yoon has been appointed as an Associate Editor for IEEE TPAMI",
+      "summary": "Professor Kuk-Jin Yoon has been appointed as an Associate Editor for IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI).",
+      "description": "Professor <strong>Kuk-Jin Yoon</strong> has been appointed as an <strong>Associate Editor for IEEE Transactions on Pattern Analysis and Machine Intelligence (IEEE TPAMI)</strong>.<br><br> TPAMI is a prestigious academic journal published by the IEEE, publishing research papers in the fields of computer vision, image processing, pattern recognition, and machine learning.<br><br> With a 2-year Impact Factor (IF) of 24.31, TPAMI boasts the highest IF in the fields of computer vision and AI.",
+      "links": [
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=636"
+        }
+      ]
+    },
+    {
+      "id": "2023-samsung-human-tech-award",
+      "type": "award",
+      "date": "2023-03-02",
+      "title": "Won a Bronze Prize at Signal Proscessing Division of 29th Samsung Humantech Paper Award",
+      "summary": "Hyeokjun Kweon and Sung-Hoon Yoon won a bronze prize at 'Signal Proscessing' division of 29th Samsung Humantech Paper Award.",
+      "description": "Ph.D Candidate, <strong>Hyeokjun Kweon</strong> and <strong>Sung-Hoon Yoon (Prof: Kuk-Jin Yoon)</strong> won a <strong>bronze prize</strong> at <strong>'Signal Proscessing' division of 29th Samsung Humantech Paper Award</strong>.<br><br> Hyeokjun Kweon and Sung-Hoon Yoon, the award winners, presented a research paper titled <i><strong>Weakly Supervised Semantic Segmentation via Adversarial Erasing and Reconstruction Learning</strong></i>. The corresponding paper is accepted to CVPR 2023.",
+      "images": [
+        {
+          "src": "../assets/images/news/23_29th_samsung_humantech/29th_samsunghumantech-1.jpg",
+          "alt": "Samsung Humantech Paper Award certificate"
+        }
+      ],
+      "links": [
+        {
+          "label": "Samsung Humantech",
+          "url": "https://humantech.samsung.com/saitext/index.jsp"
+        },
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=602"
+        }
+      ]
+    },
+    {
+      "id": "2023-ipiu-award",
+      "type": "award",
+      "date": "2023-02-10",
+      "title": "Won a Gold Prize at 35th Workshop on Image Processing and Understanding (IPIU 2023)",
+      "summary": "Taewoo Kim, Yujeong Chae, and Hyun-Kurl Jang won a gold prize at 35th Workshop on Image Processing and Understanding (IPIU 2023).",
+      "description": "VILab Students <strong>Taewoo Kim, Yujeong Chae, and Hyun-Kurl Jang (Prof. Kuk-Jin Yoon)</strong> received the <strong>Gold Award for Outstanding Paper at the 2023 Workshop on Image Processing and Understanding (IPIU 2023)</strong>, hosted by the Korea Computer Vision Society, held from February 8th to 10th.<br> IPIU, now in its 35th year, is the largest and most prestigious workshop in the field of image processing in Korea.<br><br> The award-winning students, Taewoo Kim, Yujeong Chae, and Hyun-Kurl Jang, presented a paper titled <i><strong>Event-guided Video Frame Interpolation with Bi-modal Asymmetric Motion Fields</strong></i> and demonstrated their excellence. <br><br> The research team developed an algorithm for upsampling the frame rate of an RGB camera using an event camera, which provides asynchronous event data with very low latency. To address the problem of relying on approximation-based methods for estimating bidirectional motion fields in existing video frame interpolation approaches, this paper proposes an asymmetric bidirectional motion field estimation method that carefully considers the characteristics of the RGB camera used in event cameras.<br><br> Furthermore, we developed hardware based on a beam-splitter setup for high-resolution event cameras and RGB cameras. We demonstrated the superiority of this method by proposing the ERF-X170XPS dataset, a large-scale video frame interpolation dataset using event cameras. <br><br> This research is expected to be highly useful in environments requiring the analysis of ultra-high-speed motion, such as drones and autonomous vehicles.",
+      "images": [
+        {
+          "src": "../assets/images/news/23_ipiu/23_ipiu_1.jpg",
+          "alt": "IPIU 2023 Gold Prize certificate"
+        }
+      ],
+      "links": [
+        {
+          "label": "IPIU 2023",
+          "url": "http://ipiu2023.ipiu.or.kr/"
+        },
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=601"
+        }
+      ]
+    },
+    {
+      "id": "2022-pbvs-sshodc-challenge",
+      "type": "award",
+      "date": "2022-04-01",
+      "title": "Winning the 2nd place in PBVS SSHODC 2022 challenge",
+      "summary": "We won the 2nd place in PBVS Semi-Supervised Hyperspectral Object Detection Challenge(SSHODC) 2022 (Pranjay Shyam, Kyung-Soo Kim, and Kuk-Jin Yoon).",
+      "description": "We won the 2nd place in PBVS Semi-Supervised Hyperspectral Object Detection Challenge(SSHODC) 2022 (Pranjay Shyam, Kyung-Soo Kim, and Kuk-Jin Yoon).",
+      "images": [
+      ],
+      "links": [
+      ]
+    },
+    {
+      "id": "2022-ipiu-award",
+      "type": "award",
+      "date": "2022-02-10",
+      "title": "VILab Wins Grand Prize and Gold Prize at 34th Workshop on Image Processing and Understanding (IPIU 2022)",
+      "summary": "VILab Wins Grand Prize and Gold Prize at 34th Workshop on Image Processing and Understanding (IPIU 2022).",
+      "description": "VILab achieved outstanding recognition at the <strong>34th Workshop on Image Processing and Image Understanding (IPIU 2022)</strong>, held on February 9-11 and organized by the Korean Computer Vision Society. IPIU, now in its 34th year, is one of the most prestigious and largest academic workshops in Korea in the field of image and video processing. This year's hybrid-format event received over 250 submissions, of which 227 papers were accepted, including 16 selected for oral presentations.<br><br> VILab earned both the <strong>Grand Prize</strong>, awarded to the single best paper among all Outstanding Paper Award candidates, and a <strong>Gold Prize</strong>, which is given to two additional top papers.<br><br> A VILab team consisting of <strong>Changgyoon Oh, Won-June Cho, Daehee Park, and Yujeong Chae</strong> received the <strong>Grand Prize</strong> for the paper <i><strong>BIPS: Bi-modal Indoor Panorama Synthesis via Residual Depth-aided Adversarial Learning</i></strong>.<br> The work proposes an RGB-D panorama generation framework that reconstructs complete 3D indoor environments from limited and arbitrarily structured RGB-D inputs. By designing a Residual Depth-aided Adversarial Learning (RDAL) method, the paper demonstrates the ability to synthesize realistic virtual indoor spaces suitable for VR and metaverse applications.<br><br> Another VILab team <strong>Sung-Hoon Yoon, Hyeokjun Kweon, Jaeseok Jeong, Hyunseong Kim, and Shinjeong Kim</strong> won the <strong>Gold Prize</strong> for the paper <i><strong>Exploring Pixel-level Self-supervision for Weakly Supervised Semantic Segmentation</strong></i>.<br> The study introduces a new contrastive-learning-based framework for Weakly Supervised Semantic Segmentation that achieves state-of-the-art performance on the PASCAL VOC 2012 benchmark, highlighting its strong effectiveness even under limited supervision.",
+      "images": [
+        {
+          "src": "../assets/images/news/22_ipiu/22_ipiu_1.png",
+          "alt": "IPIU 2022 Grand Prize certificate"
+        },
+        {
+          "src": "../assets/images/news/22_ipiu/22_ipiu_2.png",
+          "alt": "IPIU 2022 Gold Prize certificate"
+        }
+      ],
+      "links": [
+        {
+          "label": "IPIU 2022",
+          "url": "http://ipiu2022.ipiu.or.kr/"
+        },
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=456"
+        }
+      ]
+    },
+    {
+      "id": "2021-ieee-spectrum",
+      "type": "media",
+      "date": "2021-08-07",
+      "title": "Our work on Event-based Omnidirectional Multi-view Stereo (EOMVS) was introduced in IEEE Spectrum",
+      "summary": "Our work on Event-based Omnidirectional Multi-view Stereo (EOMVS) was introduced in IEEE Spectrum.",
+      "description": "Our work on <strong>Event-based Omnidirectional Multi-view Stereo (EOMVS)</strong> was introduced in <strong>IEEE Spectrum</strong>, with the title <i><strong>This Camera Can 'See' the Bigger Picture: Researchers' new camera spots fast-moving objects over a wide angle of view.</strong></i>",
+      "images": [
+      ],
+      "links": [
+        {
+          "label": "IEEE Spectrum Article",
+          "url": "https://spectrum.ieee.org/new-camera-sees-more"
+        }
+      ]
+    },
+    {
+      "id": "2021-cvprw-dsec-competition",
+      "type": "award",
+      "date": "2021-06-16",
+      "title": "VILab won CVPRW 2021 DSEC competition",
+      "summary": "VILab won CVPRW 2021 DSEC competition.",
+      "description": "VILab won CVPR 2021 Workshop DSEC competition.<br><br> <i><strong>EI-Stereo</strong></i> by <strong>S. Mohammad Mostafavi I., Yeongwoo Nam, Kuk-Jin Yoon, and Jonghyun Choi</strong> achieves the best performance using both the event data and image (E + I).<br><br> And <i><strong>CESNet</strong></i> by <strong>Hyeokjun Kweon, Jaeseok Jeong, Sung-hoon Yoon, Yujeong Chae, and Kuk-Jin Yoon</strong> achieves the best performance using only event data.<br><br> Overall, the methods won first and second place in the competition.",
+      "images": [
+      ],
+      "links": [
+        {
+          "label": "CVPRW 2021 DSEC competition results",
+          "url": "https://dsec.ifi.uzh.ch/cvpr-2021-competition-results/"
+        },
+        {
+          "label": "EI-Stereo Report",
+          "url": "https://dsec.ifi.uzh.ch/wp-content/uploads/sourcenova/uni-comp/cvprw-2021-competition/submissions/9/details.pdf"
+        },
+        {
+          "label": "CESNet Report",
+          "url": "https://dsec.ifi.uzh.ch/wp-content/uploads/sourcenova/uni-comp/cvprw-2021-competition/submissions/15/details.pdf"
+        }
+      ]
+    },
+    {
+      "id": "2021-ipiu-award",
+      "type": "award",
+      "date": "2021-02-03",
+      "title": "Won a Silver Prize at 33th Workshop on Image Processing and Understanding (IPIU 2021)",
+      "summary": "Lin Wang, Yujeong Chae, and Sung-Hoon Yoon won a silver prize at 33th Workshop on Image Processing and Understanding (IPIU 2021).",
+      "description": "The paper <strong><i>EvDistill: Asynchronous Events to End-task Learning via Bidirectional Reconstruction-guided Cross-modal Knowledge Distillation</strong></i> by <strong>Lin Wang, Yujeong Chae, Sung-Hoon Yoon, and Kuk-Jin Yoon</strong> won the <strong>Silver Prize</strong> award at Domestic Workshop on 33th Image Processing and Image Understanding (IPIU 2021).",
+      "images": [
+      ],
+      "links": [
+        {
+          "label": "IPIU 2021",
+          "url": "http://archive.ipiu.or.kr/2021/index.php"
+        }
+      ]
+    },
+    {
+      "id": "2020-minister-of-science-and-ict-commendation",
+      "type": "award",
+      "date": "2020-12-24",
+      "title": "Professor Kuk-Jin Yoon received a commendation from the Minister of Science and ICT",
+      "summary": "Professor Kuk-Jin Yoon received a commendation from the Minister of Science and ICT.",
+      "description": "Recognized for his contribution to the development of the artificial intelligence industry and the promotion of the Internet,  Prof. <strong>Kuk-Jin Yoon</strong> received a <strong>commendation from the Minister of Science and ICT</strong>.",
+      "images": [
+        {
+          "src": "../assets/images/news/20_science_and_ict_commendation/20_science_and_ict_commendation_1.png",
+          "alt": "Minister of Science and ICT Commendation Certificate"
+        }
+      ],
+      "links": [
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=265"
+        }
+      ]
+    },
+    {
+      "id": "2020-kccv-test-of-time-award",
+      "type": "award",
+      "date": "2020-08-17",
+      "title": "Winning the test-of-time award at KCCV 2020",
+      "summary": "Professor Kuk-Jin Yoon has won the Test of Time Award at Domestic Conference on 7th Korean Conference on Computer Vision (KCCV 2020).",
+      "description": "The paper <strong><i>Robust Online Multi-Object Tracking based on Tracklet Confidence and Online Discriminative Appearance Learning</i></strong> by <strong>Seung-hwan Bae, and Kuk-Jin Yoon</strong> won the <strong>test-of-time paper award</strong> at Domestic Conference on 7th Korean Conference on Computer Vision (KCCV 2020).",
+      "images": [
+      ],
+      "links": [
+      ]
+    },
+    {
+      "id": "2020-september-professor-appointments",
+      "type": "career",
+      "date": "2020-09-22",
+      "title": "Yeong-Jun Cho Appointed as Chonnam National University Assistant Professor",
+      "summary": "VILAB member Yeong-Jun Cho has been appointed as a university professor at Chonnam National University.",
+      "description": "🎉 We would like to congratulate Yeong-Jun Cho on his well-deserved appointment as a university professor. This is an outstanding achievement, and we are excited to see him continue to contribute to academia and inspire future generations of researchers. 🎉",
+      "people": [
+        {
+          "name": "Yeong-Jun Cho",
+          "career": "Assistant Professor at Chonnam National University",
+          "career_ko": "전남대학교 조교수 임용"
+        }
+      ]
+    },
+    {
+      "id": "2029-ksc-paper-award",
+      "type": "award",
+      "date": "2019-12-20",
+      "title": "Winning the best paper award at KSC 2019",
+      "summary": "Winning the best paper award at Domestic Workshop on 3rd Korea Software Congress (KSC 2019).",
+      "description": "The paper <strong><i>Event to HDR, Depth and Motion Images by Multi Task Learning</i></strong> by <strong>S.Mohammad Mostafavi I., Jonghyun Choi, Kuk-Jin Yoon</strong> won the <strong>best paper award</strong> at Domestic Workshop on 3rd Korea Software Congress (KSC 2019).",
+      "images": [
+      ],
+      "links": [
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=158"
+        }
+      ]
+    },
+    {
+      "id": "2019-ipiu-award",
+      "type": "award",
+      "date": "2019-02-15",
+      "title": "VILab Wins Gold Prize and Bronze Prize at 31th Workshop on Image Processing and Understanding (IPIU 2019)",
+      "summary": "VILab Wins Gold Prize and Bronze Prize at 31th Workshop on Image Processing and Understanding (IPIU 2019).",
+      "description": "VILab achieved outstanding recognition at the <strong>31th Workshop on Image Processing and Image Understanding (IPIU 2019)</strong>, held on February 13-15 and organized by the Korean Computer Vision Society.<br><br> VILab earned both the <strong>Gold Prize</strong> and a <strong>Bronze Prize</strong>.<br><br> A VILab team consisting of <strong>Yeon-Kun Lee, Jaeseok Jeong, Jong-Seob Yoon, Won-June Cho, and Kuk-Jin Yoon</strong> received the <strong>Gold Prize</strong> for the paper <i><strong>정20면체 기반 360도 이미지 표현 및 CNN 적용 방법</i></strong>.<br><br> Another VILab team <strong>S.Mohammad Mostafavi I., Lin Wang, Yo-Sung Ho, and Kuk-Jin Yoon</strong> won the <strong>Bronze Prize</strong> for the paper <i><strong>Event-based HDR Image and Very HFR Video Generation using cGANs</strong></i>.",
+      "images": [
+      ],
+      "links": [
+        {
+          "label": "KAIST ME News",
+          "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=21"
+        }
+      ]
+    },
+    {
+      "id": "2018-fcv-best-student-paper-award",
+      "type": "award",
+      "date": "2018-03-05",
+      "title": "Winning the best student paper award at FCV 2018",
+      "summary": "Young-Chul Yoon won the best student paper award at International Workshop on Frontiers of Computer Vision (FCV 2018)",
+      "description": "The paper <strong><i>Animal Detection in Huge Air-view images using CNN-based Sliding Window</i></strong> by <strong>Young-Chul Yoon and Kuk-Jin Yoon</strong> won the <strong>best student paper award</strong> at International Workshop on Frontiers of Computer Vision (FCV 2018).",
+      "images": [
+      ],
+      "links": [
+      ]
+    }
 
   ]
 }

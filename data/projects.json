@@ -11,6 +11,18 @@
   },
   "projects": [
     {
+      "title": "GS E&C-KAIST Joint R&D on Urban AI Technologies for Future Cities",
+      "category": "computer-vision",
+      "status": "ongoing",
+      "description": "TBD.",
+      "funding": "GS E&C",
+      "duration": "08/2025 - 08/2028",
+      "role": "PI",
+      "links": {
+        "CAUS Website": "https://caus.kaist.ac.kr/"
+      }
+    },
+    {
       "title": "Development of a C-arm X-ray Video Engine",
       "category": "computer-vision",
       "status": "ongoing",
@@ -139,7 +151,7 @@
     {
       "title": "Development of Data Augmentation and Sensor Fusion Technologies for Robust Autonomous Driving",
       "category": "computer-vision",
-      "status": "ongoing",
+      "status": "completed",
       "description": "TBD.",
       "funding": "42dot",
       "duration": "12/2024 - 11/2025",
@@ -149,7 +161,7 @@
     {
       "title": "Samsung Electronics DS Division Strategic Industry-Academia Project",
       "category": "computer-vision",
-      "status": "ongoing",
+      "status": "completed",
       "description": "TBD.",
       "funding": "Samsung Electronics",
       "duration": "09/2023 - 09/2025",

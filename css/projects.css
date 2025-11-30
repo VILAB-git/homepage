@@ -1,0 +1,169 @@
+/* ===== projects.css ===== */
+
+.projects-section {
+  padding: 50px 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));  /* 1열 고정 */
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.project-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 9px;
+  padding: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.project-icon {
+  font-size: 24px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.project-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.project-details {
+  margin-bottom: 20px;
+}
+
+.project-status,
+.project-funding {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.status-label,
+.funding-label {
+  font-weight: 500;
+  color: #666;
+}
+
+/* Status text */
+span.ongoing {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+span.completed {
+  color: #555;
+  font-weight: 600;
+}
+
+/* Status badge (if 사용) */
+.status-badge {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-badge.ongoing {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.status-badge.new {
+  background: #e8f5e8;
+  color: #388e3c;
+}
+
+.status-badge.completed {
+  background: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.funding-source {
+  color: #555;
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.project-link:hover {
+  background: #FFC109;
+  color: #fff;
+  border-color: #FFC109;
+}
+
+/* Collaboration section */
+.collaboration-section {
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.collaboration-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.collaboration-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  border-left: 3px solid #FFC109;
+}
+
+.collaboration-item h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.collaboration-item p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}

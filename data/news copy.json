@@ -1,6 +1,27 @@
 {
   "news": [
     {
+      "id": "2025-neurips",
+      "type": "publication",
+      "date": "2025-12-20",
+      "title": "A paper accepted to NeurIPS 2025",
+      "summary": "1 paper from VILAB is accepted to NeurIPS 2025.",
+      "venue": "NeurIPS 2025",
+      "pub_venue": "NeurIPS",
+      "pub_year": 2025
+    },
+    {
+      "id": "2025-cvpr",
+      "type": "publication",
+      "date": "2025-02-20",
+      "title": "Papers accepted to CVPR 2025",
+      "summary": "4 papers and 1 workshop paper from VILAB are accepted to CVPR 2025.",
+      "venue": "CVPR 2025",
+      "pub_venue": "CVPR",
+      "pub_year": 2025
+    },
+    
+    {
       "id": "news021",
       "date": "2025-11-09",
       "title": "Rethinking Direct Preference Optimization in Diffusion Models Accepted",
