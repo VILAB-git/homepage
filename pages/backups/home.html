@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAIST VILab</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../assets/logos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/logos/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/logos/apple-touch-icon.png">
+  <link rel="manifest" href="../../assets/logos/site.webmanifest">
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="home-page-main">
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="../../assets/logos/vilab-logo.png" alt="VILab" class="logo-img">
+          <!-- <span class="logo-text">VILab</span> -->
+        </div>
+        <ul class="nav-menu">
+          <li><a href="../home/" class="nav-link active">Home</a></li>
+          <li><a href="../people/" class="nav-link">People</a></li>
+          <li><a href="../research/" class="nav-link">Research</a></li>
+          <li><a href="../publications/" class="nav-link">Publications</a></li>
+          <li><a href="../projects/" class="nav-link">Projects</a></li>
+          <li><a href="../news/" class="nav-link">News</a></li>
+          <li><a href="../gallery/" class="nav-link">Gallery</a></li>
+          <li><a href="../contact/" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section - restructured layout -->
+    <section class="hero-main">
+      <div class="container">
+        <!-- Title section - full width -->
+        <div class="hero-title-section">
+          <h1 class="main-subtitle">KAIST</h1>
+          <h1 class="main-title">
+            Visual Intelligence Lab
+            <!-- Computer <span class="vision-highlight">V</span>ision & Machine Learning Lab -->
+          </h1>
+        </div>
+
+        <!-- Content section - logo and intro side by side -->
+        <div class="hero-content-layout">
+          <!-- Left side - VILab Logo -->
+          <div class="hero-logo-section">
+            <div class="vilab-brand">
+              <div class="vilab-logo-main">
+                <img src="../../assets/logos/vilab-main-logo.png" alt="VILab" class="main-logo-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- Right side - Introduction content -->
+          <div class="hero-intro-section">
+            <div class="welcome-section">
+              <p class="welcome-text">
+                Welcome to the <strong>Visual Intelligence Lab</strong>.
+              </p>
+            </div>
+
+            <div class="research-overview">
+              <h3>Our core research areas include:</h3>
+              <ul class="research-list">
+                <!-- <li>
+                  <strong>Generative AI:</strong> Pioneering high-fidelity text-to-image, video, and 3D generation using
+                  diffusion models and user-guided control.
+                </li>
+                <li>
+                  <strong>Robust Computer Vision:</strong> Developing reliable vision systems that perform under
+                  real-world challenges such as low light, adverse weather, autonomous driving, and other
+                  safety-critical applications.
+                </li>
+                <li>
+                  <strong>Efficient Learning:</strong> Creating resource-efficient AI through lightweight training,
+                  model compression and quantization, and dataset distillation.
+                </li>
+                <li>
+                  <strong>Trustworthy AI:</strong> Building frameworks to evaluate and mitigate AI flaws, such as
+                  hallucination and bias in generative models.
+                </li> -->
+              </ul>
+            </div>
+
+            <div class="recognition-section">
+              <p class="recognition-text">
+                <!-- Our work is consistently recognized at premier AI conferences, including CVPR, NeurIPS, and ICLR.
+                We are committed to advancing the science of AI in a collaborative and supportive environment. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <h2>Latest News</h2>
+        <div class="news-list" id="news-list">
+          <!-- News items will be loaded here by JavaScript -->
+        </div>
+        <div class="news-actions">
+          <button class="btn btn-secondary" onclick="loadMoreNews()">Load More News</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>KAIST VILab</h3>
+          <p>Visual Intelligence Lab</p>
+          <p>Korea Advanced Institute of Science and Technology</p>
+        </div>
+        <!-- <div class="footer-links">
+          <a href="mailto:contact@cvml.kaist.ac.kr" class="footer-link">Contact</a>
+          <a href="pages/apply.html" class="footer-link">Join Us</a>
+          <a href="https://github.com/kaist-vilab" class="footer-link">GitHub</a>
+        </div> -->
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KAIST Visual Intelligence Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/data-manager.js"></script>
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>

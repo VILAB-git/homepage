@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAIST VILab</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logos/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/logos/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logos/apple-touch-icon.png">
+  <link rel="manifest" href="assets/logos/site.webmanifest">
+
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="home-page-main">
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img src="assets/logos/vilab-logo.png" alt="VILab" class="logo-img">
+          <!-- <span class="logo-text">VILab</span> -->
+        </div>
+        <ul class="nav-menu">
+          <li><a href="pages/home/" class="nav-link active">Home</a></li>
+          <li><a href="pages/people/" class="nav-link">People</a></li>
+          <li><a href="pages/research/" class="nav-link">Research</a></li>
+          <li><a href="pages/publications/" class="nav-link">Publications</a></li>
+          <li><a href="pages/projects/" class="nav-link">Projects</a></li>
+          <li><a href="pages/news/" class="nav-link">News</a></li>
+          <li><a href="pages/gallery/" class="nav-link">Gallery</a></li>
+          <li><a href="pages/contact/" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-main">
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1 class="hero-kaist">KAIST</h1>
+          <h1 class="hero-title">Visual Intelligence Lab</h1>
+        </div>
+      </div>
+    </section>
+    <section class="lab-intro">
+      <div class="lab-intro-wrapper">
+    
+        <div class="lab-logo">
+          <img src="./assets/logos/vilab-logo.png" alt="VILAB Logo">
+        </div>
+    
+        <div class="lab-text">
+          <p>
+            Welcome to the <strong>Visual Intelligence Lab (VILAB)</strong> at <strong>KAIST</strong>, 
+            led by <strong>Prof. Kuk-Jin Yoon</strong>.  
+            We focus on cutting-edge research in Computer Vision, Robotics, and Machine Learning.  
+            Our goal is to develop intelligent systems capable of understanding, reconstructing, and interacting with the complex real world.
+          </p>
+    
+          <h3>Our core research areas include:</h3>
+    
+          <ul>
+            <li><strong>End-to-End Autonomous Driving</strong></li>
+            <li><strong>Generative AI & Multi-modal Language Models</strong></li>
+            <li><strong>Event-based Vision</strong></li>
+            <li><strong>3D Scene Reconstruction & Understanding</strong></li>
+          </ul>
+    
+          <p>
+            We are looking for passionate students and researchers to join our journey.<br>
+            If you're interested, please contact us at 
+            <strong class="contact-email">kjyoon@kaist.ac.kr</strong>
+          </p>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <h2>Latest News</h2>
+        <div class="news-list" id="news-list">
+          <!-- News items will be loaded here by JavaScript -->
+        </div>
+        <div class="news-actions">
+          <button class="btn btn-secondary" onclick="loadMoreNews()">Load More News</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <h3>KAIST VILab</h3>
+          <p>Visual Intelligence Lab</p>
+          <p>Korea Advanced Institute of Science and Technology</p>
+        </div>
+        <!-- <div class="footer-links">
+          <a href="mailto:contact@cvml.kaist.ac.kr" class="footer-link">Contact</a>
+          <a href="pages/apply.html" class="footer-link">Join Us</a>
+          <a href="https://github.com/kaist-vilab" class="footer-link">GitHub</a>
+        </div> -->
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 KAIST Visual Intelligence Lab. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data-manager.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
