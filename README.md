@@ -114,6 +114,8 @@ git push
 - Keep image files small (< 1MB) for fast loading
 
 ---
+---
+
 
 ## ✏️ How to Update Content
 
