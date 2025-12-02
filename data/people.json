@@ -14,6 +14,7 @@
   },
   "members": {
     "current": [
+      "Taeyeop Lee",
       "Jihun Kim",
       "Byeongin Joung",
       "Hyun-Kurl Jang",
@@ -23,6 +24,7 @@
       "Youngho Yoon",
       "Jin-Ho Kim",
       "Hunmin Yang",
+      "Minjun Kang",
       "Jongoh Jeong",
       "Changgyoon Oh",
       "Hoonhee Cho",
@@ -98,6 +100,14 @@
     ]
   },
   "peoples": [
+    {
+      "name": "Taeyeop Lee",
+      "email": "taeyeop.trevor@kaist.ac.kr",
+      "category": "postdoc",
+      "image": "TaeyeopLee.jpg",
+      "researchInterests": ["Physical AI"],
+      "website": "https://sites.google.com/view/taeyeop-lee"
+    },
     {
       "name": "Jihun Kim",
       "email": "jihun1998@kaist.ac.kr",
@@ -177,6 +187,15 @@
       "image": "HunminYang_low.jpg",
       "researchInterests": ["TBD"],
       "website": "https://hmyang1.github.io/"
+    },
+    {
+      "name": "Minjun Kang",
+      "email": "kmmj2005@kaist.ac.kr",
+      "category": "phd",
+      "major_phd": "The Robotics Program",
+      "image": "MinjunKang.jpg",
+      "researchInterests": ["World Model", "Generative AI"],
+      "website": "https://sites.google.com/view/minjun-kang"
     },
     {
       "name": "Jongoh Jeong",
