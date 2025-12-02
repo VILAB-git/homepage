@@ -52,6 +52,7 @@ Make sure you are logged in with the VILAB-git account or an account with push p
 Follow the next commands in `bash`
 ```bash
 cd VILAB-git.github.io
+git pull
 git add .
 git commit -a -m "Commit Messages"
 git push
