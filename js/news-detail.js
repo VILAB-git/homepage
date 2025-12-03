@@ -296,7 +296,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ms: 'Masters Students',
     };
 
-    const studentPlaceholder = '../assets/images/people/student-placeholder.svg';
+    const studentPlaceholder = '../../assets/images/people/student-placeholder.svg';
 
     function createAdmissionCard(name, groupKey) {
       const person = indexByName[name.trim()];
@@ -461,7 +461,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       ms: 'Masters Graduates',
     };
 
-    const studentPlaceholder = '../assets/images/people/student-placeholder.svg';
+    const studentPlaceholder = '../../assets/images/people/student-placeholder.svg';
 
     function createGradCard(name, groupKey) {
       const person = indexByName[name.trim()];
@@ -758,7 +758,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       const person = indexByName[name.trim()];
 
       // 위쪽: people 카드 요약 (사진, 이름, 학위+전공, 이메일, 개인 홈페이지)
-      const placeholderImg = '../assets/images/people/student-placeholder.svg';
+      const placeholderImg = '../../assets/images/people/student-placeholder.svg';
       const imgFile = person && person.image ? person.image : '';
       const imgPath = imgFile
         ? `../../assets/images/people/${imgFile}`

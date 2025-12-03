@@ -290,6 +290,23 @@
       "pub_year": 2024
     },
     {
+      "id": "2024-august-admission",
+      "type": "admission",
+      "date": "2024-08-28",
+      "title": "New students joined VILAB (August 2024)",
+      "summary": "We welcome new MS students to VILAB.",
+      "people": {
+        "ms": [
+          "Heejun Park",
+          "Daehyun We"
+        ],
+        "phd": [
+          " Jongseob Yun"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
       "id": "2024-eccv",
       "type": "publication",
       "date": "2024-07-02",
@@ -298,6 +315,40 @@
       "venue": "ECCV 2024",
       "pub_venue": "ECCV",
       "pub_year": 2024
+    },
+    {
+      "id": "2024-february-admission",
+      "type": "admission",
+      "date": "2024-02-24",
+      "title": "New students joined VILAB (February 2024)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "Giwon Lee"
+        ],
+        "phd": [
+          "Yuhwan Jeong",
+          "Yunseo Yang"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2024-february-graduation",
+      "type": "graduation",
+      "date": "2024-02-23",
+      "title": "February 2024 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Yuhwan Jeong",
+          "Yunseo Yang"
+        ],
+        "phd": [
+          "Inkyu Shin"
+        ]
+      },
+      "description": "Congratulations to our Ph.D and master's graduates, and we wish them all the best in their future endeavors!"
     },
     {
       "id": "2024-cvpr",
@@ -338,6 +389,38 @@
       "venue": "3DV 2024",
       "pub_venue": "3DV",
       "pub_year": 2024
+    },
+    {
+      "id": "2023-august-admission",
+      "type": "admission",
+      "date": "2023-08-28",
+      "title": "New students joined VILAB (August 2023)",
+      "summary": "We welcome new MS students to VILAB.",
+      "people": {
+        "ms": [
+          "Jae-Young Kang",
+          "Hoyong Kwon"
+        ],
+        "phd": [
+          "Hyun-Kurl Jang"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2023-august-graduation",
+      "type": "graduation",
+      "date": "2023-08-27",
+      "title": "August 2023 Graduation",
+      "summary": "In-Chul Chung successfully completed his master's degree.",
+      "people": {
+        "ms": [
+          "In-Chul Chung"
+        ],
+        "phd": [
+        ]
+      },
+      "description": "Congratulations to our master's graduate, and we wish him all the best in his future endeavors!"
     },
     {
       "id": "2023-iccv",
@@ -398,6 +481,44 @@
       "pub_year": 2023
     },
     {
+      "id": "2023-february-admission",
+      "type": "admission",
+      "date": "2023-02-24",
+      "title": "New students joined VILAB (February 2023)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "Youngjin Oh",
+          "Minseok Kim"
+        ],
+        "phd": [
+          "Byeongin Joung",
+          "Jaewoo Jeong",
+          "Wooseong Jeong",
+          "Jihun Kim"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2023-february-graduation",
+      "type": "graduation",
+      "date": "2023-02-23",
+      "title": "February 2023 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Jeong-Min Lee",
+          "Yoonsu Kang",
+          "Jihun Kim",
+          "Wooseong Jeong"
+        ],
+        "phd": [
+        ]
+      },
+      "description": "Congratulations to our master's graduates, and we wish them all the best in their future endeavors!"
+    },
+    {
       "id": "2023-ipiu-award",
       "type": "award",
       "date": "2023-02-10",
@@ -452,6 +573,37 @@
       "pub_year": 2022
     },
     {
+      "id": "2022-august-admission",
+      "type": "admission",
+      "date": "2022-08-24",
+      "title": "New students joined VILAB (August 2022)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "Hyun-Kurl Jang"
+        ],
+        "phd": [
+          
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2022-august-graduation",
+      "type": "graduation",
+      "date": "2022-08-23",
+      "title": "August 2022 Graduation",
+      "summary": "Pranjay Shyam successfully completed his Ph.D. degree.",
+      "people": {
+        "ms": [
+        ],
+        "phd": [
+          "Pranjay Shyam"
+        ]
+      },
+      "description": "Congratulations to our Ph.D. graduate, and we wish him all the best in his future endeavors!"
+    },
+    {
       "id": "2023-wacv",
       "type": "publication",
       "date": "2022-08-17",
@@ -504,6 +656,44 @@
       "pub_year": 2022
     },
     {
+      "id": "2022-february-admission",
+      "type": "admission",
+      "date": "2022-02-24",
+      "title": "New students joined VILAB (February 2022)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "Yuhwan Jeong",
+          "Yunseo Yang"
+        ],
+        "phd": [
+          "Jongoh Jeong",
+          "Changgyoon Oh",
+          "Jegyeong Cho",
+          "Hoonhee Cho"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2022-february-graduation",
+      "type": "graduation",
+      "date": "2022-02-23",
+      "title": "February 2022 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Kang-Il Lee",
+          "Changgyoon Oh",
+          "Jegyeong Cho",
+          "Hoonhee Cho"
+        ],
+        "phd": [
+        ]
+      },
+      "description": "Congratulations to our master's graduates, and we wish them all the best in their future endeavors!"
+    },
+    {
       "id": "2022-ipiu-award",
       "type": "award",
       "date": "2022-02-10",
@@ -550,6 +740,38 @@
       "venue": "BMVC 2021",
       "pub_venue": "BMVC",
       "pub_year": 2021
+    },
+    {
+      "id": "2021-august-admission",
+      "type": "admission",
+      "date": "2021-08-24",
+      "title": "New students joined VILAB (August 2021)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "Wooseong Jeong",
+          "Jihun Kim"
+        ],
+        "phd": [
+          "Hunmin Yang"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2021-august-graduation",
+      "type": "graduation",
+      "date": "2021-08-23",
+      "title": "August 2021 Graduation",
+      "summary": "Lin Wang successfully completed his Ph.D. degree.",
+      "people": {
+        "ms": [
+        ],
+        "phd": [
+          "Lin Wang"
+        ]
+      },
+      "description": "Congratulations to his Ph.D graduate, and we wish him all the best in his future endeavors!"
     },
     {
       "id": "2021-ieee-spectrum",
@@ -622,6 +844,46 @@
       "pub_year": 2021
     },
     {
+      "id": "2021-february-admission",
+      "type": "admission",
+      "date": "2021-02-24",
+      "title": "New students joined VILAB (February 2021)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "In-Chul Chung",
+          "Jeong-Min Lee",
+          "Yoonsu Kang"
+        ],
+        "phd": [
+          "Yujeong Chae",
+          "Hyeonseong Kim",
+          "Youngho Yoon",
+          "Inkyu Shin"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2021-february-graduation",
+      "type": "graduation",
+      "date": "2021-02-23",
+      "title": "February 2021 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Won-June Cho",
+          "Yujeong Chae",
+          "Kwon-Young Ryu",
+          "Kyeong-Seob Song",
+          "Jung-Won Lee"
+        ],
+        "phd": [
+        ]
+      },
+      "description": "Congratulations to our master's graduates, and we wish them all the best in their future endeavors!"
+    },
+    {
       "id": "2021-ipiu-award",
       "type": "award",
       "date": "2021-02-03",
@@ -668,18 +930,6 @@
       "pub_year": 2021
     },
     {
-      "id": "2020-kccv-test-of-time-award",
-      "type": "award",
-      "date": "2020-08-17",
-      "title": "Winning the test-of-time award at KCCV 2020",
-      "summary": "Professor Kuk-Jin Yoon has won the Test of Time Award at Domestic Conference on 7th Korean Conference on Computer Vision (KCCV 2020).",
-      "description": "The paper <strong><i>Robust Online Multi-Object Tracking based on Tracklet Confidence and Online Discriminative Appearance Learning</i></strong> by <strong>Seung-hwan Bae, and Kuk-Jin Yoon</strong> won the <strong>test-of-time paper award</strong> at Domestic Conference on 7th Korean Conference on Computer Vision (KCCV 2020).",
-      "images": [
-      ],
-      "links": [
-      ]
-    },
-    {
       "id": "2020-september-professor-appointments",
       "type": "career",
       "date": "2020-09-22",
@@ -692,6 +942,52 @@
           "career": "Assistant Professor at Chonnam National University",
           "career_ko": "전남대학교 조교수 임용"
         }
+      ]
+    },
+    {
+      "id": "2020-august-admission",
+      "type": "admission",
+      "date": "2020-08-24",
+      "title": "New student joined VILAB (August 2020)",
+      "summary": "We welcome the new Ph.D student to VILAB.",
+      "people": {
+        "ms": [
+          
+        ],
+        "phd": [
+          "Jaeseok Jeong"
+        ]
+      },
+      "description": "We are delighted to welcome our new PhD student to the lab and look forward to the fresh perspectives and innovative contributions he will bring to our research community."
+    },
+    {
+      "id": "2020-august-graduation",
+      "type": "graduation",
+      "date": "2020-08-23",
+      "title": "August 2020 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Hee-Chan Jung",
+          "Sung-Hyun Park",
+          "Jaeseok Jeong",
+          "Jongseob Yun"
+        ],
+        "phd": [
+        ]
+      },
+      "description": "Congratulations to our master's graduates, and we wish them all the best in their future endeavors!"
+    },
+    {
+      "id": "2020-kccv-test-of-time-award",
+      "type": "award",
+      "date": "2020-08-17",
+      "title": "Winning the test-of-time award at KCCV 2020",
+      "summary": "Professor Kuk-Jin Yoon has won the Test of Time Award at Domestic Conference on 7th Korean Conference on Computer Vision (KCCV 2020).",
+      "description": "The paper <strong><i>Robust Online Multi-Object Tracking based on Tracklet Confidence and Online Discriminative Appearance Learning</i></strong> by <strong>Seung-hwan Bae, and Kuk-Jin Yoon</strong> won the <strong>test-of-time paper award</strong> at Domestic Conference on 7th Korean Conference on Computer Vision (KCCV 2020).",
+      "images": [
+      ],
+      "links": [
       ]
     },
     {
@@ -715,6 +1011,45 @@
       "pub_year": 2020
     },
     {
+      "id": "2020-february-admission",
+      "type": "admission",
+      "date": "2020-02-24",
+      "title": "New students joined VILAB (February 2020)",
+      "summary": "We welcome new MS and Ph.D students to VILAB.",
+      "people": {
+        "ms": [
+          "Hyeonseong Kim",
+          "Youngho Yoon",
+          "Kang-Il Lee"
+        ],
+        "phd": [
+          "Taewoo Kim",
+          "Sung-Hoon Yoon",
+          "Daehee Park",
+          "Hyeokjun Kweon"
+        ]
+      },
+      "description": "We are delighted to welcome our new MS and PhD students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2020-february-graduation",
+      "type": "graduation",
+      "date": "2020-02-23",
+      "title": "February 2020 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Yeon-Kun Lee",
+          "Taewoo Kim",
+          "Sung-Hoon Yoon"
+        ],
+        "phd": [
+          "Jeong-Kyun Lee"
+        ]
+      },
+      "description": "Congratulations to our PhD and master's graduates, and we wish them all the best in their future endeavors!"
+    },
+    {
       "id": "2019-ksc-paper-award",
       "type": "award",
       "date": "2019-12-20",
@@ -729,6 +1064,21 @@
           "url": "https://me.kaist.ac.kr/news/news_020100.html?bmain=view&uid=158"
         }
       ]
+    },
+    {
+      "id": "2019-august-graduation",
+      "type": "graduation",
+      "date": "2019-08-23",
+      "title": "August 2019 Graduation",
+      "summary": "Chang-Ryeol Lee successfully completed his Ph.D degree.",
+      "people": {
+        "ms": [
+        ],
+        "phd": [
+          "Chang-Ryeol Lee"
+        ]
+      },
+      "description": "Congratulations to his Ph.D graduate, and we wish him all the best in his future endeavors!"
     },
     {
       "id": "2019-3dv",
@@ -751,6 +1101,26 @@
       "pub_year": 2019
     },
     {
+      "id": "2019-february-admission",
+      "type": "admission",
+      "date": "2019-02-24",
+      "title": "New students joined VILAB (February 2019)",
+      "summary": "We welcome new MS students to VILAB.",
+      "people": {
+        "ms": [
+          "Yujeong Chae",
+          "Won-June Cho",
+          "Kwon-Young Ryu",
+          "Kyeong-Seob Song",
+          "Jung-Won Lee"
+        ],
+        "phd": [
+          
+        ]
+      },
+      "description": "We are delighted to welcome our new MS students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
       "id": "2019-ipiu-award",
       "type": "award",
       "date": "2019-02-15",
@@ -767,6 +1137,41 @@
       ]
     },
     {
+      "id": "2018-august-admission",
+      "type": "admission",
+      "date": "2018-08-24",
+      "title": "New students joined VILAB (August 2018)",
+      "summary": "We welcome new MS students to VILAB.",
+      "people": {
+        "ms": [
+          "Jongseob Yun",
+          "Jaeseok Jeong",
+          "Hee-Chan Jung",
+          "Sung-Hyun Park"
+        ],
+        "phd": [
+          
+        ]
+      },
+      "description": "We are delighted to welcome our new MS students to the lab and look forward to the fresh perspectives and innovative contributions they will bring to our research community."
+    },
+    {
+      "id": "2018-august-graduation",
+      "type": "graduation",
+      "date": "2018-08-23",
+      "title": "August 2018 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Jeong-Yun Na"
+        ],
+        "phd": [
+          "Yeong-Jun Cho"
+        ]
+      },
+      "description": "Congratulations to our PhD and master's graduates, and we wish them all the best in their future endeavors!"
+    },
+    {
       "id": "2018-fcv-best-student-paper-award",
       "type": "award",
       "date": "2018-03-05",
@@ -777,6 +1182,24 @@
       ],
       "links": [
       ]
+    },
+    {
+      "id": "2018-february-graduation",
+      "type": "graduation",
+      "date": "2018-02-23",
+      "title": "February 2018 Graduation",
+      "summary": "Several members successfully completed their degrees.",
+      "people": {
+        "ms": [
+          "Hyeok-Jae Choi",
+          "Jae-Han Park",
+          "Yeon-Kun Lee"
+        ],
+        "phd": [
+          "Han-Mu Park"
+        ]
+      },
+      "description": "Congratulations to our PhD and master's graduates, and we wish them all the best in their future endeavors!"
     }
 
   ]

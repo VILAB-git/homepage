@@ -132,7 +132,6 @@
       "email": "byeonginjoung@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
-      "major_ms": "Mechanical Engineering",
       "role": "2025 Assistant Lab Leader (부랩장)",
       "image": "ByeonginJoung.jpg",
       "researchInterests": ["TBD"]
@@ -142,6 +141,7 @@
       "email": "jhg0001@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "role": "2025 Assistant Lab Leader (부랩장)",
       "image": "HyunkurlJang.jpg",
       "researchInterests": ["3D Vision"],
@@ -152,6 +152,7 @@
       "email": "jason.jeong@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "JaeseokJeong_low.jpg",
       "researchInterests": ["3D Vision"]
     },
@@ -160,6 +161,7 @@
       "email": "yujeong@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "YujeongChae_low.jpg",
       "researchInterests": ["Multi-modal Vision", "Object Detection"]
     },
@@ -168,6 +170,7 @@
       "email": "brian617@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "HyeonseongKim.jpg",
       "researchInterests": ["TBD"]
     },
@@ -176,6 +179,7 @@
       "email": "dudgh1732@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "YounghoYoon.jpg",
       "researchInterests": ["TBD"]
     },
@@ -219,6 +223,7 @@
       "email": "changgyoon@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "ChanggyoonOh.jpg",
       "researchInterests": ["Generative Models"]
     },
@@ -227,6 +232,7 @@
       "email": "gnsgnsgml@kaist.ac.kr",
       "category": "phd",
       "major_phd": "The Robotics Program",
+      "major_ms": "The Robotics Program",
       "image": "HoonheeCho.jpg",
       "researchInterests": ["Stereo Vision", "Multi-modal sensor"],
       "website": "https://chohoonhee.github.io/hoonheecho/"
@@ -236,6 +242,7 @@
       "email": "j2k0618@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "JegyeongCho_low.jpg",
       "researchInterests": ["TBD"]
     },
@@ -244,6 +251,7 @@
       "email": "stk14570@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering",
+      "major_ms": "Mechanical Engineering",
       "image": "WooseongJeong.png",
       "researchInterests": ["TBD"]
     },
@@ -279,6 +287,7 @@
       "email": "jseob.y@kaist.ac.kr",
       "category": "phd",
       "major_phd": "Mechanical Engineering (Part-time)",
+      "major_ms": "Mechanical Engineering",
       "image": "JongseobYun.jpg",
       "researchInterests": ["TBD"],
       "website": "https://jseobyun.github.io/"
@@ -427,6 +436,7 @@
       "major_phd": "Mechanical Engineering",
       "thesis_phd": "Video Enhancement with Event Camera",
       "thesis_phd_kor": "이벤트 카메라를 이용한 비디오 향상",
+      "major_ms": "The Robotics Program",
       "nextPosition": "Qualcomm",
       "graduationDate": "2025-02",
       "website": "https://intelpro.github.io/"
@@ -440,6 +450,7 @@
       "major_phd": "Mechanical Engineering",
       "thesis_phd": "Learning Image Semantic Segmentation with Weak Supervision",
       "thesis_phd_kor": "약지도 학습을 통한 영상의 의미론적 분할 방법 연구",
+      "major_ms": "Mechanical Engineering",
       "nextPosition": "DGIST",
       "graduationDate": "2025-02"
     },
@@ -472,8 +483,10 @@
     {
       "name": "Inkyu Shin",
       "email": "dlsrbgg33@gmail.com",
+      "image": "InkyuShin.jpg",
       "category": "phd",
       "title": "Ph.D",
+      "major_phd": "Division of Future Vehicle",
       "nextPosition": "TikTok",
       "graduationDate": "2024-02",
       "website": "https://dlsrbgg33.github.io/"
@@ -488,8 +501,10 @@
     {
       "name": "Lin Wang",
       "email": "linwang@ust.hk",
+      "image": "LinWang.jpg",
       "category": "phd",
       "title": "Ph.D",
+      "major_phd": "Mechanical Engineering",
       "nextPosition": "NTU-Singapore",
       "graduationDate": "2021-08",
       "website": "https://vlislab22.github.io/vlislab/people.html"
@@ -603,6 +618,7 @@
       "email": "",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Mechanical Engineering",
       "nextPosition": "",
       "graduationDate": "2023-08"
     },
@@ -611,6 +627,7 @@
       "email": "",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "The Robotics Program",
       "nextPosition": "KETI",
       "graduationDate": "2023-02"
     },
@@ -619,6 +636,7 @@
       "email": "",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Mechanical Engineering",
       "nextPosition": "",
       "graduationDate": "2023-02"
     },
@@ -627,6 +645,7 @@
       "email": "4bkang@snu.ac.kr",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Mechanical Engineering",
       "nextPosition": "Machine Intelligence Lab, Seoul National University (Ph.D Candidate)",
       "graduationDate": "2022-02"
     },
@@ -635,6 +654,7 @@
       "email": "",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Mechanical Engineering",
       "nextPosition": "NaverLabs",
       "graduationDate": "2021-02"
     },
@@ -643,6 +663,7 @@
       "email": "",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Mechanical Engineering",
       "nextPosition": "Postech (Ph.D Candidate)",
       "graduationDate": "2021-02"
     },
@@ -651,6 +672,7 @@
       "email": "",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Mechanical Engineering",
       "nextPosition": "Hyundai Motors",
       "graduationDate": "2021-02"
     },
@@ -659,6 +681,7 @@
       "email": "",
       "category": "ms",
       "title": "Masters",
+      "major_ms": "Division of Future Vehicle",
       "nextPosition": "Hyundai Motors",
       "graduationDate": "2021-02"
     },
