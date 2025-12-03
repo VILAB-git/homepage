@@ -112,7 +112,7 @@
       "nextPosition": "KAIST Postdoc (VILab)",
       "graduationDate": "2025-02",
       "researchInterests": ["Physical AI"],
-      "website": "https://sites.google.com/view/taeyeop-lee"
+      "personalpage": "https://sites.google.com/view/taeyeop-lee"
     },
     {
       "name": "Jihun Kim",
@@ -123,8 +123,8 @@
       "role": "2025 Lab Leader (랩장)",
       "image": "JihunKim.jpg",
       "researchInterests": ["Semantic Segmentation", "Domain Adaptation", "Point Cloud", "Foundation Model"],
-      "website": "https://jihun1998.github.io/",
-      "googlescholor": "https://scholar.google.com/citations?user=8UVicysAAAAJ&hl=en",
+      "personalpage": "https://jihun1998.github.io/",
+      "googlescholar": "https://scholar.google.com/citations?user=8UVicysAAAAJ&hl=en",
       "linkedin": "https://www.linkedin.com/in/jihun1998/",
       "github": "https://github.com/jihun1998"
     },
@@ -146,7 +146,7 @@
       "role": "2025 Assistant Lab Leader (부랩장)",
       "image": "HyunkurlJang.jpg",
       "researchInterests": ["3D Vision"],
-      "website": "https://blue-531.github.io/"
+      "personalpage": "https://blue-531.github.io/"
     },
     {
       "name": "Jaeseok Jeong",
@@ -199,7 +199,7 @@
       "major_phd": "Mechanical Engineering (Part-time)",
       "image": "HunminYang_low.jpg",
       "researchInterests": ["TBD"],
-      "website": "https://hmyang1.github.io/"
+      "personalpage": "https://hmyang1.github.io/"
     },
     {
       "name": "Minjun Kang",
@@ -208,7 +208,7 @@
       "major_phd": "The Robotics Program",
       "image": "MinjunKang.jpg",
       "researchInterests": ["World Model", "Generative AI"],
-      "website": "https://sites.google.com/view/minjun-kang"
+      "personalpage": "https://sites.google.com/view/minjun-kang"
     },
     {
       "name": "Jongoh Jeong",
@@ -217,7 +217,7 @@
       "major_phd": "The Robotics Program",
       "image": "JongohJeong.jpg",
       "researchInterests": ["Visual Recognition", "Domain Adaptation/Generalization"],
-      "website": "https://sites.google.com/view/jongohjeong?pli=1"
+      "personalpage": "https://sites.google.com/view/jongohjeong?pli=1"
     },
     {
       "name": "Changgyoon Oh",
@@ -236,7 +236,7 @@
       "major_ms": "The Robotics Program",
       "image": "HoonheeCho.jpg",
       "researchInterests": ["Stereo Vision", "Multi-modal sensor"],
-      "website": "https://chohoonhee.github.io/hoonheecho/"
+      "personalpage": "https://chohoonhee.github.io/hoonheecho/"
     },
     {
       "name": "Jegyeong Cho",
@@ -263,7 +263,7 @@
       "major_phd": "Mechanical Engineering",
       "image": "JaewooJeong.jpg",
       "researchInterests": ["Human Motion Forecasting", "Trajectory Prediction"],
-      "website": "https://jaewoo97.github.io/"
+      "personalpage": "https://jaewoo97.github.io/"
     },
     {
       "name": "Yuhwan Jeong",
@@ -291,7 +291,7 @@
       "major_ms": "Mechanical Engineering",
       "image": "JongseobYun.jpg",
       "researchInterests": ["TBD"],
-      "website": "https://jseobyun.github.io/"
+      "personalpage": "https://jseobyun.github.io/"
     },
     {
       "name": "Minseok Kim",
@@ -302,7 +302,9 @@
       "thesis_ms": "Generalized Category Discovery for LiDAR Semantic Segmentation",
       "thesis_ms_kor": "라이더 의미론적 분할을 위한 일반화된 카테고리 발견 방법",
       "image": "MinseokKim.jpg",
-      "researchInterests": ["TBD"]
+      "researchInterests": ["TBD"],
+      "googlescholar": "https://scholar.google.com/citations?user=74B4XPgAAAAJ&hl=en",
+      "linkedin": "https://www.linkedin.com/in/alstjrx1x1/"
     },
     {
       "name": "Jae-Young Kang",
@@ -325,7 +327,12 @@
       "thesis_ms_kor": "약지도 의미론적 분할을 위한 위상 집중 및 지름길 억제 기법",
       "image": "HoyongKwon.jpg",
       "researchInterests": ["Semantic Segmentation", "Foundation Model"],
-      "website": "https://kwonhoyong3.github.io/"
+      "personalpage": "https://kwonhoyong3.github.io/",
+      "cv": "https://kwonhoyong3.github.io/assets/docs/HoyongKwon_KAIST_Robotics_CV.pdf",
+      "googlescholar": "https://scholar.google.com/citations?user=76Bbek8AAAAJ&hl=en",
+      "linkedin": "https://www.linkedin.com/in/hoyongkwon/",
+      "orcid": "https://orcid.org/0000-0002-5888-1002",
+      "github": "https://github.com/kwonhoyong3"
     },
     
     {
@@ -335,7 +342,7 @@
       "major_ms": "Mechanical Engineering",
       "image": "GiwonLee.jpg",
       "researchInterests": ["TBD"],
-      "website": "https://giwonlee00.github.io/"
+      "personalpage": "https://giwonlee00.github.io/"
     },
     {
       "name": "Heejun Park",
@@ -344,7 +351,7 @@
       "major_ms": "Division of Future Vehicle",
       "image": "HeejunPark.jpg",
       "researchInterests": ["3D Computer Vision"],
-      "website": "https://parkie0517.github.io/"
+      "personalpage": "https://parkie0517.github.io/"
     },
     {
       "name": "Daehyun We",
@@ -449,7 +456,7 @@
       "major_ms": "The Robotics Program",
       "nextPosition": "Qualcomm",
       "graduationDate": "2025-02",
-      "website": "https://intelpro.github.io/"
+      "personalpage": "https://intelpro.github.io/"
     },
     {
       "name": "Sung-Hoon Yoon",
@@ -475,7 +482,7 @@
       "thesis_phd_kor": "다양한 도시 환경에서 안정적인 자율주행 시스템을 위한 데이터 기반 경로 예측",
       "nextPosition": "DGIST",
       "graduationDate": "2025-02",
-      "website": "https://sites.google.com/view/dhpark/"
+      "personalpage": "https://sites.google.com/view/dhpark/"
     },
     {
       "name": "Hyeokjun Kweon",
@@ -488,7 +495,7 @@
       "thesis_phd_kor": "사영을 통해 2D 이미지 도메인의 지식을 활용하는 3D 점구름 의미론적 분할의 약지도 학습",
       "nextPosition": "Chung-Ang University",
       "graduationDate": "2025-02",
-      "website": "https://sangrockeg.github.io/"
+      "personalpage": "https://sangrockeg.github.io/"
     },
     {
       "name": "Inkyu Shin",
@@ -499,7 +506,7 @@
       "major_phd": "Division of Future Vehicle",
       "nextPosition": "TikTok",
       "graduationDate": "2024-02",
-      "website": "https://dlsrbgg33.github.io/"
+      "personalpage": "https://dlsrbgg33.github.io/"
     },
     {
       "name": "Pranjay Shyam",
@@ -517,7 +524,7 @@
       "major_phd": "Mechanical Engineering",
       "nextPosition": "NTU-Singapore",
       "graduationDate": "2021-08",
-      "website": "https://vlislab22.github.io/vlislab/people.html"
+      "personalpage": "https://vlislab22.github.io/vlislab/people.html"
     },
     {
       "name": "S. Mohammad Mostafavi I",
@@ -552,7 +559,7 @@
       "major_phd": "Electrical Engineering and Computer Science",
       "nextPosition": "Chonnam University",
       "graduationDate": "2018-08",
-      "website": "https://sites.google.com/view/cvl-jnu/member/professor?authuser=0"
+      "personalpage": "https://sites.google.com/view/cvl-jnu/member/professor?authuser=0"
     },
     {
       "name": "Han-Mu Park",

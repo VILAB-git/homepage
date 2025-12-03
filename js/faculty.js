@@ -45,10 +45,28 @@ class FacultyPage {
             <p class="faculty-intro-text">${introText}</p>
 
             <div class="faculty-links">
-                ${data.google_scholar ? `<a href="${data.google_scholar}" target="_blank">Google Scholar</a>` : ""}
-                ${data.cv ? `<a href="${data.cv}" target="_blank">Curriculum Vitae</a>` : ""}
+                ${
+                    data.cv
+                    ? `
+                        <a href="${data.cv}" 
+                        target="_blank" class="icon-btn" aria-label="Curriculum Vitae">
+                        <i class="ai ai-cv"></i>
+                        </a>
+                    `
+                    : ""
+                }    
+                ${
+                    data.google_scholar
+                    ? `
+                        <a href="${data.google_scholar}" 
+                        target="_blank" class="icon-btn" aria-label="Google Scholar">
+                        <i class="ai ai-google-scholar"></i>
+                        </a>
+                    `
+                    : ""
+                }
             </div>
-            </div>
+        </div>
         </div>
 
         <hr class="faculty-divider" />

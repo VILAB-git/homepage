@@ -33,6 +33,18 @@
 .hero-text {
   text-align: center;
   color: white;
+  
+  /* background: rgba(0, 0, 0, 0.20);
+  padding: 10px 30px;
+  border-radius: 8px; */
+}
+
+.hero-text h1 {
+  text-shadow:
+    -2px -2px 4px rgba(0,0,0,0.8),
+     2px -2px 4px rgba(0,0,0,0.8),
+    -2px  2px 4px rgba(0,0,0,0.8),
+     2px  2px 4px rgba(0,0,0,0.8);
 }
 
 .hero-kaist {

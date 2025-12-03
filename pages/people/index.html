@@ -19,7 +19,12 @@
   <!-- <link rel="stylesheet" href="../../css/main.css"> -->
   <link rel="stylesheet" href="../../css/base.css">
   <link rel="stylesheet" href="../../css/people.css">
+  <link rel="stylesheet" href="../../css/academicons.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome (GitHub / LinkedIn / Globe 등) -->
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -78,12 +83,27 @@
                 <a href="mailto:kjyoon@kaist.ac.kr">kjyoon@kaist.ac.kr</a>
               </p>
               <div class="person-links">
+
+                <!-- Homepage -->
                 <a href="../faculty/"
-                  target="_blank" class="person-link">Website</a>
+                  target="_blank" class="icon-btn" aria-label="Homepage"
+                  onclick="event.stopPropagation();">
+                  <i class="fa-solid fa-house"></i>
+                </a>
+
+                <!-- CV -->
+                <a href="../../assets/docs/Prof_Kuk-Jin_Yoon_CV.pdf"
+                  target="_blank" class="icon-btn" aria-label="Curriculum Vitae"
+                  onclick="event.stopPropagation();">
+                  <i class="ai ai-cv"></i>
+                </a>
+
+                <!-- Google Scholar -->
                 <a href="https://scholar.google.com/citations?user=1NvBj_gAAAAJ&hl=en"
-                  target="_blank" class="person-link">Google Scholar</a>
-                <a href="../../assets/docs/251201_Prof_Kuk-Jin_Yoon_CV.pdf"
-                  target="_blank" class="person-link">Curriculum Vitae</a>
+                  target="_blank" class="icon-btn" aria-label="Google Scholar"
+                  onclick="event.stopPropagation();">
+                  <i class="ai ai-google-scholar"></i>
+                </a>
               </div>
             </div>
           </div>

@@ -111,17 +111,70 @@ class PeoplePage {
     }
 
     const links = [];
-    if (person.website) {
-      links.push(`<a href="${person.website}" target="_blank" class="person-link">Website</a>`);
+    
+    // Personal Page (globe)
+    if (person.personalpage) {
+      links.push(`
+        <a href="${person.personalpage}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="Homepage">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      `);
     }
-    if (person.googlescholor) {
-      links.push(`<a href="${person.googlescholor}" target="_blank" class="person-link">Google Scholar</a>`);
+
+    // CV (pdf 링크)
+    if (person.cv) {
+      links.push(`
+        <a href="${person.cv}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="CV">
+          <i class="ai ai-cv"></i>
+        </a>
+      `);
     }
+
+    // Google Scholar (Academicons)
+    if (person.googlescholar) {   // people.json 키 그대로 사용
+      links.push(`
+        <a href="${person.googlescholar}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      `);
+    }
+
+    // LinkedIn
     if (person.linkedin) {
-      links.push(`<a href="${person.linkedin}" target="_blank" class="person-link">LinkedIn</a>`);
+      links.push(`
+        <a href="${person.linkedin}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      `);
     }
+
+    // ORCID (Academicons)
+    if (person.orcid) {
+      // 전체 URL이 아니라 ID만 넣었다면 앞에 https://orcid.org/ 를 붙여줘도 됨
+      const orcidUrl = person.orcid.startsWith('http')
+        ? person.orcid
+        : `https://orcid.org/${person.orcid}`;
+
+      links.push(`
+        <a href="${orcidUrl}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="ORCID">
+          <i class="ai ai-orcid"></i>
+        </a>
+      `);
+    }
+
+    // GitHub
     if (person.github) {
-      links.push(`<a href="${person.github}" target="_blank" class="person-link">Github</a>`);
+      links.push(`
+        <a href="${person.github}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      `);
     }
 
     return `
@@ -153,14 +206,70 @@ class PeoplePage {
       : '';
 
     const links = [];
-    if (person.website) {
-      links.push(`<a href="${person.website}" target="_blank" class="person-link">Website</a>`);
+
+    // Personal Page (globe)
+    if (person.personalpage) {
+      links.push(`
+        <a href="${person.personalpage}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="Homepage">
+          <i class="fa-solid fa-house"></i>
+        </a>
+      `);
     }
-    if (person.googleScholar) {
-      links.push(`<a href="${person.googleScholar}" target="_blank" class="person-link">Google Scholar</a>`);
+
+    // CV (pdf 링크)
+    if (person.cv) {
+      links.push(`
+        <a href="${person.cv}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="CV">
+          <i class="ai ai-cv"></i>
+        </a>
+      `);
     }
+
+    // Google Scholar (Academicons)
+    if (person.googlescholar) {   // people.json 키 그대로 사용
+      links.push(`
+        <a href="${person.googlescholar}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      `);
+    }
+
+    // LinkedIn
     if (person.linkedin) {
-      links.push(`<a href="${person.linkedin}" target="_blank" class="person-link">LinkedIn</a>`);
+      links.push(`
+        <a href="${person.linkedin}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      `);
+    }
+
+    // ORCID (Academicons)
+    if (person.orcid) {
+      // 전체 URL이 아니라 ID만 넣었다면 앞에 https://orcid.org/ 를 붙여줘도 됨
+      const orcidUrl = person.orcid.startsWith('http')
+        ? person.orcid
+        : `https://orcid.org/${person.orcid}`;
+
+      links.push(`
+        <a href="${orcidUrl}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="ORCID">
+          <i class="ai ai-orcid"></i>
+        </a>
+      `);
+    }
+
+    // GitHub
+    if (person.github) {
+      links.push(`
+        <a href="${person.github}" target="_blank" rel="noopener"
+          class="icon-btn" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      `);
     }
 
     return `
