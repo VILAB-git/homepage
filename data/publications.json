@@ -14,6 +14,15 @@
 
   "publications": [
     {
+      "title": "Temporal Stereo Matching from Event Cameras via Joint Learning with Stereoscopic Flow",
+      "authors": ["Jae-Young Kang*", "Hoonhee Cho*", "Kuk-Jin Yoon"],
+      "venue": "TPAMI",
+      "year": 2025,
+      "type": "journal",
+      "status": "accepted",
+      "keywords": ["Stereo Matching", "Event Cameras"]
+    },
+    {
       "title": "Gated Temporal Fusion Transformers for Robust Multi-Object Tracking",
       "authors": ["Jinho Kim", "Kuk-Jin Yoon"],
       "venue": "WACV",
