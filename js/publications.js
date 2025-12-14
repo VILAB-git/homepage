@@ -323,6 +323,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           <!-- Venue -->
           <p class="publication-venue">
             <strong>${venueText}</strong>
+            ${pub.presentation ? `<span class="presentation-tag">${pub.presentation}</span>` : ''}
           </p>
 
           <!-- 특허일 때만 application/registration/status 표시 -->
