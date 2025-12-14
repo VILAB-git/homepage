@@ -290,6 +290,18 @@
   margin-bottom: 10px;
 }
 
+.presentation-tag {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 6px;
+  background-color: #fffed4; 
+  color: #ffbf00;            
+  border-radius: 10px;
+  /* font-size: 0.75rem; */
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
 /* Keywords (publications.css 스타일과 맞춤) */
 .news-publication-keywords {
   display: flex;

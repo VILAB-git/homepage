@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   function createNewsPublicationHTML(pub) {
     const presentation = pub.presentation
-      ? ` (${pub.presentation.charAt(0).toUpperCase() + pub.presentation.slice(1)})`
+      ? ` ${pub.presentation.charAt(0).toUpperCase() + pub.presentation.slice(1)}`
       : '';
 
     return `
@@ -218,7 +218,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         <h3 class="news-publication-title">${pub.title}</h3>
         <p class="news-publication-authors">${pub.authors.join(', ')}</p>
         <p class="news-publication-venue">
-          <strong>${pub.venue} ${pub.year}</strong>${presentation}
+          <strong>${pub.venue} ${pub.year}</strong>
+          <span class="presentation-tag">${presentation}</span>
         </p>
         ${
           pub.keywords
